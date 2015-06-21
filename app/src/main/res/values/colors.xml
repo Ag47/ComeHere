@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_blue">#0071BC</color>
+    <color name="theme_blue_green">#05ACB0</color>
+    <color name="theme_green">#64FF4E</color>
+    <color name="theme_orange">#FBB03B</color>
+    <color name="theme_yellow">#FCEE21</color>
+
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorPrimaryLight">#B3E5FC</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="colorHighlight">#B6B6B6</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+
+
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+
+    <color name="ColorPrimary">#00897B</color>
+    <color name="ColorPrimaryDark">#00695C</color>
+    <color name="tabsScrollColor">#004D40</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#E0E0E0</color>
+
+
+</resources>

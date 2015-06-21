@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
+    compileSdkVersion 21
     buildToolsVersion "22.0.1"
-
     defaultConfig {
-        applicationId "io.codeguy.comehere"
-        minSdkVersion 15
-        targetSdkVersion 22
+        applicationId 'io.codeguy.comehere'
+        minSdkVersion 16
+        targetSdkVersion 21
         versionCode 1
         versionName "1.0"
     }
@@ -17,9 +16,21 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.0'
+    compile files('libs/cps2-java-api-java-7.jar')
+    compile files('libs/volley.jar')
+    compile 'com.google.android.gms:play-services-maps:7.5.0'
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+    compile 'com.android.support:cardview-v7:21.0.3'
+    compile 'com.google.maps.android:android-maps-utils:0.3+'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:support-v4:21.0.3'
+
+
 }
