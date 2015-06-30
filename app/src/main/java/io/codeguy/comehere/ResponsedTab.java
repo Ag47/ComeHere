@@ -1,6 +1,7 @@
 package io.codeguy.comehere;
 
 import android.content.Intent;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -110,7 +111,8 @@ public class ResponsedTab extends Fragment {
 
     public void setListView(View rootView) {
         documentsList = new ArrayList<HashMap<String, String>>();
-        ListView lv = (ListView) rootView.findViewById(R.id.listview);
+        ListView listView = (ListView) rootView.findViewById(R.id.listview);
+
         try {
             // Getting array of documents
             documents = responseObject.getJSONArray("documents");
@@ -160,8 +162,8 @@ public class ResponsedTab extends Fragment {
                 R.layout.row_responsed, new String[]{TAG_NAME, TAG_TYPE, TAG_LOCATION, TAG_PRICE, TAG_HOLDER},
                 new int[]{R.id.name, R.id.type, R.id.location, R.id.price, R.id.holder});
 
-        lv.setAdapter(adapter);
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getActivity(), SpotDetailActivity.class);

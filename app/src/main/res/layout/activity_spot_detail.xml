@@ -61,37 +61,47 @@
                 android:id="@+id/image"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/combine" />
+                android:src="@drawable/handtool" />
 
             <TextView
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/image" />
+                android:layout_below="@id/image"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:id="@+id/type"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/name" />
+                android:layout_below="@id/name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:id="@+id/price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/type" />
+                android:layout_below="@id/type"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:id="@+id/vendor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/price" />
+                android:layout_below="@id/price"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/vendor" />
+                android:layout_below="@id/vendor"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
 
         </RelativeLayout>
 

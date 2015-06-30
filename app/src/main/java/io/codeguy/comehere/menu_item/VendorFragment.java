@@ -3,6 +3,7 @@ package io.codeguy.comehere.menu_item;
 import android.app.AlertDialog;
 import android.app.Fragment;
 import android.content.DialogInterface;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
@@ -157,7 +158,9 @@ public class VendorFragment extends Fragment {
     public void setListView(View rootView) {
         documentsList = new ArrayList<HashMap<String, String>>();
         ListView lv = (ListView) rootView.findViewById(R.id.listview);
-        try {
+        int[] colors = {0xFFAED7DA, 0xFF1DAFB2, 0xFFAED7DA};
+        lv.setDivider(new GradientDrawable(GradientDrawable.Orientation.RIGHT_LEFT, colors));
+        lv.setDividerHeight(5);        try {
             // Getting array of documents
             documents = responseObject.getJSONArray("documents");
 

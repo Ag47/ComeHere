@@ -1,6 +1,7 @@
 package io.codeguy.comehere;
 
 import android.content.Intent;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -120,7 +121,10 @@ public class PendingTab extends Fragment  {
 
     public void setListView(View rootView) {
         documentsList = new ArrayList<HashMap<String, String>>();
-        ListView lv = (ListView) rootView.findViewById(R.id.listview);
+        ListView listView = (ListView) rootView.findViewById(R.id.listview);
+        int[] colors = {0xFF9CD1DD, 0xFF0872BA, 0xFF9CD1DD};
+        listView.setDivider(new GradientDrawable(GradientDrawable.Orientation.RIGHT_LEFT, colors));
+        listView.setDividerHeight(5);
         try {
             // Getting array of documents
             documents = responseObject.getJSONArray("documents");
@@ -171,7 +175,7 @@ public class PendingTab extends Fragment  {
                 R.layout.row_request, new String[]{TAG_NAME, TAG_TYPE, TAG_LOCATION, TAG_PRICE, TAG_HOLDER},
                 new int[]{R.id.name, R.id.type, R.id.location, R.id.price, R.id.holder});
 
-        lv.setAdapter(adapter);
+        listView.setAdapter(adapter);
     }
 
 }

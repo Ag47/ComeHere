@@ -1,6 +1,7 @@
 package io.codeguy.comehere;
 
 import android.app.Fragment;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
@@ -82,6 +83,9 @@ public class SpotListFragment extends Fragment {
     public void setListView(View rootView) {
         documentsList = new ArrayList<HashMap<String, String>>();
         listView = (ListView) rootView.findViewById(R.id.listviewinPending);
+        int[] colors = {0xFFCDE3AE, 0xFF8AC542, 0xFFCDE3AE};
+        listView.setDivider(new GradientDrawable(GradientDrawable.Orientation.RIGHT_LEFT, colors));
+        listView.setDividerHeight(5);
         try {
             // Getting array of documents
             documents = responseObject.getJSONArray("documents");
