@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+
+
+    <EditText android:id="@+id/inputSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Spot Your products..."
+        android:inputType="textVisiblePassword"
+        android:layout_centerVertical="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPOT!"
+        android:id="@+id/inputSearchBtn"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/inputSearch"
+        android:layout_centerHorizontal="true"
+         />
+</RelativeLayout>
+
+
+<!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/fragment_spot.xml -->
