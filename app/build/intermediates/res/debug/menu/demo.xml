@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_toggle"
+        android:orderInCategory="100"
+        sothree:showAsAction="never"
+        android:title="@string/action_hide"/>
+    
+    <item
+        android:id="@+id/action_anchor"
+        android:orderInCategory="200"
+        sothree:showAsAction="never"
+        android:title="@string/action_anchor_enable"/>    
+
+</menu>
+<!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/menu/demo.xml -->

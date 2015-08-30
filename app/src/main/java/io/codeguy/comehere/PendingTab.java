@@ -1,6 +1,5 @@
 package io.codeguy.comehere;
 
-import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,7 +8,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -28,9 +26,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PendingTab extends Fragment  {
-
-    String search_url = String.format("https://api-us.clusterpoint.com/100403/ComeHere/_search.json");
+public class PendingTab extends Fragment {
 
     private static final String TAG_doc = "documents";
     private static final String TAG_ID = "id";
@@ -44,11 +40,9 @@ public class PendingTab extends Fragment  {
     private static final String TAG_HOLDER = "holder";
     private static final String TAG_KEY = "key";
     private static final String TAG_STATE = "state";
-
-
-    JSONObject jsonObject = null;
     public static JSONObject responseObject = null;
-
+    String search_url = String.format("https://api-us.clusterpoint.com/100403/ComeHere/_search.json");
+    JSONObject jsonObject = null;
     // contacts JSONArray
     JSONArray documents = null;
 

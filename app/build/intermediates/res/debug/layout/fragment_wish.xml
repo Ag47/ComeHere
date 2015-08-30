@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<ImageView-->
+        <!--android:layout_width="360dp"-->
+        <!--android:layout_height="43dp"-->
+        <!--android:src="@drawable/header" />-->
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="43dp"
+            android:src="@drawable/bar5" />
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:text="This is add to the pending view" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_edt_panel"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="72dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Wish Name"
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+                android:textSize="34sp"
+                app:met_baseColor="@android:color/white"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="20"
+                app:met_primaryColor="@color/editor_text"
+                app:met_singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Optional (e.g required money)"
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+                app:met_baseColor="@android:color/white"
+                app:met_floatingLabel="highlight"
+                app:met_maxCharacters="40"
+                app:met_primaryColor="@color/editor_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="8dp"
+                    android:text="Type:" />
+
+                <!--<Button-->
+                <!--android:id="@+id/btn_type"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Browse" />-->
+
+
+                <Button
+                    android:id="@+id/buttonOpen"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="browse now" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tag_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="1"
+                    android:text="tag1"
+                    android:textColor="@color/dragedColorFromStart"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@id/tag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="tag1"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tag3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="tag1"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.wunderlist.slidinglayer.SlidingLayer
+        android:id="@+id/slidingLayer1"
+        android:layout_width="@dimen/layer_size"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:elevation="2dip">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primaryBottomSheet">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/bottom_sheet_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false" />
+
+            <TextView
+                android:id="@+id/buttonClose"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="60dp"
+                android:onClick="buttonClicked"
+                android:text="close"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+        <!--android:gravity="right|bottom"-->
+
+    </com.wunderlist.slidinglayer.SlidingLayer>
+</RelativeLayout>
+
+<!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/fragment_wish.xml -->

@@ -15,21 +15,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Clusterpoint {
+    public static final String search_url = "https://api-us.clusterpoint.com/100403/android/_search.json";
+    private static String jsonResponse = null;
+    private static JSONObject jsonObject = null;
+    private static JSONArray jsonArray = null;
     public final String url = "https://api-us.clusterpoint.com/100403/android.json";
-
     public final String insert_url = url;
     public final String update_url = url;
     public final String replace_url = "https://api-us.clusterpoint.com/100403/android/_replace.json";
     public final String partial_replace_url = "https://api-us.clusterpoint.com/100403/android/_partial_replace.json";
     public final String delete_url = url;
-    public static final String search_url = "https://api-us.clusterpoint.com/100403/android/_search.json";
     public final String lookup_url = "https://api-us.clusterpoint.com/100403/android/_lookup.json";
     public final String retrieve_url = "https://api-us.clusterpoint.com/100403/android/_retrieve.json";
     public final String status_url = url;
-
-    private static String jsonResponse = null;
-    private static JSONObject jsonObject = null;
-    private static JSONArray jsonArray = null;
 
     public static JSONArray search_all(Context context) {
 

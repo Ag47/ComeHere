@@ -1,0 +1,86 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:orientation="vertical">
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="?attr/colorPrimary"-->
+            <!--android:minHeight="?attr/actionBarSize"-->
+            <!--app:theme="@style/Toolbar" />-->
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"></LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Things you want to add to the pending"
+        android:layout_below="@+id/header"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seaching Product Name"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView2" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editName"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending Hours"
+        android:id="@+id/textView3"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/editName"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTime"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/editTime"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_marginTop="36dp" />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editType"
+        android:layout_below="@+id/editTime"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:layout_marginTop="50dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to pending queue!"
+        android:id="@+id/btnAddPending"
+        android:layout_below="@+id/editType"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginTop="71dp" />
+</RelativeLayout><!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/activity_pending_detail.xml -->

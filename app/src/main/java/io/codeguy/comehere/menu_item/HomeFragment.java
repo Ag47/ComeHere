@@ -40,22 +40,17 @@ import io.codeguy.comehere.SpotDetailActivity;
 
 public class HomeFragment extends Fragment implements OnMapReadyCallback {
 
-    String search_url = String.format("https://api-us.clusterpoint.com/100403/ComeHere/_search.json");
-
     private static final String TAG_doc = "documents";
     private static final String TAG_ID = "id";
     private static final String TAG_NAME = "name";
-
-    JSONObject jsonObject = null;
     public static JSONObject responseObject = null;
-
+    private static View rootView;
+    String search_url = String.format("https://api-us.clusterpoint.com/100403/ComeHere/_search.json");
+    JSONObject jsonObject = null;
     // contacts JSONArray
     JSONArray documents = null;
-
     // Hashmap for ListView
     ArrayList<HashMap<String, String>> documentsList;
-
-    private static View rootView;
 
     public HomeFragment() {
     }

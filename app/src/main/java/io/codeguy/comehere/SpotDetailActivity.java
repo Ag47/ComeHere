@@ -31,13 +31,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class SpotDetailActivity extends FragmentActivity implements View.OnClickListener, OnMapReadyCallback{
-    private Button mQueen;
-    private Button mHidden;
-    private SpotDetailOuterLayout mOuterLayout;
-    private RelativeLayout mMainLayout;
-
-    public GoogleMap googleMap;
+public class SpotDetailActivity extends FragmentActivity implements View.OnClickListener, OnMapReadyCallback {
     private static final String TAG_doc = "documents";
     private static final String TAG_ID = "id";
     private static final String TAG_NAME = "name";
@@ -50,21 +44,21 @@ public class SpotDetailActivity extends FragmentActivity implements View.OnClick
     private static final String TAG_HOLDER = "holder";
     private static final String TAG_KEY = "key";
     private static final String TAG_STATE = "state";
-
-//    public static String[] extraId;
-
     public static String targetName;
-
+    public static JSONObject responseObject = null;
+    public GoogleMap googleMap;
     String search_url = String.format("https://api-us.clusterpoint.com/100403/ComeHere/_search.json");
     JSONObject jsonObject = null;
 
-    public static JSONObject responseObject = null;
-
+//    public static String[] extraId;
     // contacts JSONArray
     JSONArray documents = null;
-
     // Hashmap for ListView
     ArrayList<HashMap<String, String>> documentsList;
+    private Button mQueen;
+    private Button mHidden;
+    private SpotDetailOuterLayout mOuterLayout;
+    private RelativeLayout mMainLayout;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

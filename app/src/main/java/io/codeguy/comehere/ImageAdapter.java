@@ -15,24 +15,39 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import io.codeguy.comehere.R;
-
 
 public class ImageAdapter extends PagerAdapter {
+    public static String[] loadURL = new String[]{
+            "http://xamarin.com/resources/design/home/devices.png",
+            "http://xamarin.com/resources/design/home/devices.png",
+            "http://www.att.com/catalog/en/skus/images/apple-iphone%205c%20-%208gb-white-100x160.jpg                                 "
+    };
     Context context;
     private int[] GalImages = new int[]{
 //            R.drawable.one,
 //            R.drawable.two,
 //            R.drawable.three
     };
-    public static String[] loadURL = new String[]{
-            "http://xamarin.com/resources/design/home/devices.png",
-            "http://xamarin.com/resources/design/home/devices.png",
-            "http://www.att.com/catalog/en/skus/images/apple-iphone%205c%20-%208gb-white-100x160.jpg                                 "
-    };
 
     ImageAdapter(Context context) {
         this.context = context;
+    }
+
+    public static Bitmap getBitmapFromURL(String src) {
+        try {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+            URL url = new URL(src);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setDoInput(true);
+            connection.connect();
+            InputStream input = connection.getInputStream();
+            Bitmap myBitmap = BitmapFactory.decodeStream(input);
+            return myBitmap;
+        } catch (IOException e) {
+            // Log exception
+            return null;
+        }
     }
 
     @Override
@@ -63,23 +78,6 @@ public class ImageAdapter extends PagerAdapter {
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         ((ViewPager) container).removeView((ImageView) object);
-    }
-
-    public static Bitmap getBitmapFromURL(String src) {
-        try {
-            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-            StrictMode.setThreadPolicy(policy);
-            URL url = new URL(src);
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setDoInput(true);
-            connection.connect();
-            InputStream input = connection.getInputStream();
-            Bitmap myBitmap = BitmapFactory.decodeStream(input);
-            return myBitmap;
-        } catch (IOException e) {
-            // Log exception
-            return null;
-        }
     }
 }
 

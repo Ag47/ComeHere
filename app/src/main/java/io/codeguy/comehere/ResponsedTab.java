@@ -1,7 +1,6 @@
 package io.codeguy.comehere;
 
 import android.content.Intent;
-import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -29,9 +28,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ResponsedTab extends Fragment {
-    String search_url = String.format("https://api-us.clusterpoint.com/100403/ComeHere/_search.json");
-
-
     private static final String TAG_doc = "documents";
     private static final String TAG_ID = "id";
     private static final String TAG_NAME = "name";
@@ -44,11 +40,9 @@ public class ResponsedTab extends Fragment {
     private static final String TAG_HOLDER = "holder";
     private static final String TAG_KEY = "key";
     private static final String TAG_STATE = "state";
-
-
-    JSONObject jsonObject = null;
     public static JSONObject responseObject = null;
-
+    String search_url = String.format("https://api-us.clusterpoint.com/100403/ComeHere/_search.json");
+    JSONObject jsonObject = null;
     // contacts JSONArray
     JSONArray documents = null;
 

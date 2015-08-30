@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+  <solid android:color="@color/cyan_500" />
+  <size android:width="0.5dp" />
+</shape><!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/drawable/text_cursor_cyan.xml -->

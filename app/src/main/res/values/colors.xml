@@ -29,5 +29,71 @@
     <color name="white">#FFFFFF</color>
     <color name="grey">#E0E0E0</color>
 
+    <color name="primary">#ffff8800</color>
+    <color name="primaryDark">#F57C00</color>
+    <color name="accentLight">#FFEB3B</color>
+    <color name="accent">#F0F4C3</color>
+
+    <color name="color_shadow">#44000000</color>
+    <color name="color_primary_red">#f44336</color>
+    <color name="color_primary_red_dark">#d32f2f</color>
+
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="dim_after_popup">#000000</color>
+
+    <color name="selected_item">#FFEB3B</color>
+
+    <!--Indigo 500-->
+    <color name="primary_500">#3F51B5</color>
+    <!--Indigo 700-->
+    <color name="primary_700">#303F9F</color>
+    <!--Pink 500-->
+    <color name="accent_500">#E91E63</color>
+    <!--Pink 700-->
+    <color name="accent_700">#C2185B</color>
+    <color name="black_trans80">#33000000</color>
+    <color name="transparent">#00000000</color>
+
+
+
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#4a9f8d</color>
+    <color name="half_black">#fafafa</color>
+    <color name="white_pressed">#4a9f8d</color>
+
+
+    <!--<color name="blueStatusBar">#356ac3</color>-->
+    <color name="promoStatusBar">#4a9f8d</color>
+
+
+    <color name="dragColorFromStart">#FFFFFF</color>
+    <color name="dragedColorFromStart">#56c1aa</color>
+    <color name="dragColorshopperNameFromStart">#767676</color>
+    <color name="dragedColorshopperNameFromStart">#FFFFFF</color>
+
+    <color name="dragColorFromEnd">#56c1aa</color>
+    <color name="dragedColorFromEnd">#FFFFFF</color>
+    <color name="dragColorshopperNameFromEnd">#FFFFFF</color>
+    <color name="dragedColorshopperNameFromEnd">#767676</color>
+
+    <!--edit text-->
+    <color name="indigo_500">#3f51b5</color>
+    <color name="indigo_700">#303f9f</color>
+    <color name="cyan_500">#00bcd4</color>
+    <color name="color_edt_panel">#0088bf</color>
+    <color name="editor_text">#FFFFFF</color>
+
+
+
+    <!-- bottom sheet-->
+    <color name="primaryBottomSheet">#D3FFDC</color>
+    <color name="primary_dark">#00796B</color>
+    <color name="primary_light">#B2DFDB</color>
+    <color name="accentBottomSheet">#FF5252</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+
 
 </resources>

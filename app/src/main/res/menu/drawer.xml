@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_home"
+            android:checked="true"
+            android:icon="@drawable/ic_action_add"
+            android:title="Home" />
+        <item
+            android:id="@+id/navigation_spot"
+            android:icon="@drawable/ic_action_add"
+            android:title="Spot" />
+        <item
+            android:id="@+id/navigation_seek"
+            android:icon="@drawable/ic_action_add"
+            android:title="Seek" />
+        <item
+            android:id="@+id/navigation_request"
+            android:icon="@drawable/ic_action_add"
+            android:title="Request" />
+        <item
+            android:id="@+id/navigation_promotion"
+            android:icon="@drawable/ic_action_add"
+            android:title="Promotion" />
+        <item
+            android:id="@+id/navigation_vendor"
+            android:icon="@drawable/ic_action_add"
+            android:title="vendor" />
+    </group>
+
+
+</menu>

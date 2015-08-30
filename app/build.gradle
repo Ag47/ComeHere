@@ -23,14 +23,47 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.0'
-    compile files('libs/cps2-java-api-java-7.jar')
-    compile files('libs/volley.jar')
-    compile 'com.google.android.gms:play-services-maps:7.5.0'
-    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
-    compile 'com.android.support:cardview-v7:21.0.3'
-    compile 'com.google.maps.android:android-maps-utils:0.3+'
-    compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.android.support:support-v4:21.0.3'
+
+    // clusterpoint
+    compile files('libs/cps2-java-api-java-7.jar')
+
+    // connection
+//    compile files('libs/volley.jar')
+
+    // custom volley (pro volley by Oscar Kira Kira Hin Hin
+    compile 'com.mcxiaoke.volley:library:1.0.+'
+
+    // google map
+    compile 'com.google.android.gms:play-services-maps:7.5.0'
+    compile 'com.google.maps.android:android-maps-utils:0.3+'
+
+    // pager sliding tab strip
+    compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
+
+    // cardview
+    compile 'com.android.support:cardview-v7:21.0.3'
+    compile 'com.android.support:recyclerview-v7:22.2.0'
+
+    // google design
+    compile 'com.android.support:design:22.2.0'
+
+    // material
+    compile 'com.android.support:palette-v7:22.2.0'
+
+    // sliding uppane (map)
+    compile 'com.sothree.slidinguppanel:library:3.1.1'
+
+    // floating button
+    compile 'com.getbase:floatingactionbutton:1.10.0'
+
+    // custom material
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    // sliding
+    compile 'com.wunderlist:sliding-layer:1.2.5'
+
+
 
 
 }

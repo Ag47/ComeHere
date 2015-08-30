@@ -32,8 +32,6 @@ import java.util.Map;
 
 public class SeekListFragment extends Fragment {
 
-    String search_url = String.format("https://api-us.clusterpoint.com/100403/ComeHere/_search.json");
-    public String search;
     private static final String TAG_doc = "documents";
     private static final String TAG_ID = "id";
     private static final String TAG_NAME = "name";
@@ -46,22 +44,19 @@ public class SeekListFragment extends Fragment {
     private static final String TAG_HOLDER = "holder";
     private static final String TAG_KEY = "key";
     private static final String TAG_STATE = "state";
+    public String search;
     public ListView listView;
-    JSONObject jsonObject = null;
     public JSONObject responseObject = null;
-
+    public View rootView;
+    String search_url = String.format("https://api-us.clusterpoint.com/100403/ComeHere/_search.json");
+    JSONObject jsonObject = null;
     // contacts JSONArray
     JSONArray documents = null;
-
-
-    public View rootView;
     ArrayList<HashMap<String, String>> documentsList;
-
-    public SeekListFragment() {
-    }
-
     TextView pending;
     String getSpot;
+    public SeekListFragment() {
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
