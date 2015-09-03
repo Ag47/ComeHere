@@ -60,24 +60,24 @@
         <activity
             android:name=".RecyclerViewActivity"
             android:label="recyclerView"
-            android:windowSoftInputMode="stateHidden"></activity>
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".DetailItem"
             android:label="DetailItem"
-            android:windowSoftInputMode="stateHidden"></activity>
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".SpotActivity"
             android:label="spot"
-            android:windowSoftInputMode="stateHidden"></activity>
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".AddToPendingDetailActivity"
             android:label="@string/title_activity_pending_detail"
-            android:windowSoftInputMode="stateHidden"></activity>
+            android:windowSoftInputMode="stateHidden" />
 
 
         <activity
             android:name=".PromotionActivity"
-            android:label="Promotion"></activity>
+            android:label="Promotion" />
         <activity
             android:name=".SpotAddPendingActivity"
             android:label="Spot">
@@ -94,6 +94,9 @@
                 android:value="io.codeguy.comehere.SpotAddPendingActivity" />
         </activity>
 
+        <activity android:name=".RequestActivity" />
+
+        <activity android:name=".SeekActivity" />
 
     </application>
 

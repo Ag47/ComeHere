@@ -179,6 +179,14 @@ ADDED from AndroidManifest.xml:88:9
 		ADDED from AndroidManifest.xml:90:13
 	android:name
 		ADDED from AndroidManifest.xml:89:13
+activity#io.codeguy.comehere.RequestActivity
+ADDED from AndroidManifest.xml:97:9
+	android:name
+		ADDED from AndroidManifest.xml:97:19
+activity#io.codeguy.comehere.SeekActivity
+ADDED from AndroidManifest.xml:99:9
+	android:name
+		ADDED from AndroidManifest.xml:99:19
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:22.2.0:20:5
@@ -207,6 +215,7 @@ MERGED from com.android.support:appcompat-v7:22.2.0:20:5
 MERGED from com.android.support:support-v4:22.2.0:20:5
 MERGED from com.wunderlist:sliding-layer:1.2.5:23:5
 MERGED from com.android.support:support-v4:22.2.0:20:5
+MERGED from pl.droidsonroids.gif:android-gif-drawable:1.1.7:6:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0

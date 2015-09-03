@@ -97,6 +97,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="io.codeguy.comehere.SpotAddPendingActivity" />
         </activity>
+        <activity android:name="io.codeguy.comehere.RequestActivity" />
+        <activity android:name="io.codeguy.comehere.SeekActivity" />
     </application>
 
 </manifest>

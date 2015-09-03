@@ -1,6 +1,5 @@
 package io.codeguy.comehere;
 
-import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -22,7 +21,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.clusterpoint.api.CPSConnection;
 import com.clusterpoint.api.request.CPSInsertRequest;
@@ -50,11 +48,7 @@ import io.codeguy.comehere.Fragment.NavSpot;
 import io.codeguy.comehere.menu_item.SpotActivity;
 import io.codeguy.comehere.model.NavDrawerItem;
 
-
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback {
-
-
-    // TODO gif navigation drawer sai hung
 
     private static final String TAG_doc = "documents";
     private static final String TAG_ID = "id";
@@ -128,107 +122,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        final FragmentManager fragmentManager = getFragmentManager();
-
-//        if (savedInstanceState == null) {
-//
-//            fragmentManager.beginTransaction().add(R.id.fragment_container, new InitFragment()).commit();
-//            Thread timer = new Thread() {
-//                public void run() {
-//                    try {
-//                        sleep(2000);
-//
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    } finally {
-//                        fragmentManager.beginTransaction().add(R.id.fragment_container, new HomeFragment()).commit();
-//                    }
-//
-//                }
-//            };
-//            timer.start();
-//
-//        }
-
-//        mTitle = mDrawerTitle = getTitle();
-//
-//        // load slide menu items
-//        navMenuTitles = getResources().getStringArray(R.array.nav_drawer_items);
-//
-//        // nav drawer icons from resources
-//        navMenuIcons = getResources()
-//                .obtainTypedArray(R.array.nav_drawer_icons);
-//
-//        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-//
-//        mDrawerList = (ListView) findViewById(R.id.list_slidermenu);
-////        mDrawerList.setBackground(getResources().getDrawable(R.color.theme_blue));
-//        navDrawerItems = new ArrayList<NavDrawerItem>();
-//
-//        // adding nav drawer items to array
-//        // Home
-//        navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1)));
-//        // Find People
-//        navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
-//        // Photos
-//        navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1)));
-//        // Communities, Will add a counter here
-//        navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, "22"));
-//        // Pages
-//        navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(4, -1)));
-//        // What's hot, We  will add a counter here
-//        navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuIcons.getResourceId(5, -1), true, "50+"));
-
-//        navDrawerItems.add(new NavDrawerItem(navMenuTitles[6], navMenuIcons.getResourceId(6, -1)));
-
-
-//        // Recycle the typed array
-//        navMenuIcons.recycle();
-//
-//        mDrawerList.setOnItemClickListener(new SlideMenuClickListener());
-//
-//        // setting the nav drawer list adapter
-//        adapter = new NavDrawerListAdapter(getApplicationContext(),
-//                navDrawerItems);
-//        mDrawerList.setAdapter(adapter);
-//
-//        // enabling action bar app icon and behaving it as toggle button
-//        getActionBar().setDisplayHomeAsUpEnabled(true);
-//        getActionBar().setHomeButtonEnabled(true);
-//
-//        mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
-//                R.drawable.ic_drawer, //nav menu toggle icon
-//                R.string.app_name, // nav drawer open - description for accessibility
-//                R.string.app_name // nav drawer close - description for accessibility
-//        ) {
-//            public void onDrawerClosed(View view) {
-////                getActionBar().setTitle(mTitle);
-//                // calling onPrepareOptionsMenu() to show action bar icons
-//                invalidateOptionsMenu();
-//            }
-//
-//            public void onDrawerOpened(View drawerView) {
-////                getActionBar().setTitle(mDrawerTitle);
-//                // calling onPrepareOptionsMenu() to hide action bar icons
-//                invalidateOptionsMenu();
-//            }
-//        };
-//        mDrawerLayout.setDrawerListener(mDrawerToggle);
-
-
-//        if (savedInstanceState == null) {
-//            // on first time display view for first nav item
-//            displayView(0);
-//        }
-
-
-//        MapFragment mapFragment = (MapFragment) getFragmentManager()
-//                .findFragmentById(R.id.map);
-//        mapFragment.getMapAsync(this);
-
-//        this.getActionBar().setBackgroundDrawable(this.getResources().getDrawable(R.drawable.actionbar));
-
-
         // MKey Login
         mkeyLogin();
 
@@ -248,20 +141,19 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         startActivity(new Intent(MainActivity.this, SpotActivity.class));
                         return true;
                     case R.id.navigation_seek:
-//                        startActivity(new Intent(MainActivity.this, AddToPendingDetailActivity.class));
+                        mCurrentSelectedPosition = 2;
+                        startActivity(new Intent(MainActivity.this, SeekActivity.class));
                         return true;
                     case R.id.navigation_request:
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.tabanim_viewpager, navSpot, "navspot").addToBackStack("back").commit();
-                        Toast.makeText(getApplicationContext(), "spot Selected", Toast.LENGTH_SHORT).show();
-//                        NavSpot navSpot = NavSpot.newInstance("", "");
-//                        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-//                        fragmentTransaction.replace(R.id.tabanim_viewpager, navSpot);
-//                        fragmentTransaction.commit();
+                        mCurrentSelectedPosition = 3;
+                        startActivity(new Intent(MainActivity.this, RequestActivity.class));
                         return true;
                     case R.id.navigation_promotion:
+                        mCurrentSelectedPosition = 4;
                         startActivity(new Intent(MainActivity.this, PromotionActivity.class));
                         return true;
                     case R.id.navigation_vendor:
+                        mCurrentSelectedPosition = 5;
 //                        startActivity(new Intent(MainActivity.this, SpotAddPendingActivity.class));
                         return true;
                     default:

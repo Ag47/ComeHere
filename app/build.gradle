@@ -63,7 +63,6 @@ dependencies {
     // sliding
     compile 'com.wunderlist:sliding-layer:1.2.5'
 
-
-
-
+    // drawable gif
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
 }
