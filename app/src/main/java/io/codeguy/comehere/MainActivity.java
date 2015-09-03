@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         return true;
                     case R.id.navigation_vendor:
                         mCurrentSelectedPosition = 5;
-//                        startActivity(new Intent(MainActivity.this, SpotAddPendingActivity.class));
+                        startActivity(new Intent(MainActivity.this, VendorActivity.class));
                         return true;
                     default:
                         return true;

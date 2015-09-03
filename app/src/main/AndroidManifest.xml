@@ -96,13 +96,17 @@
 
         <activity android:name=".RequestActivity" />
 
-        <activity android:name=".SeekActivity" />
+        <activity
+            android:name=".SeekActivity"
+            android:screenOrientation="portrait" />
 
         <activity android:name=".SearchProductDetail" />
 
         <activity android:name=".MapProductActivity" />
 
         <activity android:name=".SeekResultActivity" />
+
+        <activity android:name=".VendorActivity" />
 
     </application>
 

@@ -98,6 +98,11 @@
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="before_transition">#0088bf</color>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <color name="black_button">#3C3C3C</color>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <color name="black_semi_transparent">#B2000000</color>
     <color name="black_trans80">#33000000</color>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
@@ -110,7 +115,7 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="cardview_dark_background">#FF202020</color>
     <color name="cardview_light_background">#FFFAFAFA</color>
@@ -147,6 +152,11 @@
     <color name="counter_text_bg">#626262</color>
     <color name="counter_text_color">#c5c4c4</color>
     <color name="cyan_500">#00bcd4</color>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <color name="description_color">#878787</color>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <color name="dim_after_popup">#000000</color>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
@@ -157,6 +167,12 @@
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="divider">#B6B6B6</color>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <color name="divider_grey">#D4D4D4</color>
+    <color name="divider_white">#608DFA</color>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <color name="dragColorFromEnd">#56c1aa</color>
     <color name="dragColorFromStart">#FFFFFF</color>
     <color name="dragColorshopperNameFromEnd">#FFFFFF</color>
@@ -176,6 +192,11 @@
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="grey">#E0E0E0</color>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <color name="grey_title">#626262</color>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <color name="half_black">#fafafa</color>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
@@ -205,6 +226,9 @@
     <color name="material_blue_grey_950">#ff21272b</color>
     <color name="material_deep_teal_200">#ff80cbc4</color>
     <color name="material_deep_teal_500">#ff009688</color>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <color name="orange_button">#FD9B32</color>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="primary">#ffff8800</color>
@@ -302,6 +326,7 @@
     <declare-styleable name="LoadingImageView"><attr format="enum" name="imageAspectRatioAdjust"><enum name="none" value="0"/><enum name="adjust_width" value="1"/><enum name="adjust_height" value="2"/></attr><attr format="float" name="imageAspectRatio"/><attr format="boolean" name="circleCrop"/></declare-styleable>
     <declare-styleable name="MapAttrs"><attr format="enum" name="mapType"><enum name="none" value="0"/><enum name="normal" value="1"/><enum name="satellite" value="2"/><enum name="terrain" value="3"/><enum name="hybrid" value="4"/></attr><attr format="float" name="cameraBearing"/><attr format="float" name="cameraTargetLat"/><attr format="float" name="cameraTargetLng"/><attr format="float" name="cameraTilt"/><attr format="float" name="cameraZoom"/><attr format="boolean" name="liteMode"/><attr format="boolean" name="uiCompass"/><attr format="boolean" name="uiRotateGestures"/><attr format="boolean" name="uiScrollGestures"/><attr format="boolean" name="uiTiltGestures"/><attr format="boolean" name="uiZoomControls"/><attr format="boolean" name="uiZoomGestures"/><attr format="boolean" name="useViewLifecycle"/><attr format="boolean" name="zOrderOnTop"/><attr format="boolean" name="uiMapToolbar"/></declare-styleable>
     <declare-styleable name="MaterialEditText"><attr format="color" name="met_baseColor"/><attr format="color" name="met_primaryColor"/><attr name="met_floatingLabel"><enum name="none" value="0"/><enum name="normal" value="1"/><enum name="highlight" value="2"/></attr><attr format="color" name="met_errorColor"/><attr format="integer" name="met_minCharacters"/><attr format="integer" name="met_maxCharacters"/><attr format="boolean" name="met_singleLineEllipsis"/><attr format="integer" name="met_minBottomTextLines"/><attr format="string" name="met_helperText"/><attr format="color" name="met_helperTextColor"/><attr format="string" name="met_accentTypeface"/><attr format="string" name="met_typeface"/><attr format="string" name="met_floatingLabelText"/><attr format="dimension" name="met_floatingLabelPadding"/><attr format="boolean" name="met_hideUnderline"/><attr format="color" name="met_underlineColor"/><attr format="boolean" name="met_autoValidate"/><attr format="reference" name="met_iconLeft"/><attr format="reference" name="met_iconRight"/><attr format="dimension" name="met_iconPadding"/><attr format="boolean" name="met_clearButton"/><attr format="dimension" name="met_floatingLabelTextSize"/><attr format="color" name="met_floatingLabelTextColor"/><attr format="dimension" name="met_bottomTextSize"/><attr format="boolean" name="met_floatingLabelAlwaysShown"/><attr format="boolean" name="met_helperTextAlwaysShown"/><attr format="boolean" name="met_floatingLabelAnimating"/><attr format="color" name="met_textColor"/><attr format="color" name="met_textColorHint"/><attr format="boolean" name="met_validateOnFocusLost"/><attr format="boolean" name="met_checkCharactersCountAtBeginning"/></declare-styleable>
+    <declare-styleable name="MaterialListView"><attr format="integer" name="column_count"/><attr format="integer" name="column_count_portrait"/><attr format="integer" name="column_count_landscape"/></declare-styleable>
     <declare-styleable name="MenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
     <declare-styleable name="MenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="android:numericShortcut"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="android:onClick"/><attr name="showAsAction"><flag name="never" value="0"/><flag name="ifRoom" value="1"/><flag name="always" value="2"/><flag name="withText" value="4"/><flag name="collapseActionView" value="8"/></attr><attr format="reference" name="actionLayout"/><attr format="string" name="actionViewClass"/><attr format="string" name="actionProviderClass"/></declare-styleable>
     <declare-styleable name="MenuView"><attr name="android:itemTextAppearance"/><attr name="android:horizontalDivider"/><attr name="android:verticalDivider"/><attr name="android:headerBackground"/><attr name="android:itemBackground"/><attr name="android:windowAnimationStyle"/><attr name="android:itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/></declare-styleable>
@@ -395,11 +420,22 @@
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="appbar_elevation">4dp</dimen>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="big_padding">16dp</dimen>
+    <dimen name="bigger_title_size">28sp</dimen>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.1.4/res/values/values.xml -->
     <eat-comment/>
     <dimen name="bottom_ellipsis_height">4dp</dimen>
     <dimen name="bottom_text_size">12sp</dimen>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_press_elevation">4dp</dimen>
+    <dimen name="button_size">14sp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
@@ -413,6 +449,9 @@
     <eat-comment/>
     <dimen name="default_padding_bottom">8dp</dimen>
     <dimen name="default_padding_top">8dp</dimen>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="description_size">16sp</dimen>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
@@ -474,6 +513,9 @@
     <dimen name="flexible_space_height">72dp</dimen>
     <dimen name="flexible_space_image_height">240dp</dimen>
     <dimen name="flexible_space_show_fab_offset">120dp</dimen>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="floating_button_size">40dp</dimen>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.1.4/res/values/values.xml -->
     <eat-comment/>
     <dimen name="floating_label_text_size">12sp</dimen>
@@ -524,6 +566,9 @@
     <dimen name="shadow_size">8dp</dimen>
     <dimen name="sliding_overlay_blur_size">4dp</dimen>
     <dimen name="sliding_slop">32dp</dimen>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="small_padding">8dp</dimen>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="snackbar_action_inline_max_width">128dp</dimen>
@@ -539,6 +584,11 @@
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="statusbar_size">24dp</dimen>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="subtitle_size">20sp</dimen>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
     <dimen name="tab_height">48dp</dimen>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
@@ -547,6 +597,11 @@
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="tabsHeight">48dp</dimen>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="title_size">24sp</dimen>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
     <dimen name="toolbar_double_height">112dp</dimen>
     <dimen name="toolbar_elevation">4dp</dimen>
     <dimen name="toolbar_margin_start">72dp</dimen>
@@ -1672,7 +1727,32 @@
         <item name="android:textColor">#fff</item>
         <item name="android:background">@drawable/button_red_selector</item>
     </style>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <style name="CardDescription">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+    <style name="CardPhoto">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="CardTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">@dimen/bigger_title_size</item>
+        <!--<item name="android:fontFamily">sans-serif-light</item>-->
+
+        <item name="android:gravity">bottom|left</item>
+        <item name="android:paddingLeft">@dimen/big_padding</item>
+        <item name="android:paddingBottom">@dimen/small_padding</item>
+    </style>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <style name="CardView">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
@@ -1694,6 +1774,30 @@
         <item name="android:textColor">#ffeeeeee</item>
         <item name="android:textSize">16sp</item>
         <item name="android:textStyle">bold</item>
+    </style>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <style name="LeftButtonBaseStyle">
+        <item name="android:textColor">@color/black_button</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:textAllCaps">true</item>-->
+        <item name="android:textSize">@dimen/button_size</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="MainCardView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+    <style name="MainLayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="MyCardPhoto" parent="CardPhoto">
+
+        <item name="android:layout_height">wrap_content</item>
+
     </style>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
@@ -1793,6 +1897,17 @@
         <item name="android:autoCompleteTextViewStyle">@style/Widget.AppCompat.Light.AutoCompleteTextView</item>
         <item name="android:dropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
     </style>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
+    <eat-comment/>
+    <style name="RightButtonBaseStyle" parent="@style/LeftButtonBaseStyle">
+        <item name="android:textColor">@color/orange_button</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:textAllCaps">true</item>-->
+        <item name="android:textSize">@dimen/button_size</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <eat-comment/>
     <style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="Base.DialogWindowTitle.AppCompat">
     </style>
     <style name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" parent="android:Widget">

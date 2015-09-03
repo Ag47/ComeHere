@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/Carlos/Home/Projects/MaterialList/materialList/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="black_button">#3C3C3C</color>
+    <color name="description_color">#878787</color>
+    <color name="divider_grey">#D4D4D4</color>
+    <color name="divider_white">#608DFA</color>
+    <color name="grey_title">#626262</color>
+    <color name="orange_button">#FD9B32</color>
+    <declare-styleable name="MaterialListView"><attr format="integer" name="column_count"/><attr format="integer" name="column_count_portrait"/><attr format="integer" name="column_count_landscape"/></declare-styleable>
+    <!-- From: file:/Users/Carlos/Home/Projects/MaterialList/materialList/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="big_padding">16dp</dimen>
+    <dimen name="bigger_title_size">28sp</dimen>
+    <dimen name="button_elevation">2dp</dimen>
+    <dimen name="button_press_elevation">4dp</dimen>
+    <dimen name="button_size">14sp</dimen>
+    <dimen name="card_corner_radius">2dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="description_size">16sp</dimen>
+    <dimen name="floating_button_size">40dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="subtitle_size">20sp</dimen>
+    <dimen name="title_size">24sp</dimen>
+    <!-- From: file:/Users/Carlos/Home/Projects/MaterialList/materialList/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">MaterialList</string>
+    <!-- From: file:/Users/Carlos/Home/Projects/MaterialList/materialList/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="CardDescription">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+    <style name="CardPhoto">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="CardTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">@dimen/bigger_title_size</item>
+        <!--<item name="android:fontFamily">sans-serif-light</item>-->
+
+        <item name="android:gravity">bottom|left</item>
+        <item name="android:paddingLeft">@dimen/big_padding</item>
+        <item name="android:paddingBottom">@dimen/small_padding</item>
+    </style>
+    <style name="LeftButtonBaseStyle">
+        <item name="android:textColor">@color/black_button</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:textAllCaps">true</item>-->
+        <item name="android:textSize">@dimen/button_size</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="MainCardView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+    <style name="MainLayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="MyCardPhoto" parent="CardPhoto">
+
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="RightButtonBaseStyle" parent="@style/LeftButtonBaseStyle">
+        <item name="android:textColor">@color/orange_button</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:textAllCaps">true</item>-->
+        <item name="android:textSize">@dimen/button_size</item>
+        <item name="android:maxLines">1</item>
+    </style>
+</resources>

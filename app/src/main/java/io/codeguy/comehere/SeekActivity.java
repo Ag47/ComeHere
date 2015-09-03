@@ -83,4 +83,32 @@ public class SeekActivity extends AppCompatActivity {
     public void smartphone(View view) {
         startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "smartphone"));
     }
+
+    public void handtools(View view) {
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "handtools"));
+    }
+
+    public void lightbulb(View view) {
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "lightbulb"));
+    }
+
+    public void watch(View view) {
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "watch"));
+    }
+
+    public void tv(View view) {
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "tv"));
+    }
+
+    public void tnd(View view) {
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "tnd"));
+    }
+
+    public void msp(View view) {
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "msp"));
+    }
+
+    public void tvwall(View view) {
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "tvwall"));
+    }
 }
