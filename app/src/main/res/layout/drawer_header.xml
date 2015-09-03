@@ -4,11 +4,11 @@
     android:layout_height="150dp"
     android:orientation="vertical">
 
-    <ImageView
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/nav_header_bg"
-        android:scaleType="centerInside" />
+        android:src="@drawable/init2" />
 
     <TextView
         style="@style/TextAppearance.AppCompat.Subhead"
@@ -17,7 +17,7 @@
         android:layout_gravity="bottom"
         android:layout_margin="16dp"
         android:text="Come Here"
-        android:textSize="20dp"
-        android:textColor="@android:color/white" />
+        android:textColor="#4D5053"
+        android:textSize="20dp" />
 
 </FrameLayout>

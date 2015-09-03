@@ -101,6 +101,7 @@
         <activity android:name="io.codeguy.comehere.SeekActivity" />
         <activity android:name="io.codeguy.comehere.SearchProductDetail" />
         <activity android:name="io.codeguy.comehere.MapProductActivity" />
+        <activity android:name="io.codeguy.comehere.SeekResultActivity" />
     </application>
 
 </manifest>

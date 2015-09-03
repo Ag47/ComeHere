@@ -75,4 +75,12 @@ public class SeekActivity extends AppCompatActivity {
         });
 
     }
+
+    public void cable(View view) {
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "cable"));
+    }
+
+    public void smartphone(View view) {
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "smartphone"));
+    }
 }

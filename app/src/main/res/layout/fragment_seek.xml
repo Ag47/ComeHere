@@ -62,7 +62,8 @@
                             android:layout_marginBottom="401dp"
                             android:layout_marginEnd="242dp"
                             android:layout_marginRight="242dp"
-                            android:src="@drawable/tvcable" />
+                            android:src="@drawable/tvcable"
+                            android:onClick="cable" />
 
                         <ImageView
                             android:id="@+id/imageView7"
@@ -78,7 +79,8 @@
                             android:layout_marginRight="102dp"
                             android:layout_marginStart="121dp"
                             android:src="@drawable/smartphone"
-                            android:layout_alignBottom="@+id/imageView8" />
+                            android:layout_alignBottom="@+id/imageView8"
+                            android:onClick="smartphone" />
 
                         <ImageView
                             android:id="@+id/imageView9"
@@ -93,7 +95,7 @@
                             android:layout_marginLeft="141dp"
                             android:layout_marginStart="141dp"
                             android:src="@drawable/lightbulb"
-                            />
+                            android:onClick="lightbulb" />
 
                         <ImageView
                             android:id="@+id/imageView10"
@@ -107,7 +109,8 @@
                             android:layout_below="@+id/imageView7"
                             android:layout_marginBottom="275dp"
                             android:layout_marginTop="8dp"
-                            android:src="@drawable/watch" />
+                            android:src="@drawable/watch"
+                            android:onClick="watch" />
 
                         <ImageView
                             android:id="@+id/imageView11"
@@ -120,7 +123,8 @@
                             android:layout_alignStart="@+id/imageView7"
                             android:src="@drawable/tv"
                             android:layout_alignTop="@+id/imageView10"
-                            android:layout_alignParentStart="false" />
+                            android:layout_alignParentStart="false"
+                            android:onClick="tv" />
 
                         <ImageView
                             android:id="@+id/imageView12"
@@ -134,7 +138,8 @@
                             android:layout_below="@+id/imageView11"
                             android:layout_marginBottom="143dp"
                             android:layout_marginTop="9dp"
-                            android:src="@drawable/tnd" />
+                            android:src="@drawable/tnd"
+                            android:onClick="tnd" />
 
                         <ImageView
                             android:id="@+id/imageView13"
@@ -165,7 +170,7 @@
                             android:layout_toEndOf="@+id/imageView13"
                             android:layout_toRightOf="@+id/imageView13"
                             android:src="@drawable/handtools"
-                            />
+                            android:onClick="handtools" />
 
                         <ImageView
                             android:id="@+id/imageView15"
@@ -181,7 +186,7 @@
                             android:layout_marginRight="80dp"
                             android:layout_marginTop="11dp"
                             android:src="@drawable/msp"
-                            />
+                            android:onClick="msp" />
 
                         <ImageView
                             android:layout_width="100dp"
@@ -195,7 +200,7 @@
                             android:layout_marginLeft="52dp"
                             android:layout_marginStart="52dp"
                             android:src="@drawable/tvwall"
-                            />
+                            android:onClick="tvwall" />
 
                     </RelativeLayout>
 
