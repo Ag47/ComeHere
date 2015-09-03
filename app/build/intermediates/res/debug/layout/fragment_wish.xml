@@ -20,9 +20,12 @@
         <!--android:src="@drawable/header" />-->
 
         <ImageView
-            android:layout_width="360dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="390dp"
             android:layout_height="43dp"
-            android:src="@drawable/bar5" />
+            android:src="@drawable/bar_a4"
+            android:layout_marginBottom="3dp" />
+
         <!--<TextView-->
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="wrap_content"-->
@@ -39,6 +42,7 @@
             android:paddingTop="16dp">
 
             <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/spot_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Wish Name"
@@ -53,12 +57,13 @@
             <com.rengwuxian.materialedittext.MaterialEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Optional (e.g required money)"
+                android:hint="Note (e.g required money)"
                 android:textCursorDrawable="@drawable/text_cursor_cyan"
                 app:met_baseColor="@android:color/white"
                 app:met_floatingLabel="highlight"
                 app:met_maxCharacters="40"
-                app:met_primaryColor="@color/editor_text" />
+                app:met_primaryColor="@color/editor_text"
+                android:id="@+id/note"/>
 
         </LinearLayout>
 
@@ -86,17 +91,22 @@
                 <!--android:text="Browse" />-->
 
 
-                <Button
+                <TextView
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp" 
                     android:id="@+id/buttonOpen"
                     android:layout_width="150dp"
                     android:layout_height="50dp"
-                    android:text="browse now" />
+                    android:text="Browse now"
+                    android:textColor="@color/color_edt_panel"/>
+
             </LinearLayout>
+
 
             <LinearLayout
                 android:id="@+id/tag_row"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="15dp"
                 android:layout_marginTop="15dp"
                 android:orientation="horizontal"
                 android:weightSum="3">
@@ -109,7 +119,8 @@
                     android:layout_weight="1"
                     android:text="tag1"
                     android:textColor="@color/dragedColorFromStart"
-                    android:visibility="gone" />
+                    android:visibility="gone"
+                    android:textSize="14dp"/>
 
                 <TextView
                     android:id="@id/tag2"
@@ -129,8 +140,21 @@
 
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
+
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_marginTop="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:text="SUBMIT"
+                android:textColor="#ffffff"
+                android:background="#03A9F4"
+                />
+
+    </LinearLayout>
 
     <com.wunderlist.slidinglayer.SlidingLayer
         android:id="@+id/slidingLayer1"
@@ -167,6 +191,8 @@
         <!--android:gravity="right|bottom"-->
 
     </com.wunderlist.slidinglayer.SlidingLayer>
+
+
 </RelativeLayout>
 
 <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/fragment_wish.xml -->

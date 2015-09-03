@@ -1,7 +1,9 @@
 package io.codeguy.comehere.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,6 +16,7 @@ import java.util.ArrayList;
 
 import io.codeguy.comehere.Adapter.ResultSearchAdapter;
 import io.codeguy.comehere.DataObject.Product;
+import io.codeguy.comehere.MapProductActivity;
 import io.codeguy.comehere.R;
 
 /**
@@ -28,6 +31,7 @@ public class FragmentFindResult extends Fragment {
     private RecyclerView resultRecyclerVIew;
     private RecyclerView.LayoutManager mLayoutManager;
     private RecyclerView.Adapter mAdapter;
+    private FloatingActionButton mapFab;
 
 
     public static FragmentFindResult newInstance(String param1, String param2, ArrayList<Product> getSearchProduct) {
@@ -62,11 +66,23 @@ public class FragmentFindResult extends Fragment {
 
     private void initRecyclerView(View layout) {
         resultRecyclerVIew = (RecyclerView) layout.findViewById(R.id.result_recycler_view);
+        mapFab = (FloatingActionButton) layout.findViewById(R.id.fab_map);
         mAdapter = new ResultSearchAdapter(this.getActivity(), searchProduct);
         mLayoutManager = new LinearLayoutManager(this.getActivity());
         resultRecyclerVIew.setLayoutManager(mLayoutManager);
         resultRecyclerVIew.setHasFixedSize(true);
         resultRecyclerVIew.setAdapter(mAdapter);
 //        mAdapter.notifyDataSetChanged();
+
+        mapFab.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity().getApplicationContext(), MapProductActivity.class);
+                Bundle toMap = new Bundle();
+                toMap.putSerializable("listResult", searchProduct);
+                i.putExtras(toMap);
+                startActivity(i);
+            }
+        });
     }
 }

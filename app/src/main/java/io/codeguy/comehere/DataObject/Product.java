@@ -17,6 +17,34 @@ public class Product implements Serializable {
 
     String pVendorId;
     String pVendorName;
+    String pVendorAddr;
+
+    String latitude;
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
+    }
+
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
+
+    String longitude;
+    public String getpVendorAddr() {
+        return pVendorAddr;
+    }
+
+    public void setpVendorAddr(String pVendorAddr) {
+        this.pVendorAddr = pVendorAddr;
+    }
 
     public String getPid() {
         return pid;

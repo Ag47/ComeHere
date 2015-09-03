@@ -72,27 +72,27 @@ public class SpotAddPendingActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Spot");
         instantRecycler = (RecyclerView) findViewById(R.id.instant_search_recycler);
-        inputSearch = (EditText) findViewById(R.id.input_search);
+//        inputSearch = (EditText) findViewById(R.id.input_search);
 
         mLayoutManager = new LinearLayoutManager(this);
-        inputSearch.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                hotProduct();
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // the count is counting the input number 1 is char, 0 is backspace etc
-                Log.v("instant", "the count is " + count);
-                instantSearch(s);
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
+//        inputSearch.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//                hotProduct();
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                // the count is counting the input number 1 is char, 0 is backspace etc
+//                Log.v("instant", "the count is " + count);
+//                instantSearch(s);
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//
+//            }
+//        });
         searchContentRow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

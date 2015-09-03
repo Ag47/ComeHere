@@ -98,6 +98,10 @@
 
         <activity android:name=".SeekActivity" />
 
+        <activity android:name=".SearchProductDetail" />
+
+        <activity android:name=".MapProductActivity" />
+
     </application>
 
 </manifest>

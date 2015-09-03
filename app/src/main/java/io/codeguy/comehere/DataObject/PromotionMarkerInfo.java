@@ -7,12 +7,20 @@ import com.google.maps.android.clustering.ClusterItem;
  * Created by KaiHin on 8/11/2015.
  */
 public class PromotionMarkerInfo implements ClusterItem {
+    // shopper name
     private String name;
     private String time;
     private Integer shopperIcon;
     private LatLng pointLocation;
     private String shopperLocation;
 
+    // extra product marker
+    private String productName;
+    private String productPrice;
+    private String productImage;
+
+
+    // promotion constructor
     public PromotionMarkerInfo(String name, String time, LatLng pointLocation, String shopperLocation, Integer shopperIcon) {
         this.name = name;
         this.time = time;
@@ -20,6 +28,41 @@ public class PromotionMarkerInfo implements ClusterItem {
         this.shopperLocation = shopperLocation;
         this.shopperIcon = shopperIcon;
     }
+
+    //product constructor
+    public PromotionMarkerInfo(String productName, String name, LatLng productLocation, String shopperLocation, String productImage){
+        this.productImage = productImage;
+        this.productName = productName;
+        this.productPrice = productPrice;
+        this.pointLocation = pointLocation;
+
+    }
+
+
+ public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+
+    public String getProductPrice() {
+        return productPrice;
+    }
+
+    public void setProductPrice(String productPrice) {
+        this.productPrice = productPrice;
+    }
+
+    public String getProductImage() {
+        return productImage;
+    }
+
+    public void setProductImage(String productImage) {
+        this.productImage = productImage;
+    }
+
 
     public String getName() {
         return name;

@@ -24,13 +24,13 @@
         android:orientation="vertical">
 
 
-        <EditText
-            android:id="@+id/input_search"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:hint="Search products.."
-            android:imeOptions="actionSearch"
-            android:inputType="textVisiblePassword" />
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:layout_width="390dp"
+            android:layout_height="43dp"
+            android:src="@drawable/bar_a1"
+            android:layout_marginBottom="3dp" />
+
 
         <LinearLayout
             android:layout_width="match_parent"

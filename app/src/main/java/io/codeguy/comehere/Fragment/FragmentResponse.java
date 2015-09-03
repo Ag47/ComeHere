@@ -136,12 +136,12 @@ public class FragmentResponse extends Fragment implements SwipeRefreshLayout.OnR
             @Override
             public void onResponse(JSONObject response) {
                 Log.d("oscar", response.toString());
-                ArrayList result = new ArrayList<response>();
+                ArrayList result = new ArrayList<io.codeguy.comehere.DataObject.response>();
                 try {
                     comeHereDB = response.getJSONArray("come_here");
                     Log.v("oscar", "before looping");
                     for (int i = 0; i < comeHereDB.length(); i++) {
-                        response currentResponseItem = new response();
+                        io.codeguy.comehere.DataObject.response currentResponseItem = new response();
                         JSONObject currentJsonObject = comeHereDB.getJSONObject(i);
                         String id = currentJsonObject.getString("response_id");
                         String name = currentJsonObject.getString("p_name");

@@ -84,6 +84,7 @@
     <color name="accent_material_light">@color/material_deep_teal_500</color>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
     <eat-comment/>
+    <color name="after_transition">#00796B</color>
     <color name="background">#4a9f8d</color>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
@@ -96,6 +97,7 @@
     <color name="background_tab_pressed">#6633B5E5</color>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
     <eat-comment/>
+    <color name="before_transition">#0088bf</color>
     <color name="black_semi_transparent">#B2000000</color>
     <color name="black_trans80">#33000000</color>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->

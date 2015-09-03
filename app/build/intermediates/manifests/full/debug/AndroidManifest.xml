@@ -99,6 +99,8 @@
         </activity>
         <activity android:name="io.codeguy.comehere.RequestActivity" />
         <activity android:name="io.codeguy.comehere.SeekActivity" />
+        <activity android:name="io.codeguy.comehere.SearchProductDetail" />
+        <activity android:name="io.codeguy.comehere.MapProductActivity" />
     </application>
 
 </manifest>

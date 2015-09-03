@@ -125,6 +125,7 @@ public class BottomSheetAdapter extends RecyclerView.Adapter<BottomSheetAdapter.
                     gotTag1.setVisibility(View.VISIBLE);
                     gotTag1.setText("# " + current.getCatName());
                     gotSlidingLayout.closeLayer(true);
+
 //                    TextView clickedItem = new TextView(v.getContext());
 //                    clickedItem.setText("# " + current.getCatName());
 //                    clickedItem.setId(R.id.tag1);

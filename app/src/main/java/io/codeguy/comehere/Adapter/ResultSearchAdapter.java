@@ -1,6 +1,8 @@
 package io.codeguy.comehere.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -18,6 +20,7 @@ import java.util.ArrayList;
 import io.codeguy.comehere.AppController;
 import io.codeguy.comehere.DataObject.Product;
 import io.codeguy.comehere.R;
+import io.codeguy.comehere.SearchProductDetail;
 
 /**
  * Created by KaiHin on 8/25/2015.
@@ -109,8 +112,17 @@ public class ResultSearchAdapter extends RecyclerView.Adapter<ResultSearchAdapte
             if (v == btnShare) {
                 Snackbar.make(v, "clicked share", Snackbar.LENGTH_SHORT).show();
             }
-            if (v == btnView) {
-                Snackbar.make(v, "clicked view", Snackbar.LENGTH_SHORT).show();
+            if (v == btnView || v== productImage) {
+                Product currentProduct = data.get(getPosition());
+                Bundle itemBundle = new Bundle();
+                Intent intentToDetail = new Intent(context, SearchProductDetail.class);
+                itemBundle.putString("searchProductName",currentProduct.getpName());
+                itemBundle.putString("searchProductLocation", currentProduct.getpVendorAddr());
+                itemBundle.putString("searchProductImage", currentProduct.getImaageURL());
+                itemBundle.putString("searchPRoductPrice", currentProduct.getpPrice());
+                itemBundle.putString("searchProductShopperName", currentProduct.getpVendorName());
+                intentToDetail.putExtras(itemBundle);
+                context.startActivity(intentToDetail);
             }
         }
     }

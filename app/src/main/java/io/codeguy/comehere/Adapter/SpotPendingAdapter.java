@@ -1,6 +1,8 @@
 package io.codeguy.comehere.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,6 +17,7 @@ import java.util.ArrayList;
 import io.codeguy.comehere.AppController;
 import io.codeguy.comehere.DataObject.Product;
 import io.codeguy.comehere.R;
+import io.codeguy.comehere.SearchProductDetail;
 
 /**
  * Created by KaiHin on 8/23/2015.
@@ -92,7 +95,16 @@ public class SpotPendingAdapter extends RecyclerView.Adapter<SpotPendingAdapter.
 
         @Override
         public void onClick(View v) {
-
+            Product currentProduct = data.get(getPosition());
+            Bundle itemBundle = new Bundle();
+            Intent intentToDetail = new Intent(context, SearchProductDetail.class);
+            itemBundle.putString("searchProductName",currentProduct.getpName());
+            itemBundle.putString("searchProductLocation", currentProduct.getpVendorAddr());
+            itemBundle.putString("searchProductImage", currentProduct.getImaageURL());
+            itemBundle.putString("searchPRoductPrice", currentProduct.getpPrice());
+            itemBundle.putString("searchProductShopperName", currentProduct.getpVendorName());
+            intentToDetail.putExtras(itemBundle);
+            context.startActivity(intentToDetail);
         }
     }
 }

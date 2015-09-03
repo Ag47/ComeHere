@@ -95,5 +95,6 @@
     <color name="icons">#FFFFFF</color>
     <color name="divider">#B6B6B6</color>
 
-
+<color name="before_transition">#0088bf</color>
+    <color name="after_transition">#00796B</color>
 </resources>

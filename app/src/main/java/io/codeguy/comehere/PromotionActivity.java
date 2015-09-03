@@ -259,42 +259,15 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
     @Override
     public void onMapReady(GoogleMap map) {
         // Add a marker in Sydney, Australia, and move the camera.
-//        LatLng ApliuStreet = new LatLng(22.328964, 114.163547);
-//        map.addMarker(new MarkerOptions().position(ApliuStreet).title("Marker in Apliu Street"));
-//        map.moveCamera(CameraUpdateFactory.newLatLng(ApliuStreet));
-
 
         LatLng ApliuStreet = new LatLng(22.328964, 114.163547);
         CameraPosition movingApliuStreet = new CameraPosition.Builder().target(ApliuStreet).zoom(16).build();
 
         MarkerOptions marker = new MarkerOptions().position(ApliuStreet).title("ApliuStreet");
-//        marker.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
 
         map.animateCamera(CameraUpdateFactory.newCameraPosition(movingApliuStreet));
-//        map.addMarker(marker);
 
     }
-
-    //    private void fadeOutFabMenu() {
-//
-//            Animation fadeOutFabMenu = new AlphaAnimation(1, 0);
-//            fadeOutFabMenu.setInterpolator(new AccelerateInterpolator());
-//            fadeOutFabMenu.setDuration(50);
-//
-//            fadeOutFabMenu.setAnimationListener(new Animation.AnimationListener() {
-//                public void onAnimationEnd(Animation animation) {
-//                    fabMenu.setVisibility(View.GONE);
-//                }
-//
-//                public void onAnimationRepeat(Animation animation) {
-//                }
-//
-//                public void onAnimationStart(Animation animation) {
-//                }
-//            });
-//
-//            fabMenu.startAnimation(fadeOutFabMenu);
-//    }
     private void fadeOutExpendIcon() {
 
         if (dragFromStart == true) {
@@ -361,75 +334,7 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
 //        Marker secondMarker = mapFragment.placeMarker(NamPontBldg);
         mapFragment.placeMarker(MingChuBldg, mClusterManager);
         mapFragment.placeMarker(NamPontBldg, mClusterManager);
-////        View marker = ((LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(R.layout.custom_marker_layout, null);
-////        NetworkImageView shopperIcon = (NetworkImageView) marker.findViewById(R.id.shopper_icon);
-//
-////        TextView numTxt = (TextView) marker.findViewById(R.id.num_txt);
-////        numTxt.setText("27");
-//
-//
-////        ImageLoader imageLoader =  AppController.getInstance().getImageLoader();
-////        shopperIcon.setImageUrl("https://lh5.ggpht.com/I7Q6vZsaxNvpozGVGfUvSfIOhfqCTO1-kFlCYP1au-0cuWERSDuiTS5hzw-nCF1uOJg8=w300",imageLoader);
-//
-//        promotionMarkerMap = new HashMap<Marker, PromotionMarkerInfo>();
-//        promotionMarkerMap.put(firstMarker, MingChuBldg);
-//        promotionMarkerMap.put(secondMarker, NamPontBldg);
-
-//        mapFragment.getMap().setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
-//            @Override
-//            public boolean onMarkerClick(Marker marker) {
-//                PromotionMarkerInfo promotionMarkerInfo = promotionMarkerMap.get(marker);
-//                clickedPinpointName = promotionMarkerInfo.getName();
-//                Toast.makeText(getBaseContext(), "The Promotion time of " + promotionMarkerInfo.getName() + " is " + promotionMarkerInfo.getTime(), Toast.LENGTH_LONG).show();
-//                textInDrag.setVisibility(View.GONE);
-//                promotionShopperName.setText(promotionMarkerInfo.getName());
-//
-//                dataPromotion = new ArrayList<>();
-//
-//                if (dataPromotion != null) {
-//                    dataPromotion.clear();
-//                    Log.v("promo", "cleared");
-//                }
-//
-//                fetchPromotionDataFromDB();
-//                locationView.setText(promotionMarkerInfo.getShopperLocation());
-//                promotionRecyclerAdapter = new PromotionInfoAdapter(PromotionActivity.this, dataPromotion);
-//                promotionInfoRecyclerView.setAdapter(promotionRecyclerAdapter);
-//                final LinearLayoutManager mLayoutManager = new LinearLayoutManager(PromotionActivity.this);
-//
-//                RecyclerView.ItemDecoration itemDecoration = new DividerItemDecoration(PromotionActivity.this, DividerItemDecoration.VERTICAL_LIST);
-//                promotionInfoRecyclerView.addItemDecoration(itemDecoration);
-//
-//                promotionInfoRecyclerView.setLayoutManager(mLayoutManager);
-//                promotionInfoRecyclerView.setHasFixedSize(true);
-//
-//                dataPromoImage = new ArrayList<>();
-//                fetchPromotionImage();
-//
-//                if (dataPromoImage != null) {
-//                    dataPromoImage.clear();
-//                    Log.v("promo", "cleared");
-//                }
-//                promotionGalleryAdapter = new PromotionGalleryAdapter(PromotionActivity.this, dataPromoImage);
-//                promotionGalleryRecyclerView.setAdapter(promotionGalleryAdapter);
-//                final LinearLayoutManager galleryLayoutManer = new LinearLayoutManager(PromotionActivity.this);
-//
-//                promotionGalleryRecyclerView.setLayoutManager(galleryLayoutManer);
-//                promotionInfoRecyclerView.setHasFixedSize(true);
-//
-//                return true;
-//            }
-//
-////            @Override
-////            public void onInfoWindowCloick(Marker marker) {
-////                PromotionMarkerInfo promotionMarkerInfo = promotionMarkerMap.get(marker);
-////                clickedPinpointName = promotionMarkerInfo.getName();
-////                Toast.makeText(getBaseContext(), "The Promotion time of " + promotionMarkerInfo.getName() + " is " + promotionMarkerInfo.getTime(), Toast.LENGTH_LONG).show();
-////                textInDrag.setVisibility(View.GONE);
-////                promotionShopperName.setText(promotionMarkerInfo.getName());
-//////                shoppeerIcon.setBackgroundResource(promotionMarkerInfo.getShopperIcon());
-////            }
-//        });
+////
         mClusterManager.cluster();
 
     }

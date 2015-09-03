@@ -74,27 +74,27 @@ public class SpotActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Spot");
         instantRecycler = (RecyclerView) findViewById(R.id.instant_search_recycler);
-        inputSearch = (EditText) findViewById(R.id.input_search);
+//        inputSearch = (EditText) findViewById(R.id.input_search);
 
         mLayoutManager = new LinearLayoutManager(this);
-        inputSearch.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-                hotProduct();
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                // the count is counting the input number 1 is char, 0 is backspace etc
-                Log.v("instant", "the count is " + count);
-                instantSearch(s);
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-
-            }
-        });
+//        inputSearch.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//                hotProduct();
+//            }
+//
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                // the count is counting the input number 1 is char, 0 is backspace etc
+//                Log.v("instant", "the count is " + count);
+//                instantSearch(s);
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//
+//            }
+//        });
         searchContentRow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -112,12 +112,9 @@ public class SpotActivity extends AppCompatActivity {
     private void instantSearch(CharSequence inputSearch) {
         Log.v("instant", "the charSequence is" + inputSearch.toString());
 
-        if (searchProduct != null) {
             searchProduct.clear();
             searchProduct = new ArrayList<>();
             Log.v("instant", "count i " + i);
-            i++;
-        }
         fetchInstantSearch(inputSearch);
         mAdapter = new SpotPendingAdapter(this, searchProduct);
         instantRecycler.setAdapter(mAdapter);
@@ -153,12 +150,12 @@ public class SpotActivity extends AppCompatActivity {
                         String pTypeName = currentJsonObject.getString("type_name");
                         String pVendorId = currentJsonObject.getString("v_id");
                         String pVendorName = currentJsonObject.getString("v_shop_name");
-
+                        String shopperAddr = currentJsonObject.getString("v_addr");
                         if (imageURL == "" || imageURL == null)
                             imageURL = "";
                         else
                             imageURL = imageURL.replace("\\/", "/");
-
+                        currentProductItem.setpVendorAddr(shopperAddr);
                         currentProductItem.setpName(pName);
                         currentProductItem.setPid(pid);
                         currentProductItem.setImaageURL(imageURL);
@@ -252,7 +249,11 @@ public class SpotActivity extends AppCompatActivity {
             edtSeach.addTextChangedListener(new TextWatcher() {
                 @Override
                 public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
+                    if (searchProduct != null) {
+                        searchProduct.clear();
+                        searchProduct = new ArrayList<>();
+                        Log.v("instant", "count i " + i);
+                    }
                 }
 
                 @Override
@@ -263,22 +264,32 @@ public class SpotActivity extends AppCompatActivity {
                     if (searchProduct != null) {
                         searchProduct.clear();
                         searchProduct = new ArrayList<>();
-                        Log.v("instant", "count i " + i);
-                        i++;
                     }
                     searchContentRow.setVisibility(View.VISIBLE);
                     searchContentString = s.toString();
                     searchContent.setText(s.toString());
                     if (before == 1 && start == 0) {
-                        searchContentRow.setVisibility(View.GONE);
+                         searchContentRow.setVisibility(View.GONE);
                     }
-                    instantSearch(s);
+//                    instantSearch(s);
                 }
 
                 @Override
                 public void afterTextChanged(Editable s) {
-
+//                    if (searchProduct != null) {
+//                        searchProduct.clear();
+//                        searchProduct = new ArrayList<>();
+//                    }
+//                    searchContentRow.setVisibility(View.VISIBLE);
+//                    searchContentString = s.toString();
+//                    searchContent.setText(s.toString());
+//                    if (before == 1 && start == 0) {
+//                        searchContentRow.setVisibility(View.GONE);
+//                    }
+                    instantSearch(s);
+                    s.toString();
                 }
+
             });
 
             edtSeach.requestFocus();

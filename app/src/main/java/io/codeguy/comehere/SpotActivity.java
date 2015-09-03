@@ -125,7 +125,8 @@ public class SpotActivity extends AppCompatActivity {
                         String pTypeName = currentJsonObject.getString("type_name");
                         String pVendorId = currentJsonObject.getString("v_id");
                         String pVendorName = currentJsonObject.getString("v_shop_name");
-
+                        String latitude = currentJsonObject.getString("latitude");
+                        String longitude = currentJsonObject.getString("longitude");
                         if (imageURL == "" || imageURL == null)
                             imageURL = "";
                         else
@@ -140,6 +141,8 @@ public class SpotActivity extends AppCompatActivity {
                         currentProductItem.setpTypeName(pTypeName);
                         currentProductItem.setpVendorId(pVendorId);
                         currentProductItem.setpVendorName(pVendorName);
+                        currentProductItem.setLatitude(latitude);
+                        currentProductItem.setLatitude(latitude);
 
                         data.add(i, currentProductItem);
 //                    result.add
