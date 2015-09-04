@@ -107,7 +107,11 @@ public class VendorActivity extends AppCompatActivity {
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
                 // callback for swipe to dismiss, removing item from data and adapter
 //                items.remove(viewHolder.getAdapterPosition());
+                int getposition = viewHolder.getAdapterPosition();
+                Log.v("vendor","the row id is "+  data.get(getposition).getId());
+
                 mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
+
             }
         });
         swipeToDismissTouchHelper.attachToRecyclerView(mRecyclerView);

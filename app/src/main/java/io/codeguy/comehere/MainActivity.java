@@ -21,7 +21,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.clusterpoint.api.CPSConnection;
 import com.clusterpoint.api.request.CPSInsertRequest;
 import com.clusterpoint.api.response.CPSModifyResponse;
@@ -33,6 +38,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
@@ -63,9 +69,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public static JSONObject responseObject = null;
     public static FrameLayout fl;
     private final String PREFS_NAME = "MyPrefsFile";
+    ArrayList<response> responseData = new ArrayList<>();
     public ArrayList<pending> data = new ArrayList<>();
     public ArrayList<response> dataResponse = new ArrayList<>();
     public ArrayList<Product> dataSpotProduct = new ArrayList<>();
+    JSONArray comeHereDB = null;
+    private String urlReadResponse = "http://androiddebugoska.host22.com/readAllResponse.php";
+
     String url = String.format("https://api-us.clusterpoint.com/100403/android.json");
     String search_url = String.format("https://api-us.clusterpoint.com/100403/android/_search.json");
     JSONObject jsonObject = null;
@@ -79,8 +89,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
     // nav drawer title
-    private CharSequence mDrawerTitle;
-    // used to store app title
+    private CharSequence mDrawerTitle;// used to store app title\
     private CharSequence mTitle;
     // slide menu items
     private String[] navMenuTitles;
@@ -100,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private boolean mUserLearnedDrawer;
     private boolean mFromSavedInstanceState;
     private int mCurrentSelectedPosition;
-
+    private TextView responseNum;
     public static void saveSharedSetting(Context ctx, String settingName, String settingValue) {
         SharedPreferences sharedPref = ctx.getSharedPreferences(PREFERENCES_FILE, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
@@ -111,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+//        responseNum = (TextView) findViewById(R.id.response_num);
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.tabanim_toolbar);
         setSupportActionBar(toolbar);
@@ -125,6 +134,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         // MKey Login
         mkeyLogin();
 
+        int resultNum = countResponsing();
+        resultNum = 0;
+//        responseNum.setText(resultNum);
         mNavigationView = (NavigationView) findViewById(R.id.nav_view);
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             CoordinatorLayout mCoordinator = (CoordinatorLayout) findViewById(R.id.tabanim_maincontent);
@@ -350,5 +362,57 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .snippet("Best Flea Market in HK")
                 .position(apliu));
     }
+    //TODO 1 add fetch item to the database get count of the response list
 
+    private int countResponsing(){
+        Log.v("oscar", "int the ReadDataFromDb");
+
+
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
+                urlReadResponse, (String) null, new Response.Listener<JSONObject>() {
+
+            @Override
+            public void onResponse(JSONObject response) {
+                Log.d("oscar", response.toString());
+                ArrayList result = new ArrayList<io.codeguy.comehere.DataObject.response>();
+                try {
+                    comeHereDB = response.getJSONArray("come_here");
+                    Log.v("oscar", "before looping");
+                    for (int i = 0; i < comeHereDB.length(); i++) {
+                        io.codeguy.comehere.DataObject.response currentResponseItem = new response();
+                        JSONObject currentJsonObject = comeHereDB.getJSONObject(i);
+                        String id = currentJsonObject.getString("response_id");
+
+                        currentResponseItem.setId(id);
+                        Log.v("response ", "in the onResponse, the id is " + id);
+                        responseData.add(i, currentResponseItem);
+//                    result.add
+                        Log.v("oscar", "the array responseData is " + responseData.get(i).toString());
+                        Log.v("oscar", "adding...");
+
+
+                    }
+//                    mAdapter.notifyDataSetChanged();
+                    MainActivity ma = new MainActivity();
+                    ma.dataResponse = responseData;
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.v("oscar", "onError Response: " + error.toString());
+            }
+        }) {
+
+        };
+
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(jsonObjReq);
+        return dataResponse.size();
+
+    }
+    //TODo 2 add fetch item to the data get the count of the pending list
 }

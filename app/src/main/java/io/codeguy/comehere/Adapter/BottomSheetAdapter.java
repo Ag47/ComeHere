@@ -32,7 +32,8 @@ public class BottomSheetAdapter extends RecyclerView.Adapter<BottomSheetAdapter.
     private ClickListener clickListener;
     private SlidingLayer gotSlidingLayout;
     private LinearLayout gotRowTags;
-    private TextView gotTag1, gotTag2, gotTag3;
+
+    private TextView gotTag1, gotTag2, gotTag3, responseNum;
 
     public BottomSheetAdapter(Context context, ArrayList<BottomSheetItem> data, SlidingLayer slidingLayer, LinearLayout rowTags, TextView tag1, TextView tag2, TextView tag3) {
         this.context = context;
@@ -65,7 +66,7 @@ public class BottomSheetAdapter extends RecyclerView.Adapter<BottomSheetAdapter.
     public void onBindViewHolder(MyViewHolder holder, int position) {
 
         BottomSheetItem current = data.get(position);
-        Log.v("bottomSheet", "the bs name" + current.getCatName());
+         Log.v("bottomSheet", "the bs name" + current.getCatName());
 
         holder.catText.setText(data.get(position).getCatName());
         holder.catIcon.setImageResource(data.get(position).getCatIcon());
