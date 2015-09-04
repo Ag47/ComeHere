@@ -30,6 +30,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 import io.codeguy.comehere.Adapter.MyRecyclerAdapter;
 import io.codeguy.comehere.DataObject.pending;
@@ -57,6 +58,7 @@ public class VendorActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager mLayoutManager;
     private LinearLayout mToolbarContainer;
     private int mToolbarHeight;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -134,7 +136,7 @@ public class VendorActivity extends AppCompatActivity {
         mRecyclerView.setHasFixedSize(true);
 
         // init recycler view
-        RecyclerView recyclerView = mRecyclerView;
+        final RecyclerView recyclerView = mRecyclerView;
 
         // init layout manager
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
@@ -165,17 +167,40 @@ public class VendorActivity extends AppCompatActivity {
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
                 // callback for swipe to dismiss, removing item from data and adapter
 //                items.remove(viewHolder.getAdapterPosition());
-                int getposition = viewHolder.getAdapterPosition();
-                Log.v("vendor", "the row id is " + data.get(getposition).getId());
-
+                int getPosition = viewHolder.getAdapterPosition();
+                Log.v("vendor", "the row id is " + data.get(getPosition).getId());
+                deletePendingItem(Integer.toString(getPosition));
                 mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
+                mAdapter.notifyDataSetChanged();
+
 
             }
         });
         swipeToDismissTouchHelper.attachToRecyclerView(mRecyclerView);
 
         Log.v("pending", " after the new recyclerAdapter");
+//        pendingSwipeRefreshLayout.setOnRefreshListener(this);
+//        pendingSwipeRefreshLayout.post(new Runnable() {
+//
+//                                           @Override
+//                                           public void run() {
+//                                               pendingSwipeRefreshLayout.setRefreshing(true);
+//
+//                                               fetchPendingItems();
+//                                               Log.v("pending", "in the refresh runnable");
+//                                           }
+//                                       }
+//        );
+
     }
+
+//    @Override
+//    public void onRefresh() {
+//        if (fetchPendingItems != null) {
+//            data.clear();
+//        }
+//        fetchPendingItems();
+//    }
 
     private void fetchPendingItems() {
 
@@ -251,4 +276,36 @@ public class VendorActivity extends AppCompatActivity {
      * Created by KaiHin on 7/10/2015.
      */
 
+    private void deletePendingItem(final String id) {
+        Log.v("vendor", "deleted id is " + id);
+        String deleteURL = "http://androiddebugoska.host22.com/delete_pending_item.php?pending_id=" + id;
+
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST,
+                deleteURL, (String) null, new Response.Listener<JSONObject>() {
+
+            @Override
+            public void onResponse(JSONObject response) {
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.v("oscar", "onError Response: " + error.toString());
+            }
+        }) {
+            @Override
+            protected Map<String, String> getParams() throws com.android.volley.AuthFailureError {
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("p_name", id);
+                Log.v("spot", "in the getParams, spot :" + id);
+                return super.getParams();
+            }
+        };
+
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(jsonObjReq);
+
+    }
 }
+
+

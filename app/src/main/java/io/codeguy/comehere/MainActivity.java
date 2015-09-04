@@ -110,6 +110,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private boolean mFromSavedInstanceState;
     public static int mCurrentSelectedPosition;
     private TextView responseNum;
+
     public static void saveSharedSetting(Context ctx, String settingName, String settingValue) {
         SharedPreferences sharedPref = ctx.getSharedPreferences(PREFERENCES_FILE, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
@@ -364,7 +365,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
     //TODO 1 add fetch item to the database get count of the response list
 
-    private int countResponsing(){
+    private int countResponsing() {
         Log.v("oscar", "int the ReadDataFromDb");
 
 
@@ -415,4 +416,57 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     }
     //TODo 2 add fetch item to the data get the count of the pending list
+
+    // pending function
+    /** Oska **/
+//    private int countResponsing(){
+//        Log.v("oscar", "int the ReadDataFromDb");
+//        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
+//                urlReadResponse, (String) null, new Response.Listener<JSONObject>() {
+//
+//            @Override
+//            public void onResponse(JSONObject response) {
+//                Log.d("oscar", response.toString());
+//                ArrayList result = new ArrayList<io.codeguy.comehere.DataObject.response>();
+//                try {
+//                    comeHereDB = response.getJSONArray("come_here");
+//                    Log.v("main activity", "before looping");
+//                    for (int i = 0; i < comeHereDB.length(); i++) {
+//                        response currentResponseItem = new response();
+//                        JSONObject currentJsonObject = comeHereDB.getJSONObject(i);
+//                        String id = currentJsonObject.getString("response_id");
+//
+//                        currentResponseItem.setId(id);
+//                        Log.v("main activity", "in the onResponse, the id is " + id);
+//                        responseData.add(i, currentResponseItem);
+////                    result.add
+//                        Log.v("oscar", "the array responseData is " + responseData.get(i).toString());
+//                        Log.v("oscar", "adding...");
+//                    }
+//
+////                    mAdapter.notifyDataSetChanged();
+//                    MainActivity ma = new MainActivity();
+//                    ma.dataResponse = responseData;
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }, new Response.ErrorListener() {
+//
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//                Log.v("oscar", "onError Response: " + error.toString());
+//            }
+//        }) {
+//
+//        };
+//
+//        // Adding request to request queue
+//        AppController.getInstance().addToRequestQueue(jsonObjReq);
+//        Log.v("main activity", " the data response size is "+dataResponse.size());
+//        return dataResponse.size();
+//
+//    }
+
+
 }

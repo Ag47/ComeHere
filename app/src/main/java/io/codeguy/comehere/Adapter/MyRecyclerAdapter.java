@@ -75,9 +75,6 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.My
         Log.v("oscar", "onViewHolder data array time " + current.getTimeExpired());
         Log.v("oscar", "onViewHolder data array key " + current.getInstalledKey());
         holder.name.setText(data.get(position).getName());
-        holder.id.setText(data.get(position).getId());
-        holder.time.setText(data.get(position).getTimeExpired());
-        holder.appKey.setText(data.get(position).getInstalledKey());
 //        holder.profileIcon.setImageUrl(data.get(position).getIcon_thum(), imageLoader);
         Log.v("oscar", "onBindViewHolder adding..." + current.getName());
 //     java.lang.NullPointerException onViewHolder setText
@@ -164,10 +161,8 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.My
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            id = (TextView) itemView.findViewById(R.id.item_id);
+
             name = (TextView) itemView.findViewById(R.id.item_name);
-            appKey = (TextView) itemView.findViewById(R.id.item_app_registered_key);
-            time = (TextView) itemView.findViewById(R.id.item_time_expired);
             itemView.setOnClickListener(this);
             Log.v("oscar", "added in the MyViewHolder");
         }
@@ -176,7 +171,6 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.My
 
         @Override
         public void onClick(View v) {
-            // on Click profile icon                        by oska
 
 
             pending current = data.get(getPosition());
@@ -199,13 +193,6 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.My
         }
     }
 
-//    JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.GET,
-//            urlJsonObj,(String)null, new Response.Listener<JSONObject>() {
-//
-//        @Override
-//        public void onResponse(JSONObject response) {
-//            Log.d(TAG, response.toString());
-//
-//            try {
-//                comeHereDB = response.getJSONArray("come_here");
 }
+
+
