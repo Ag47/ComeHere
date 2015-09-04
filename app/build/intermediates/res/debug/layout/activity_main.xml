@@ -75,12 +75,16 @@
                             android:textStyle="bold" />
 
 
-                        <ListView
-                            android:id="@+id/listview"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/text" />
+                        <!--<ListView-->
+                            <!--android:id="@+id/listview"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@id/text" />-->
 
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:id="@+id/response_num"/>
 
                     </RelativeLayout>
 
@@ -102,4 +106,4 @@
         app:headerLayout="@layout/drawer_header"
         app:menu="@menu/drawer" />
 
-</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/activity_main.xml -->
+</android.support.v4.widget.DrawerLayout><!-- From: file:/C:/Users/KaiHin/Desktop/My%20android%20template/ComeHere-Marged/V4/ComeHere/app/src/main/res/layout/activity_main.xml -->

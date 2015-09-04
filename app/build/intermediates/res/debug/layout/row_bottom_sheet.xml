@@ -7,18 +7,18 @@
 
     <ImageView
         android:id="@+id/cat_icon"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="18dp"
         android:src="@drawable/perm_group_phone_calls" />
 
     <TextView
         android:id="@+id/cat_name"
-        android:layout_width="100dp"
+        android:layout_width="128dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:gravity="center"
         android:text="name"
         android:textSize="14dp" />
-</LinearLayout><!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/row_bottom_sheet.xml -->
+</LinearLayout><!-- From: file:/C:/Users/KaiHin/Desktop/My%20android%20template/ComeHere-Marged/V4/ComeHere/app/src/main/res/layout/row_bottom_sheet.xml -->

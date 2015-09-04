@@ -28,4 +28,4 @@
     <item android:drawable="@drawable/button_red_pressed" android:state_pressed="true"/>
     <item android:drawable="@drawable/button_red"/>
 
-</selector><!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/drawable/button_red_selector.xml -->
+</selector><!-- From: file:/C:/Users/KaiHin/Desktop/My%20android%20template/ComeHere-Marged/V4/ComeHere/app/src/main/res/drawable/button_red_selector.xml -->

@@ -260,13 +260,13 @@ public class FragmentWish extends Fragment {
     }
 
     private void initButtonItem(View layout) {
-        String[] iconName = {"Watch", "Phone", "Tools", "Second Hands", "Computer", "Accessory"};
-        Integer[] icon = {R.drawable.ic_watch_black_24dp,
-                R.drawable.perm_group_phone_calls,
-                R.drawable.ic_settings_grey_24dp,
-                R.drawable.perm_group_phone_calls,
-                R.drawable.ic_computer_grey_24dp,
-                R.drawable.ic_assess_grey};
+        String[] iconName = {"Watch", "Tools", "Lightbulb", "TV", "Cable", "TDN"};
+        Integer[] icon = {R.drawable.type_watch,
+                R.drawable.type_tools,
+                R.drawable.type_lightbulb,
+                R.drawable.type_tv,
+                R.drawable.type_tvcable,
+                R.drawable.type_tnd};
         arrayOfBottomSheetItem = new ArrayList<BottomSheetItem>();
         for (int i = 0; i < 6; i++) {
             BottomSheetItem bottomSheetItem = new BottomSheetItem();

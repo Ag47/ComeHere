@@ -167,7 +167,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/primaryBottomSheet">
+            android:background="#ffffff">
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/bottom_sheet_recyclerview"
@@ -179,15 +179,17 @@
                 android:id="@+id/buttonClose"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="right|bottom"
-                android:layout_marginBottom="60dp"
+                android:layout_gravity="right|bottom|end"
                 android:onClick="buttonClicked"
                 android:text="close"
-                android:textColor="#ffffff" />
+                android:textColor="#03A9F4"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:paddingLeft="90dp"
+                android:paddingTop="25dp"/>
 
-        </RelativeLayout>
+</RelativeLayout>
         <!--android:gravity="right|bottom"-->
 
     </com.wunderlist.slidinglayer.SlidingLayer>
@@ -195,4 +197,4 @@
 
 </RelativeLayout>
 
-<!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/fragment_wish.xml -->
+<!-- From: file:/C:/Users/KaiHin/Desktop/My%20android%20template/ComeHere-Marged/V4/ComeHere/app/src/main/res/layout/fragment_wish.xml -->

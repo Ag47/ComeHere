@@ -334,6 +334,8 @@ public class MapProductActivity extends ActionBarActivity implements OnMapReadyC
 
         for (int i = 0; i < productList.size(); i++) {
             Product currentProduct = productList.get(i);
+            Log.v("find result","in the looping");
+            Log.v("find result","the latituade is "+ Double.parseDouble(currentProduct.getLatitude()));
             promotionInfos[i] = new PromotionMarkerInfo(currentProduct.getpName(),currentProduct.getpVendorName()
                     ,new LatLng(Double.parseDouble(currentProduct.getLatitude()) ,Double.parseDouble(currentProduct.getLatitude()))
                     ,currentProduct.getpVendorAddr(), currentProduct.getImaageURL());
