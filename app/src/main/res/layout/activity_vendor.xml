@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/tabanim_maincontent"
             android:layout_width="match_parent"
@@ -32,7 +31,7 @@
                         android:id="@+id/tabanim_toolbar"
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
-                        android:background="?attr/colorPrimary"
+                        android:background="@drawable/mtr_bg"
                         app:layout_scrollFlags="scroll|enterAlways"
                         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
@@ -52,8 +51,7 @@
                         android:paddingRight="@dimen/activity_horizontal_margin"
                         android:paddingTop="@dimen/activity_vertical_margin">
 
-                        <android.support.v4.widget.SwipeRefreshLayout
-                            xmlns:android="http://schemas.android.com/apk/res/android"
+                        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
                             android:id="@+id/pending_swipe_refresh"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
@@ -73,7 +71,6 @@
             </RelativeLayout>
 
         </android.support.design.widget.CoordinatorLayout>
-
 
     </FrameLayout>
 

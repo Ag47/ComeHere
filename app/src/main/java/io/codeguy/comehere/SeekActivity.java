@@ -23,6 +23,8 @@ public class SeekActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_seek);
 
+        MainActivity.mCurrentSelectedPosition = 2;
+
         toolbar = (Toolbar) findViewById(R.id.tabanim_toolbar);
         setSupportActionBar(toolbar);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.nav_drawer);
@@ -46,27 +48,28 @@ public class SeekActivity extends AppCompatActivity {
                 menuItem.setChecked(true);
                 switch (menuItem.getItemId()) {
                     case R.id.navigation_home:
-                        mCurrentSelectedPosition = 0;
+                        MainActivity.mCurrentSelectedPosition = 0;
+                        startActivity(new Intent(SeekActivity.this, MainActivity.class));
                         return true;
                     case R.id.navigation_spot:
-                        mCurrentSelectedPosition = 1;
+                        MainActivity.mCurrentSelectedPosition = 1;
                         startActivity(new Intent(SeekActivity.this, io.codeguy.comehere.menu_item.SpotActivity.class));
                         return true;
                     case R.id.navigation_seek:
-                        mCurrentSelectedPosition = 2;
+                        MainActivity.mCurrentSelectedPosition = 2;
                         startActivity(new Intent(SeekActivity.this, SeekActivity.class));
                         return true;
                     case R.id.navigation_request:
-                        mCurrentSelectedPosition = 3;
+                        MainActivity.mCurrentSelectedPosition = 3;
                         startActivity(new Intent(SeekActivity.this, RequestActivity.class));
                         return true;
                     case R.id.navigation_promotion:
-                        mCurrentSelectedPosition = 4;
+                        MainActivity.mCurrentSelectedPosition = 4;
                         startActivity(new Intent(SeekActivity.this, PromotionActivity.class));
                         return true;
                     case R.id.navigation_vendor:
-                        mCurrentSelectedPosition = 5;
-//                        startActivity(new Intent(SeekActivity.this, SpotAddPendingActivity.class));
+                        MainActivity.mCurrentSelectedPosition = 5;
+                        startActivity(new Intent(SeekActivity.this, VendorActivity.class));
                         return true;
                     default:
                         return true;

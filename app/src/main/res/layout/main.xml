@@ -6,7 +6,8 @@
     android:orientation="vertical"
     >
 
-  <include layout="@layout/toolbar" android:id="@+id/toolbar"/>
+  <include layout="@layout/toolbar"
+      android:id="@+id/toolbar"/>
 
   <ListView
       android:id="@+id/device_list"

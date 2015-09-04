@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private DrawerLayout mDrawerLayout;
     private boolean mUserLearnedDrawer;
     private boolean mFromSavedInstanceState;
-    private int mCurrentSelectedPosition;
+    public static int mCurrentSelectedPosition;
     private TextView responseNum;
     public static void saveSharedSetting(Context ctx, String settingName, String settingValue) {
         SharedPreferences sharedPref = ctx.getSharedPreferences(PREFERENCES_FILE, Context.MODE_PRIVATE);

@@ -1,215 +1,217 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:fab="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:id="@+id/nav_drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".DemoActivity">
+    android:fitsSystemWindows="true">
 
-    <com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/sliding_layout"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        sothree:umanoDragView="@+id/dragView"
-        sothree:umanoOverlay="true"
-        sothree:umanoPanelHeight="68dp"
-        sothree:umanoParalaxOffset="100dp"
-        sothree:umanoScrollableView="@+id/list"
-        sothree:umanoShadowHeight="4dp">
+        android:layout_height="match_parent">
 
-        <!-- MAIN CONTENT -->
-        <FrameLayout
+        <com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:sothree="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/sliding_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:gravity="bottom"
+            sothree:umanoDragView="@+id/dragView"
+            sothree:umanoOverlay="true"
+            sothree:umanoPanelHeight="68dp"
+            sothree:umanoParalaxOffset="100dp"
+            sothree:umanoScrollableView="@+id/list"
+            sothree:umanoShadowHeight="4dp">
 
-            <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:sothree="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/main_toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                sothree:theme="@style/ActionBar" />
-
-            <TextView
-                android:id="@+id/main"
+            <!-- MAIN CONTENT -->
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="?attr/actionBarSize"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/tabanim_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@drawable/mtr_bg"
+                        sothree:theme="@style/ActionBar" />
+
+                    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:tools="http://schemas.android.com/tools"
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/tabanim_toolbar"
+                        tools:context=".MapsActivity" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <!-- SLIDING LAYOUT -->
+            <LinearLayout
+                android:id="@+id/dragView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
                 android:clickable="true"
                 android:focusable="false"
-                android:focusableInTouchMode="true"
-                android:gravity="center"
-                android:text="Main Content"
-                android:textSize="16sp" />
+                android:orientation="vertical">
 
-            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:id="@+id/map"
-                android:name="com.google.android.gms.maps.SupportMapFragment"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context=".MapsActivity" />
-        </FrameLayout>
+                <LinearLayout
+                    android:id="@+id/drag_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp"
+                    android:orientation="horizontal">
 
-        <!-- SLIDING LAYOUT -->
-        <LinearLayout
-            android:id="@+id/dragView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#ffffff"
-            android:clickable="true"
-            android:focusable="false"
-            android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/shopper_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:textSize="16dp" />
 
-            <LinearLayout
-                android:id="@+id/drag_view"
-                android:layout_width="match_parent"
-                android:layout_height="68dp"
-                android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/more_or_less"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="100dp"
+                        android:src="@drawable/ic_expand_less" />
 
-                <TextView
-                    android:id="@+id/shopper_name"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="20dp"
-                    android:textSize="16dp" />
+                    <TextView
+                        android:id="@+id/firstInitial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Click the pin point for more information"
+                        android:textSize="19dp" />
+
+
+                </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/more_or_less"
-                    android:layout_width="0dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_weight="1"
-                    android:paddingLeft="100dp"
-                    android:src="@drawable/ic_expand_less" />
-
-                <TextView
-                    android:id="@+id/firstInitial"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="Click the pin point for more information"
-                    android:textSize="19dp" />
+                    android:layout_height="150dp"
+                    android:paddingBottom="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shopper1" />
 
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/promoStatusBar"
+                    android:orientation="horizontal">
 
-            </LinearLayout>
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/ic_pin_drop_white_24dp" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="150dp"
-                android:paddingBottom="8dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/shopper1" />
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="16dp"
+                        android:text="this is the location"
+                        android:textColor="#ffffff" />
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@color/promoStatusBar"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="35dp"
-                    android:layout_height="35dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginTop="9dp"
-                    android:src="@drawable/ic_pin_drop_white_24dp" />
+                </LinearLayout>
 
                 <TextView
-                    android:id="@+id/location"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="16dp"
-                    android:text="this is the location"
-                    android:textColor="#ffffff" />
+                    android:layout_gravity="center"
+                    android:paddingBottom="9dp"
+                    android:paddingTop="9dp"
+                    android:text="Promotion Now"
+                    android:textColor="#767676" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/promotion_info_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+
+                    android:overScrollMode="never" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="right">
+
+
+                    <Button
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="16dp"
+                        android:background="@color/dragedColorFromStart"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                        android:text="show more"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/promo_gallery_recyclerview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
 
             </LinearLayout>
 
-            <TextView
+
+        </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/multiple_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            fab:fab_addButtonColorNormal="#59AD9F"
+            fab:fab_addButtonColorPressed="@color/white_pressed"
+            fab:fab_addButtonPlusIconColor="@color/half_black"
+            fab:fab_labelStyle="@style/menu_labels_style">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/action_a"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:paddingBottom="9dp"
-                android:paddingTop="9dp"
-                android:text="Promotion Now"
-                android:textColor="#767676" />
+                fab:fab_colorNormal="#59AD9F"
+                fab:fab_colorPressed="@color/white_pressed"
+                fab:fab_title="Action A" />
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/promotion_info_view"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-
-                android:overScrollMode="never" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:gravity="right">
-
-
-                <Button
-                    android:layout_width="110dp"
-                    android:layout_height="35dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginRight="16dp"
-                    android:background="@color/dragedColorFromStart"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
-                    android:text="show more"
-                    android:textColor="#ffffff"
-                    android:textSize="16dp" />
-            </LinearLayout>
-
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/promo_gallery_recyclerview"
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/action_b"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="#59AD9F"
+                fab:fab_colorPressed="@color/white_pressed"
+                fab:fab_icon="@drawable/ic_share_white_24dp"
+                fab:fab_title="Share" />
 
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </RelativeLayout>
 
-        </LinearLayout>
-
-
-    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
-
-    <com.getbase.floatingactionbutton.FloatingActionsMenu
-        android:id="@+id/multiple_actions"
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        fab:fab_addButtonColorNormal="#59AD9F"
-        fab:fab_addButtonColorPressed="@color/white_pressed"
-        fab:fab_addButtonPlusIconColor="@color/half_black"
-        fab:fab_labelStyle="@style/menu_labels_style">
-
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_a"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_colorNormal="#59AD9F"
-            fab:fab_colorPressed="@color/white_pressed"
-            fab:fab_title="Action A" />
-
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_b"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_colorNormal="#59AD9F"
-            fab:fab_colorPressed="@color/white_pressed"
-            fab:fab_icon="@drawable/ic_share_white_24dp"
-            fab:fab_title="Share" />
-
-    </com.getbase.floatingactionbutton.FloatingActionsMenu>
-
-</RelativeLayout>
-
-
-
-
-<!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/promotion.xml -->
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer" />
+</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/promotion.xml -->

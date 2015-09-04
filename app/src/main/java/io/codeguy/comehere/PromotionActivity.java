@@ -3,10 +3,15 @@ package io.codeguy.comehere;
 import android.animation.ArgbEvaluator;
 import android.animation.ValueAnimator;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -104,6 +109,60 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
             window.setStatusBarColor(this.getResources().getColor(R.color.promoStatusBar));
         }
 
+        // set up toolbar and navdrawer
+        Toolbar toolbar = (Toolbar) findViewById(R.id.tabanim_toolbar);
+        setSupportActionBar(toolbar);
+        final DrawerLayout mDrawerLayout;
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.nav_drawer);
+        toolbar = (Toolbar) findViewById(R.id.tabanim_toolbar);
+
+        if (toolbar != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            toolbar.setNavigationIcon(R.drawable.ic_drawer);
+            toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mDrawerLayout.openDrawer(GravityCompat.START);
+                }
+            });
+        }
+
+        NavigationView mNavigationView = (NavigationView) findViewById(R.id.nav_view);
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            CoordinatorLayout mCoordinator = (CoordinatorLayout) findViewById(R.id.tabanim_maincontent);
+
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                menuItem.setChecked(true);
+                switch (menuItem.getItemId()) {
+                    case R.id.navigation_home:
+                        MainActivity.mCurrentSelectedPosition = 0;
+                        return true;
+                    case R.id.navigation_spot:
+                        MainActivity.mCurrentSelectedPosition = 1;
+                        startActivity(new Intent(PromotionActivity.this, io.codeguy.comehere.menu_item.SpotActivity.class));
+                        return true;
+                    case R.id.navigation_seek:
+                        MainActivity.mCurrentSelectedPosition = 2;
+                        startActivity(new Intent(PromotionActivity.this, SeekActivity.class));
+                        return true;
+                    case R.id.navigation_request:
+                        MainActivity.mCurrentSelectedPosition = 3;
+                        startActivity(new Intent(PromotionActivity.this, RequestActivity.class));
+                        return true;
+                    case R.id.navigation_promotion:
+                        MainActivity.mCurrentSelectedPosition = 4;
+                        startActivity(new Intent(PromotionActivity.this, PromotionActivity.class));
+                        return true;
+                    case R.id.navigation_vendor:
+                        MainActivity.mCurrentSelectedPosition = 5;
+                        startActivity(new Intent(PromotionActivity.this, VendorActivity.class));
+                        return true;
+                    default:
+                        return true;
+                }
+            }
+        });
 
         dragFromStart = true;
         isSetDragBarColor = false;
@@ -120,7 +179,7 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
         mapFragment = new MainMapFragment();
         FragmentTransaction ft = getFragmentManager().beginTransaction();
         ft.add(R.id.map, mapFragment);
-        setSupportActionBar((Toolbar) findViewById(R.id.main_toolbar));
+        setSupportActionBar((Toolbar) findViewById(R.id.tabanim_toolbar));
 
         mLayout = (SlidingUpPanelLayout) findViewById(R.id.sliding_layout);
 //        swipe up onstart
@@ -268,6 +327,7 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
         map.animateCamera(CameraUpdateFactory.newCameraPosition(movingApliuStreet));
 
     }
+
     private void fadeOutExpendIcon() {
 
         if (dragFromStart == true) {
@@ -334,9 +394,8 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
 //        Marker secondMarker = mapFragment.placeMarker(NamPontBldg);
         mapFragment.placeMarker(MingChuBldg, mClusterManager);
         mapFragment.placeMarker(NamPontBldg, mClusterManager);
-////
-        mClusterManager.cluster();
 
+        mClusterManager.cluster();
     }
 
 
@@ -636,5 +695,4 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
             return cluster.getSize() > 1;
         }
     }
-
 }

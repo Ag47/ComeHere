@@ -124,7 +124,7 @@ public class MapProductActivity extends ActionBarActivity implements OnMapReadyC
         mapFragment = new MainMapFragment();
         FragmentTransaction ft = getFragmentManager().beginTransaction();
         ft.add(R.id.map, mapFragment);
-        setSupportActionBar((Toolbar) findViewById(R.id.main_toolbar));
+        setSupportActionBar((Toolbar) findViewById(R.id.tabanim_toolbar));
 
         mLayout = (SlidingUpPanelLayout) findViewById(R.id.sliding_layout);
 //        swipe up onstart

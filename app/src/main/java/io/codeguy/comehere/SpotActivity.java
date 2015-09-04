@@ -1,7 +1,11 @@
 package io.codeguy.comehere;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -54,9 +58,63 @@ public class SpotActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recycler_place);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.tabanim_toolbar);
+        setSupportActionBar(toolbar);
+        final DrawerLayout mDrawerLayout;
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.nav_drawer);
+        toolbar = (Toolbar) findViewById(R.id.tabanim_toolbar);
+
+        if (toolbar != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            toolbar.setNavigationIcon(R.drawable.ic_drawer);
+            toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mDrawerLayout.openDrawer(GravityCompat.START);
+                }
+            });
+        }
+
+        NavigationView mNavigationView = (NavigationView) findViewById(R.id.nav_view);
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            CoordinatorLayout mCoordinator = (CoordinatorLayout) findViewById(R.id.tabanim_maincontent);
+
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                menuItem.setChecked(true);
+                switch (menuItem.getItemId()) {
+                    case R.id.navigation_home:
+                        MainActivity.mCurrentSelectedPosition = 0;
+                        startActivity(new Intent(SpotActivity.this, MainActivity.class));
+                        return true;
+                    case R.id.navigation_spot:
+                        MainActivity.mCurrentSelectedPosition = 1;
+                        return true;
+                    case R.id.navigation_seek:
+                        MainActivity.mCurrentSelectedPosition = 2;
+                        startActivity(new Intent(SpotActivity.this, SeekActivity.class));
+                        return true;
+                    case R.id.navigation_request:
+                        MainActivity.mCurrentSelectedPosition = 3;
+                        startActivity(new Intent(SpotActivity.this, RequestActivity.class));
+                        return true;
+                    case R.id.navigation_promotion:
+                        MainActivity.mCurrentSelectedPosition = 4;
+                        startActivity(new Intent(SpotActivity.this, PromotionActivity.class));
+                        return true;
+                    case R.id.navigation_vendor:
+                        MainActivity.mCurrentSelectedPosition = 5;
+                        startActivity(new Intent(SpotActivity.this, VendorActivity.class));
+                        return true;
+                    default:
+                        return true;
+                }
+            }
+        });
+
         Log.v("oscar", "in the RecyclerViewActivity on create view");
 
         Item_List = new ArrayList<HashMap<String, String>>();

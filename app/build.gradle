@@ -66,6 +66,9 @@ dependencies {
     // drawable gif
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
 
-    // material list for vendor activity
+    // material list for vendor activity depency
     compile 'com.github.dexafree:materiallist:3.0.1'
+
+    // swipe to dismiss undo dependency
+    compile 'com.hudomju:swipe-to-dismiss-undo:1.0'
 }

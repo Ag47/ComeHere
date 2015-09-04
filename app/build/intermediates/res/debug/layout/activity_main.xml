@@ -33,7 +33,7 @@
                         android:id="@+id/tabanim_toolbar"
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
-                        android:background="?attr/colorPrimary"
+                        android:background="@drawable/mtr_bg"
                         app:layout_scrollFlags="scroll|enterAlways"
                         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
@@ -76,15 +76,15 @@
 
 
                         <!--<ListView-->
-                            <!--android:id="@+id/listview"-->
+                        <!--android:id="@+id/listview"-->
                         <!--android:layout_width="match_parent"-->
                         <!--android:layout_height="wrap_content"-->
                         <!--android:layout_below="@id/text" />-->
 
-                         <TextView
-                             android:layout_width="wrap_content"
-                             android:layout_height="wrap_content"
-                             android:id="@+id/response_num"/>
+                        <TextView
+                            android:id="@+id/response_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
 
                     </RelativeLayout>
 

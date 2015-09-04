@@ -29,10 +29,10 @@
     <color name="white">#FFFFFF</color>
     <color name="grey">#E0E0E0</color>
 
-    <color name="primary">#ffff8800</color>
-    <color name="primaryDark">#F57C00</color>
-    <color name="accentLight">#FFEB3B</color>
-    <color name="accent">#F0F4C3</color>
+    <color name="primary">#194147</color>
+    <color name="primaryDark">#00796B</color>
+    <color name="accentLight">#4CAF50</color>
+    <color name="accent">#B2DFDB</color>
 
     <color name="color_shadow">#44000000</color>
     <color name="color_primary_red">#f44336</color>
@@ -53,7 +53,6 @@
     <color name="accent_700">#C2185B</color>
     <color name="black_trans80">#33000000</color>
     <color name="transparent">#00000000</color>
-
 
 
     <color name="black_semi_transparent">#B2000000</color>
@@ -84,7 +83,6 @@
     <color name="editor_text">#FFFFFF</color>
 
 
-
     <!-- bottom sheet-->
     <color name="primaryBottomSheet">#D3FFDC</color>
     <color name="primary_dark">#00796B</color>
@@ -95,6 +93,6 @@
     <color name="icons">#FFFFFF</color>
     <color name="divider">#B6B6B6</color>
 
-<color name="before_transition">#0088bf</color>
+    <color name="before_transition">#0088bf</color>
     <color name="after_transition">#00796B</color>
 </resources>

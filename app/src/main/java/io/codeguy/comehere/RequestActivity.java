@@ -113,6 +113,7 @@ public class RequestActivity extends AppCompatActivity {
                         return true;
                     case R.id.navigation_seek:
                         mCurrentSelectedPosition = 2;
+                        startActivity(new Intent(RequestActivity.this, SeekActivity.class));
                         return true;
                     case R.id.navigation_request:
                         mCurrentSelectedPosition = 3;
@@ -122,6 +123,7 @@ public class RequestActivity extends AppCompatActivity {
                         startActivity(new Intent(RequestActivity.this, PromotionActivity.class));
                     case R.id.navigation_vendor:
                         mCurrentSelectedPosition = 5;
+                        startActivity(new Intent(RequestActivity.this, VendorActivity.class));
                     default:
                         return true;
                 }

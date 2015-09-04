@@ -1,13 +1,20 @@
 package io.codeguy.comehere;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -51,12 +58,63 @@ public class VendorActivity extends AppCompatActivity {
     private LinearLayout mToolbarContainer;
     private int mToolbarHeight;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vendor);
         initRecyclerView();
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.tabanim_toolbar);
+        setSupportActionBar(toolbar);
+        final DrawerLayout mDrawerLayout = (DrawerLayout) findViewById(R.id.nav_drawer);
+        if (toolbar != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            toolbar.setNavigationIcon(R.drawable.ic_drawer);
+            toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mDrawerLayout.openDrawer(GravityCompat.START);
+                }
+            });
+        }
+
+        NavigationView mNavigationView = (NavigationView) findViewById(R.id.nav_view);
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            CoordinatorLayout mCoordinator = (CoordinatorLayout) findViewById(R.id.tabanim_maincontent);
+
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                menuItem.setChecked(true);
+                switch (menuItem.getItemId()) {
+                    case R.id.navigation_home:
+                        MainActivity.mCurrentSelectedPosition = 0;
+                        startActivity(new Intent(VendorActivity.this, MainActivity.class));
+                        return true;
+                    case R.id.navigation_spot:
+                        MainActivity.mCurrentSelectedPosition = 1;
+                        startActivity(new Intent(VendorActivity.this, io.codeguy.comehere.menu_item.SpotActivity.class));
+                        return true;
+                    case R.id.navigation_seek:
+                        MainActivity.mCurrentSelectedPosition = 2;
+                        startActivity(new Intent(VendorActivity.this, SeekActivity.class));
+                        return true;
+                    case R.id.navigation_request:
+                        MainActivity.mCurrentSelectedPosition = 3;
+                        startActivity(new Intent(VendorActivity.this, RequestActivity.class));
+                        return true;
+                    case R.id.navigation_promotion:
+                        MainActivity.mCurrentSelectedPosition = 4;
+                        startActivity(new Intent(VendorActivity.this, PromotionActivity.class));
+                        return true;
+                    case R.id.navigation_vendor:
+                        MainActivity.mCurrentSelectedPosition = 5;
+                        startActivity(new Intent(VendorActivity.this, VendorActivity.class));
+                        return true;
+                    default:
+                        return true;
+                }
+            }
+        });
     }
 
 
@@ -108,7 +166,7 @@ public class VendorActivity extends AppCompatActivity {
                 // callback for swipe to dismiss, removing item from data and adapter
 //                items.remove(viewHolder.getAdapterPosition());
                 int getposition = viewHolder.getAdapterPosition();
-                Log.v("vendor","the row id is "+  data.get(getposition).getId());
+                Log.v("vendor", "the row id is " + data.get(getposition).getId());
 
                 mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
 
@@ -117,28 +175,7 @@ public class VendorActivity extends AppCompatActivity {
         swipeToDismissTouchHelper.attachToRecyclerView(mRecyclerView);
 
         Log.v("pending", " after the new recyclerAdapter");
-//        pendingSwipeRefreshLayout.setOnRefreshListener(this);
-//        pendingSwipeRefreshLayout.post(new Runnable() {
-//
-//                                           @Override
-//                                           public void run() {
-//                                               pendingSwipeRefreshLayout.setRefreshing(true);
-//
-//                                               fetchPendingItems();
-//                                               Log.v("pending", "in the refresh runnable");
-//                                           }
-//                                       }
-//        );
-
     }
-
-//    @Override
-//    public void onRefresh() {
-//        if (fetchPendingItems != null) {
-//            data.clear();
-//        }
-//        fetchPendingItems();
-//    }
 
     private void fetchPendingItems() {
 
