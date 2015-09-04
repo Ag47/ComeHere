@@ -985,10 +985,10 @@ int id bottom_sheet_recyclerview 0x7f0d00de
 int id btnAddPending 0x7f0d008a
 int id btn_search 0x7f0d00d1
 int id btn_share 0x7f0d011e
-int id btn_submit 0x7f0d00db
+int id btn_submit 0x7f0d00d6
 int id btn_view 0x7f0d0120
 int id buttonClose 0x7f0d00df
-int id buttonOpen 0x7f0d00d9
+int id buttonOpen 0x7f0d00da
 int id buttonPanel 0x7f0d005f
 int id call 0x7f0d013d
 int id cancel_action 0x7f0d00f6
@@ -1121,7 +1121,7 @@ int id location 0x7f0d010b
 int id mFrameLayout 0x7f0d0079
 int id main 0x7f0d0106
 int id main_layout 0x7f0d0094
-int id main_screen 0x7f0d00d6
+int id main_screen 0x7f0d00d7
 int id main_toolbar 0x7f0d0105
 int id map 0x7f0d007d
 int id mapView 0x7f0d0093
@@ -1144,7 +1144,7 @@ int id navigation_vendor 0x7f0d0137
 int id never 0x7f0d003c
 int id none 0x7f0d0016
 int id normal 0x7f0d0012
-int id note 0x7f0d00d8
+int id note 0x7f0d00d9
 int id ok_button 0x7f0d00f2
 int id outer_layout 0x7f0d0092
 int id p_discount 0x7f0d00ac
@@ -1208,7 +1208,7 @@ int id snackbar_action 0x7f0d00e4
 int id snackbar_text 0x7f0d00e3
 int id split_action_bar 0x7f0d000a
 int id spotThing 0x7f0d00cf
-int id spot_name 0x7f0d00d7
+int id spot_name 0x7f0d00d8
 int id spot_product_id 0x7f0d00a4
 int id spot_product_name 0x7f0d00a5
 int id spot_product_price 0x7f0d00a6
@@ -1232,7 +1232,7 @@ int id tabs 0x7f0d00c3
 int id tag1 0x7f0d000b
 int id tag2 0x7f0d000c
 int id tag3 0x7f0d000d
-int id tag_row 0x7f0d00da
+int id tag_row 0x7f0d00db
 int id terrain 0x7f0d0037
 int id text 0x7f0d000e
 int id text2 0x7f0d00fd

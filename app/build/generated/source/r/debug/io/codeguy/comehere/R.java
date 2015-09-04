@@ -3358,10 +3358,10 @@ containing a value of this type.
         public static final int btnAddPending=0x7f0d008a;
         public static final int btn_search=0x7f0d00d1;
         public static final int btn_share=0x7f0d011e;
-        public static final int btn_submit=0x7f0d00db;
+        public static final int btn_submit=0x7f0d00d6;
         public static final int btn_view=0x7f0d0120;
         public static final int buttonClose=0x7f0d00df;
-        public static final int buttonOpen=0x7f0d00d9;
+        public static final int buttonOpen=0x7f0d00da;
         public static final int buttonPanel=0x7f0d005f;
         public static final int call=0x7f0d013d;
         public static final int cancel_action=0x7f0d00f6;
@@ -3494,7 +3494,7 @@ containing a value of this type.
         public static final int mFrameLayout=0x7f0d0079;
         public static final int main=0x7f0d0106;
         public static final int main_layout=0x7f0d0094;
-        public static final int main_screen=0x7f0d00d6;
+        public static final int main_screen=0x7f0d00d7;
         public static final int main_toolbar=0x7f0d0105;
         public static final int map=0x7f0d007d;
         public static final int mapView=0x7f0d0093;
@@ -3517,7 +3517,7 @@ containing a value of this type.
         public static final int never=0x7f0d003c;
         public static final int none=0x7f0d0016;
         public static final int normal=0x7f0d0012;
-        public static final int note=0x7f0d00d8;
+        public static final int note=0x7f0d00d9;
         public static final int ok_button=0x7f0d00f2;
         public static final int outer_layout=0x7f0d0092;
         public static final int p_discount=0x7f0d00ac;
@@ -3581,7 +3581,7 @@ containing a value of this type.
         public static final int snackbar_text=0x7f0d00e3;
         public static final int split_action_bar=0x7f0d000a;
         public static final int spotThing=0x7f0d00cf;
-        public static final int spot_name=0x7f0d00d7;
+        public static final int spot_name=0x7f0d00d8;
         public static final int spot_product_id=0x7f0d00a4;
         public static final int spot_product_name=0x7f0d00a5;
         public static final int spot_product_price=0x7f0d00a6;
@@ -3605,7 +3605,7 @@ containing a value of this type.
         public static final int tag1=0x7f0d000b;
         public static final int tag2=0x7f0d000c;
         public static final int tag3=0x7f0d000d;
-        public static final int tag_row=0x7f0d00da;
+        public static final int tag_row=0x7f0d00db;
         public static final int terrain=0x7f0d0037;
         public static final int text=0x7f0d000e;
         public static final int text2=0x7f0d00fd;

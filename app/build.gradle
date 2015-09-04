@@ -68,7 +68,4 @@ dependencies {
 
     // material list for vendor activity
     compile 'com.github.dexafree:materiallist:3.0.1'
-
-    // swipe to dismiss undo
-    compile 'com.hudomju:swipe-to-dismiss-undo:1.0'
 }
