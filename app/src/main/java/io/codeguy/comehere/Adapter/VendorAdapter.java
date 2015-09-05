@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.android.volley.toolbox.ImageLoader;
@@ -56,7 +57,7 @@ public class VendorAdapter extends RecyclerView.Adapter<VendorAdapter.MyViewHold
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // get the root of the custom row
 //        View view = inflater.inflate(R.layout.custom_row, parent,false );
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.custom_row, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.vendor_row, parent, false);
         // pass the view to the view holder
         MyViewHolder holder = new MyViewHolder(view);
         Log.v("onCreateViewHolder", "adde din the MyViewHolder");
@@ -75,9 +76,6 @@ public class VendorAdapter extends RecyclerView.Adapter<VendorAdapter.MyViewHold
         Log.v("oscar", "onViewHolder data array time " + current.getTimeExpired());
         Log.v("oscar", "onViewHolder data array key " + current.getInstalledKey());
         holder.name.setText(data.get(position).getName());
-        holder.id.setText(data.get(position).getId());
-        holder.time.setText(data.get(position).getTimeExpired());
-        holder.appKey.setText(data.get(position).getInstalledKey());
 //        holder.profileIcon.setImageUrl(data.get(position).getIcon_thum(), imageLoader);
         Log.v("oscar", "onBindViewHolder adding..." + current.getName());
 //     java.lang.NullPointerException onViewHolder setText
@@ -161,14 +159,13 @@ public class VendorAdapter extends RecyclerView.Adapter<VendorAdapter.MyViewHold
     class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         TextView id, name, appKey, time;
-
+        Button btnAccept;
         public MyViewHolder(View itemView) {
             super(itemView);
-            id = (TextView) itemView.findViewById(R.id.item_id);
             name = (TextView) itemView.findViewById(R.id.item_name);
-            appKey = (TextView) itemView.findViewById(R.id.item_app_registered_key);
-            time = (TextView) itemView.findViewById(R.id.item_time_expired);
+            btnAccept = (Button) itemView.findViewById(R.id.btn_accept);
             itemView.setOnClickListener(this);
+            btnAccept.setOnClickListener(this);
             Log.v("oscar", "added in the MyViewHolder");
         }
 
@@ -176,26 +173,9 @@ public class VendorAdapter extends RecyclerView.Adapter<VendorAdapter.MyViewHold
 
         @Override
         public void onClick(View v) {
-            // on Click profile icon                        by oska
-
-
             pending current = data.get(getPosition());
-            int currentClicked = getPosition();
-            Bundle itemBundle = new Bundle();
-            Intent intentToDetail = new Intent(context, DetailItem.class);
-            itemBundle.putString("clickedItemName", current.getName());
-            itemBundle.putString("clickedItemID", current.getId());
-            itemBundle.putString("clickedItemKey", current.getInstalledKey());
-            itemBundle.putString("clickedItemTime", current.getTimeExpired());
-            Log.v("DetailItem", "onclick Name: " + current.getName());
 
-            Snackbar.make(v, "You Click" + current.getId(), Snackbar.LENGTH_LONG).show();
-            intentToDetail.putExtras(itemBundle);
-            context.startActivity(intentToDetail);
-
-            if (clickListener != null) {
-                clickListener.itemClicked(v, getPosition());
-            }
+            notifyItemRemoved(getPosition());
         }
     }
 
