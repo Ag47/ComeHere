@@ -260,10 +260,10 @@ public class FragmentWish extends Fragment {
     }
 
     private void initButtonItem(View layout) {
-        String[] iconName = {"Watch", "Tools", "Lightbulb", "TV", "Cable", "TDN"};
+        String[] iconName = {"Watch", "Tools", "SmartPhone", "TV", "Cable", "TDN"};
         Integer[] icon = {R.drawable.type_watch,
                 R.drawable.type_tools,
-                R.drawable.type_lightbulb,
+                R.drawable.type_smartphone,
                 R.drawable.type_tv,
                 R.drawable.type_tvcable,
                 R.drawable.type_tnd};

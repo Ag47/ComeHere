@@ -30,6 +30,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -143,7 +144,14 @@ public class DetailItem extends AppCompatActivity {
         ProductInfoAdapter productInfoAdapter = new ProductInfoAdapter(DetailItem.this, productInfo, imageId, tags);
         list = (ListView) findViewById(R.id.list);
         list.setAdapter(productInfoAdapter);
-
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                if (position == 2) {
+                    Snackbar.make(view ,"you clicked ",Snackbar.LENGTH_SHORT).show();
+                }
+            }
+        });
         fabInImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -5,4 +5,4 @@
     <item android:drawable="@drawable/list_item_bg_pressed" android:state_pressed="true"/>
     <item android:drawable="@drawable/list_item_bg_pressed" android:state_activated="true"/>
 
-</selector><!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/drawable/list_selector.xml -->
+</selector><!-- From: file:/C:/Users/KaiHin/Desktop/My%20android%20template/ComeHere-Marged/V5/ComeHere/app/src/main/res/drawable/list_selector.xml -->

@@ -38,8 +38,8 @@ public final class R {
 		public static final int fab_stroke_width = 0x7f07006f;
 	}
 	public static final class drawable {
-		public static final int fab_bg_mini = 0x7f020079;
-		public static final int fab_bg_normal = 0x7f02007a;
+		public static final int fab_bg_mini = 0x7f02007a;
+		public static final int fab_bg_normal = 0x7f02007b;
 	}
 	public static final class id {
 		public static final int down = 0x7f0d0030;

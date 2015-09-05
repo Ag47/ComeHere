@@ -83,4 +83,4 @@
         android:layout_below="@+id/editType"
         android:layout_toEndOf="@+id/textView3"
         android:layout_marginTop="71dp" />
-</RelativeLayout><!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/activity_pending_detail.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/KaiHin/Desktop/My%20android%20template/ComeHere-Marged/V5/ComeHere/app/src/main/res/layout/activity_pending_detail.xml -->

@@ -30,11 +30,13 @@
             android:layout_marginBottom="3dp"
             android:layout_marginTop="3dp"
             android:src="@drawable/bar_a4" />
+        <!--android:background="@color/color_edt_panel"-->
+
 
         <LinearLayout
+            android:background="@drawable/bg_wish"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/color_edt_panel"
+            android:layout_height="200dp"
             android:orientation="vertical"
             android:paddingBottom="16dp"
             android:paddingLeft="72dp"
@@ -175,4 +177,4 @@
 
 </RelativeLayout>
 
-<!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/fragment_wish.xml -->
+<!-- From: file:/C:/Users/KaiHin/Desktop/My%20android%20template/ComeHere-Marged/V5/ComeHere/app/src/main/res/layout/fragment_wish.xml -->

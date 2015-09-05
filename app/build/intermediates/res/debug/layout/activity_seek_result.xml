@@ -31,4 +31,4 @@
         app:layout_anchor="@id/coordinatorLayout"
         app:layout_anchorGravity="bottom|right|end"
         app:rippleColor="#F06292" />
-</android.support.design.widget.CoordinatorLayout><!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/activity_seek_result.xml -->
+</android.support.design.widget.CoordinatorLayout><!-- From: file:/C:/Users/KaiHin/Desktop/My%20android%20template/ComeHere-Marged/V5/ComeHere/app/src/main/res/layout/activity_seek_result.xml -->

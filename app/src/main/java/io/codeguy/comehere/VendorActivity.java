@@ -16,6 +16,7 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
@@ -33,6 +34,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import io.codeguy.comehere.Adapter.MyRecyclerAdapter;
+import io.codeguy.comehere.Adapter.VendorAdapter;
 import io.codeguy.comehere.DataObject.pending;
 
 /**
@@ -58,7 +60,6 @@ public class VendorActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager mLayoutManager;
     private LinearLayout mToolbarContainer;
     private int mToolbarHeight;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,6 +118,7 @@ public class VendorActivity extends AppCompatActivity {
                 }
             }
         });
+
     }
 
 
@@ -127,7 +129,7 @@ public class VendorActivity extends AppCompatActivity {
         data = new ArrayList<>();
 
         fetchPendingItems();
-        mAdapter = new MyRecyclerAdapter(this, data);
+        mAdapter = new VendorAdapter(this, data);
         mRecyclerView.setAdapter(mAdapter);
 
         mRecyclerView.setHasFixedSize(true);
@@ -171,12 +173,13 @@ public class VendorActivity extends AppCompatActivity {
                 Log.v("vendor", "the row id is " + data.get(getPosition).getId());
                 deletePendingItem(Integer.toString(getPosition));
                 mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
-                mAdapter.notifyDataSetChanged();
+//                mAdapter.notifyDataSetChanged();
 
 
             }
         });
         swipeToDismissTouchHelper.attachToRecyclerView(mRecyclerView);
+
 
         Log.v("pending", " after the new recyclerAdapter");
 //        pendingSwipeRefreshLayout.setOnRefreshListener(this);

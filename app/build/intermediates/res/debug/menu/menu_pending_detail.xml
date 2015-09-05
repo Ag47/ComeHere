@@ -5,4 +5,4 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
-<!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/menu/menu_pending_detail.xml -->
+<!-- From: file:/C:/Users/KaiHin/Desktop/My%20android%20template/ComeHere-Marged/V5/ComeHere/app/src/main/res/menu/menu_pending_detail.xml -->

@@ -70,16 +70,64 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
-                            android:text="Responsed"
+                            android:text="Status"
                             android:textSize="22sp"
                             android:textStyle="bold" />
 
 
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="153dp"
+                            android:layout_height="153dp"
+                            android:layout_marginLeft="23dp"
+                            android:layout_marginStart="23dp"
+                            android:paddingLeft="16dp"
+                            android:src="@drawable/pending"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/response_num"
+                            android:layout_toEndOf="@+id/response_num" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignEnd="@+id/imageView17"
+                            android:layout_alignRight="@+id/imageView17"
+                            android:layout_alignTop="@+id/textView8"
+                            android:layout_marginEnd="56dp"
+                            android:layout_marginRight="56dp"
+                            android:text="5"
+                            android:textColor="#ffffff"
+                            android:textSize="50dp" />
                         <!--<ListView-->
                         <!--android:id="@+id/listview"-->
                         <!--android:layout_width="match_parent"-->
                         <!--android:layout_height="wrap_content"-->
                         <!--android:layout_below="@id/text" />-->
+
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="132dp"
+                            android:layout_height="132dp"
+                            android:layout_marginEnd="23dp"
+                            android:layout_marginRight="23dp"
+                            android:src="@drawable/responded"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="48dp"
+                            android:layout_marginTop="50dp"
+                            android:text="9"
+                            android:textColor="#ffffff"
+                            android:textSize="50dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignRight="@+id/imageView18"
+                            android:layout_alignEnd="@+id/imageView18" />
 
                         <TextView
                             android:id="@+id/response_num"
@@ -106,4 +154,4 @@
         app:headerLayout="@layout/drawer_header"
         app:menu="@menu/drawer" />
 
-</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/activity_main.xml -->
+</android.support.v4.widget.DrawerLayout><!-- From: file:/C:/Users/KaiHin/Desktop/My%20android%20template/ComeHere-Marged/V5/ComeHere/app/src/main/res/layout/activity_main.xml -->
