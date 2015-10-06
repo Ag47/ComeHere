@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-sw600dp/values-sw600dp.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">24dp</dimen>
     <dimen name="abc_action_bar_default_height_material">64dp</dimen>
@@ -19,7 +19,7 @@
     <dimen name="snackbar_min_width">320dp</dimen>
     <dimen name="snackbar_padding_vertical_2lines">@dimen/snackbar_padding_vertical</dimen>
     <dimen name="tab_min_width">160dp</dimen>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values-sw600dp/values-sw600dp.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values-sw600dp/values-sw600dp.xml -->
     <eat-comment/>
     <integer name="abc_max_action_buttons">5</integer>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values-sw600dp/values-sw600dp.xml -->

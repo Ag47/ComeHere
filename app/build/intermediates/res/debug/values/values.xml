@@ -48,7 +48,7 @@
         <item>TAB 3</item>
 
     </string-array>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -65,7 +65,7 @@
     <eat-comment/>
     <color name="ColorPrimary">#00897B</color>
     <color name="ColorPrimaryDark">#00695C</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -78,7 +78,7 @@
     <color name="accentLight">#4CAF50</color>
     <color name="accent_500">#E91E63</color>
     <color name="accent_700">#C2185B</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="accent_material_dark">@color/material_deep_teal_200</color>
     <color name="accent_material_light">@color/material_deep_teal_500</color>
@@ -86,7 +86,7 @@
     <eat-comment/>
     <color name="after_transition">#00796B</color>
     <color name="background">#4a9f8d</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="background_floating_material_dark">#ff424242</color>
     <color name="background_floating_material_light">#ffeeeeee</color>
@@ -105,7 +105,7 @@
     <eat-comment/>
     <color name="black_semi_transparent">#B2000000</color>
     <color name="black_trans80">#33000000</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="bright_foreground_disabled_material_dark">#80ffffff</color>
     <color name="bright_foreground_disabled_material_light">#80000000</color>
@@ -115,7 +115,7 @@
     <color name="bright_foreground_material_light">@android:color/black</color>
     <color name="button_material_dark">#ff5a595b</color>
     <color name="button_material_light">#ffd6d7d7</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="cardview_dark_background">#FF202020</color>
     <color name="cardview_light_background">#FFFAFAFA</color>
@@ -158,7 +158,7 @@
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="dim_after_popup">#000000</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
@@ -198,7 +198,7 @@
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="half_black">#fafafa</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
@@ -209,7 +209,7 @@
     <color name="icons">#FFFFFF</color>
     <color name="indigo_500">#3f51b5</color>
     <color name="indigo_700">#303f9f</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="link_text_material_dark">@color/material_deep_teal_200</color>
     <color name="link_text_material_light">@color/material_deep_teal_500</color>
@@ -219,7 +219,7 @@
     <color name="list_background_pressed">#992416</color>
     <color name="list_divider">#272727</color>
     <color name="list_item_title">#fff</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
@@ -237,21 +237,21 @@
     <color name="primary_500">#3F51B5</color>
     <color name="primary_700">#303F9F</color>
     <color name="primary_dark">#00796B</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">#ff000000</color>
     <color name="primary_dark_material_light">#ff757575</color>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="primary_light">#B2DFDB</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_material_dark">#ff212121</color>
     <color name="primary_material_light">#ffefefef</color>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="primary_text">#212121</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_text_default_material_dark">#ffffffff</color>
     <color name="primary_text_default_material_light">#de000000</color>
@@ -260,14 +260,14 @@
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="promoStatusBar">#4a9f8d</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="ripple_material_dark">#4dffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="secondary_text">#727272</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
     <color name="secondary_text_default_material_light">#8a000000</color>
@@ -282,7 +282,7 @@
     <color name="shadow_mid_color">#14000000</color>
     <color name="shadow_start_color">#44000000</color>
     <color name="snackbar_background_color">#323232</color>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <color name="switch_thumb_disabled_material_dark">#ff616161</color>
     <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
@@ -350,7 +350,7 @@
     <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme"/><attr name="android:theme"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -435,7 +435,7 @@
     <dimen name="button_size">14sp</dimen>
     <dimen name="card_corner_radius">2dp</dimen>
     <dimen name="card_elevation">4dp</dimen>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="cardview_compat_inset_shadow">1dp</dimen>
     <dimen name="cardview_default_elevation">2dp</dimen>
@@ -452,7 +452,7 @@
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="description_size">16sp</dimen>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -530,7 +530,7 @@
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="intersection_height">16dp</dimen>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/dimens.xml -->
@@ -550,7 +550,7 @@
     <dimen name="navigation_padding_bottom">8dp</dimen>
     <dimen name="navigation_padding_top_default">0dp</dimen>
     <dimen name="navigation_separator_vertical_padding">8dp</dimen>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
@@ -605,7 +605,7 @@
     <dimen name="toolbar_double_height">112dp</dimen>
     <dimen name="toolbar_elevation">4dp</dimen>
     <dimen name="toolbar_margin_start">72dp</dimen>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <item name="action_bar_activity_content" type="id"/>
@@ -616,13 +616,13 @@
     <eat-comment/>
     <item name="fab_expand_menu_button" type="id"/>
     <item name="fab_label" type="id"/>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="home" type="id"/>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="item_touch_helper_previous_elevation" type="id"/>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="progress_circular" type="id"/>
     <item name="progress_horizontal" type="id"/>
@@ -635,13 +635,13 @@
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.3.4/res/values/values.xml -->
     <eat-comment/>
     <item name="text" type="id"/>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="up" type="id"/>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <item name="view_offset_helper" type="id"/>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
@@ -653,7 +653,7 @@
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <integer name="snackbar_text_max_lines">2</integer>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -733,7 +733,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="next">next</string>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/strings.xml -->
@@ -751,7 +751,7 @@
     <style name="ActionBar" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:displayOptions">homeAsUp</item>
     </style>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
@@ -779,7 +779,7 @@
         <item name="android:spinnerItemStyle">@style/AppTheme.SpinnerItemStyle</item>
         <item name="android:spinnerDropDownItemStyle">@style/AppTheme.SpinnerDropDownItemStyle</item>
     </style>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -1012,7 +1012,7 @@
         <item name="colorControlNormal">?android:attr/textColorPrimary</item>
         <item name="searchViewStyle">@style/Widget.AppCompat.SearchView.ActionBar</item>
     </style>
-    <style name="Base.ThemeOverlay.AppCompat.Dark">
+    <style name="Base.ThemeOverlay.AppCompat.Dark" parent="Platform.ThemeOverlay.AppCompat.Dark">
         <item name="android:windowBackground">@color/background_material_dark</item>
         <item name="android:colorForeground">@color/bright_foreground_material_dark</item>
         <item name="android:colorForegroundInverse">@color/bright_foreground_material_light</item>
@@ -1752,7 +1752,7 @@
         <item name="android:paddingLeft">@dimen/big_padding</item>
         <item name="android:paddingBottom">@dimen/small_padding</item>
     </style>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="CardView">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
@@ -1799,7 +1799,7 @@
         <item name="android:layout_height">wrap_content</item>
 
     </style>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
@@ -1906,7 +1906,7 @@
         <item name="android:textSize">@dimen/button_size</item>
         <item name="android:maxLines">1</item>
     </style>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="RtlOverlay.DialogWindowTitle.AppCompat" parent="Base.DialogWindowTitle.AppCompat">
     </style>
@@ -1958,7 +1958,7 @@
     <style name="Spinner" parent="Widget.AppCompat.Spinner">
         <item name="android:popupBackground">@drawable/abc_popup_background_mtrl_mult</item>
     </style>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.AppCompat" parent="Base.TextAppearance.AppCompat"/>
     <style name="TextAppearance.AppCompat.Body1" parent="Base.TextAppearance.AppCompat.Body1"/>
@@ -2036,7 +2036,7 @@
         <item name="android:textColor">?android:textColorSecondary</item>
         <item name="textAllCaps">true</item>
     </style>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="TextAppearance.StatusBar.EventContent" parent=""/>
     <style name="TextAppearance.StatusBar.EventContent.Info" parent=""/>
@@ -2083,7 +2083,7 @@
         <item name="colorPrimaryDark">@color/primaryDark</item>
         <item name="colorAccent">@color/accent</item>
     </style>
-    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Widget.AppCompat.ActionBar" parent="Base.Widget.AppCompat.ActionBar">
     </style>
@@ -2118,8 +2118,7 @@
         <item name="color">?attr/colorControlNormal</item>
     </style>
     <style name="Widget.AppCompat.DropDownItem.Spinner" parent="RtlOverlay.Widget.AppCompat.Search.DropDown.Text"/>
-    <style name="Widget.AppCompat.EditText" parent="Base.Widget.AppCompat.EditText">
-    </style>
+    <style name="Widget.AppCompat.EditText" parent="Base.Widget.AppCompat.EditText"/>
     <style name="Widget.AppCompat.Light.ActionBar" parent="Base.Widget.AppCompat.Light.ActionBar">
     </style>
     <style name="Widget.AppCompat.Light.ActionBar.Solid" parent="Base.Widget.AppCompat.Light.ActionBar.Solid">

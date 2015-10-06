@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.estimote.sdk"
+    android:versionCode="1"
+    android:versionName="0.9.1" >
+
+    <uses-sdk android:minSdkVersion="9" />
+
+    <!-- Needed for Bluetooth low energy scanning. -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- Needed for Estimote Cloud. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+
+    <application>
+        <service
+            android:name="com.estimote.sdk.service.BeaconService"
+            android:exported="false" />
+    </application>
+
+</manifest>

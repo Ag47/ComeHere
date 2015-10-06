@@ -22,7 +22,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'com.android.support:support-v4:22.2.1'
 
     // clusterpoint
@@ -42,8 +42,8 @@ dependencies {
     compile 'com.astuetz:pagerslidingtabstrip:1.0.1'
 
     // cardview
-    compile 'com.android.support:cardview-v7:21.0.3'
-    compile 'com.android.support:recyclerview-v7:22.2.0'
+    compile 'com.android.support:cardview-v7:22.2.1'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
 
     // google design
     compile 'com.android.support:design:22.2.0'
@@ -72,5 +72,6 @@ dependencies {
     // swipe to dismiss undo dependency
     compile 'com.hudomju:swipe-to-dismiss-undo:1.0'
 
-
+    // estimote beacon
+    compile 'com.estimote:sdk:0.9.1@aar'
 }
