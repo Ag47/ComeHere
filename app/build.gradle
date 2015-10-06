@@ -71,4 +71,6 @@ dependencies {
 
     // swipe to dismiss undo dependency
     compile 'com.hudomju:swipe-to-dismiss-undo:1.0'
+
+
 }

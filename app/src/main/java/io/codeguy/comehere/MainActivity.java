@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.design.widget.CoordinatorLayout;
@@ -17,6 +18,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -135,9 +137,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         // MKey Login
         mkeyLogin();
 
-        int resultNum = countResponsing();
-        resultNum = 0;
-//        responseNum.setText(resultNum);
         mNavigationView = (NavigationView) findViewById(R.id.nav_view);
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             CoordinatorLayout mCoordinator = (CoordinatorLayout) findViewById(R.id.tabanim_maincontent);
@@ -293,6 +292,23 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         return super.onPrepareOptionsMenu(menu);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.drawer, menu);
+
+        //Set icon for the menu button
+        Drawable icon = getResources().getDrawable(R.drawable.ic_vender);
+        menu.getItem(0).setIcon(icon);
+        menu.getItem(1).setIcon(icon);
+        menu.getItem(2).setIcon(icon);
+        menu.getItem(3).setIcon(icon);
+
+
+        return true;
+    }
+
     /**
      * unused method ** DO NOT DELETE
      */
@@ -343,8 +359,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                 }
             });
         }
-
-
     }
 
     @Override

@@ -34,9 +34,9 @@
 
 
         <LinearLayout
-            android:background="@drawable/bg_wish"
             android:layout_width="match_parent"
             android:layout_height="200dp"
+            android:background="@drawable/bg_wish"
             android:orientation="vertical"
             android:paddingBottom="16dp"
             android:paddingLeft="72dp"
@@ -61,11 +61,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Note (e.g required money)"
+                android:imeOptions="actionDone"
                 android:textCursorDrawable="@drawable/text_cursor_cyan"
                 app:met_baseColor="@android:color/white"
                 app:met_floatingLabel="highlight"
                 app:met_maxCharacters="40"
-                app:met_primaryColor="@color/editor_text" />
+                app:met_primaryColor="@color/editor_text"
+                app:met_singleLineEllipsis="true" />
 
         </LinearLayout>
 

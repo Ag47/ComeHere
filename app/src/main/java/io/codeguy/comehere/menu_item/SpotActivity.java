@@ -4,7 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -38,7 +41,12 @@ import io.codeguy.comehere.Adapter.SpotPendingAdapter;
 import io.codeguy.comehere.AppController;
 import io.codeguy.comehere.DataObject.Product;
 import io.codeguy.comehere.FindResultAndAddActivity;
+import io.codeguy.comehere.MainActivity;
+import io.codeguy.comehere.PromotionActivity;
 import io.codeguy.comehere.R;
+import io.codeguy.comehere.RequestActivity;
+import io.codeguy.comehere.SeekActivity;
+import io.codeguy.comehere.VendorActivity;
 
 /**
  * Created by KaiHin on 8/23/2015.
@@ -59,6 +67,8 @@ public class SpotActivity extends AppCompatActivity {
     private EditText edtSeach;
     private LinearLayout searchContentRow;
     private String searchContentString;
+    NavigationView mNavigationView;
+    private DrawerLayout mDrawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,27 +84,13 @@ public class SpotActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Spot");
         instantRecycler = (RecyclerView) findViewById(R.id.instant_search_recycler);
-//        inputSearch = (EditText) findViewById(R.id.input_search);
 
         mLayoutManager = new LinearLayoutManager(this);
-//        inputSearch.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-//                hotProduct();
-//            }
-//
-//            @Override
-//            public void onTextChanged(CharSequence s, int start, int before, int count) {
-//                // the count is counting the input number 1 is char, 0 is backspace etc
-//                Log.v("instant", "the count is " + count);
-//                instantSearch(s);
-//            }
-//
-//            @Override
-//            public void afterTextChanged(Editable s) {
-//
-//            }
-//        });
+
+        final LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        instantRecycler.setLayoutManager(layoutManager);
+
         searchContentRow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -107,11 +103,50 @@ public class SpotActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.nav_drawer);
+        setUpNavDrawer();
+
+        mNavigationView = (NavigationView) findViewById(R.id.nav_view);
+        mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            CoordinatorLayout mCoordinator = (CoordinatorLayout) findViewById(R.id.tabanim_maincontent);
+
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                menuItem.setChecked(true);
+                switch (menuItem.getItemId()) {
+                    case R.id.navigation_home:
+                        MainActivity.mCurrentSelectedPosition = 0;
+                        return true;
+                    case R.id.navigation_spot:
+                        MainActivity.mCurrentSelectedPosition = 1;
+                        startActivity(new Intent(SpotActivity.this, SpotActivity.class));
+                        return true;
+                    case R.id.navigation_seek:
+                        MainActivity.mCurrentSelectedPosition = 2;
+                        startActivity(new Intent(SpotActivity.this, SeekActivity.class));
+                        return true;
+                    case R.id.navigation_request:
+                        MainActivity.mCurrentSelectedPosition = 3;
+                        startActivity(new Intent(SpotActivity.this, RequestActivity.class));
+                        return true;
+                    case R.id.navigation_promotion:
+                        MainActivity.mCurrentSelectedPosition = 4;
+                        startActivity(new Intent(SpotActivity.this, PromotionActivity.class));
+                        return true;
+                    case R.id.navigation_vendor:
+                        MainActivity.mCurrentSelectedPosition = 5;
+                        startActivity(new Intent(SpotActivity.this, VendorActivity.class));
+                        return true;
+                    default:
+                        return true;
+                }
+            }
+        });
     }
 
     private void instantSearch(CharSequence inputSearch) {
-        Log.v("instant", "the charSequence is" + inputSearch.toString());
-
             searchProduct.clear();
             searchProduct = new ArrayList<>();
             Log.v("instant", "count i " + i);
@@ -120,8 +155,6 @@ public class SpotActivity extends AppCompatActivity {
         instantRecycler.setAdapter(mAdapter);
         instantRecycler.setLayoutManager(mLayoutManager);
         instantRecycler.setHasFixedSize(true);
-
-
     }
 
 
@@ -301,6 +334,19 @@ public class SpotActivity extends AppCompatActivity {
             //add the close icon
             mSearchAction.setIcon(getResources().getDrawable(R.drawable.ic_close_search));
             isSearchOpened = true;
+        }
+    }
+
+    private void setUpNavDrawer() {
+        if (toolbar != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            toolbar.setNavigationIcon(R.drawable.ic_drawer);
+            toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mDrawerLayout.openDrawer(GravityCompat.START);
+                }
+            });
         }
     }
 

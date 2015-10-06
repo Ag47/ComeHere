@@ -2,6 +2,7 @@ package io.codeguy.comehere.Fragment;
 
 import android.animation.ArgbEvaluator;
 import android.animation.ValueAnimator;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
@@ -45,6 +46,7 @@ import io.codeguy.comehere.Adapter.BottomSheetAdapter;
 import io.codeguy.comehere.AppController;
 import io.codeguy.comehere.DataObject.BottomSheetItem;
 import io.codeguy.comehere.R;
+import io.codeguy.comehere.RequestActivity;
 
 /**
  * Created by KaiHin on 8/25/2015.
@@ -162,11 +164,11 @@ public class FragmentWish extends Fragment {
                 btnSumbitAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                     @Override
                     public void onAnimationUpdate(ValueAnimator animation) {
-                        btnSubmit.setBackgroundColor((Integer) animation.getAnimatedValue());
+                        btnSubmit.setBackgroundColor(getResources().getColor(R.color.theme_orange));
                     }
                 });
                 btnSumbitAnimation.setDuration(500).start();
-
+                startActivity(new Intent(getActivity(), RequestActivity.class));
 
             }
         });

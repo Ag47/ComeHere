@@ -473,8 +473,8 @@ public final class R {
 		public static final int abc_textfield_search_default_mtrl_alpha = 0x7f020039;
 		public static final int abc_textfield_search_material = 0x7f02003a;
 		public static final int ic_check = 0x7f020094;
-		public static final int notification_template_icon_bg = 0x7f0200eb;
-		public static final int sample_android = 0x7f0200cd;
+		public static final int notification_template_icon_bg = 0x7f0200ec;
+		public static final int sample_android = 0x7f0200ce;
 	}
 	public static final class id {
 		public static final int action0 = 0x7f0d00fb;
