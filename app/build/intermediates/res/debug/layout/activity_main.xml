@@ -154,4 +154,4 @@
         app:headerLayout="@layout/drawer_header"
         app:menu="@menu/drawer" />
 
-</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/activity_main.xml -->
+</android.support.v4.widget.DrawerLayout><!-- From: file:/C:/Users/KaiHin/Desktop/2nd_ComeHere/ComeHere/app/src/main/res/layout/activity_main.xml -->

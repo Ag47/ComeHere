@@ -169,6 +169,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         mCurrentSelectedPosition = 5;
                         startActivity(new Intent(MainActivity.this, VendorActivity.class));
                         return true;
+                    case R.id.nearby:
+                        mCurrentSelectedPosition = 6;
+                        startActivity(new Intent(MainActivity.this, NearByActivity.class));
                     default:
                         return true;
                 }

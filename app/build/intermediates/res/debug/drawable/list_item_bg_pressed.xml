@@ -5,4 +5,4 @@
         android:startColor="@color/list_background_pressed"
         android:endColor="@color/list_background_pressed"
         android:angle="90" />
-</shape><!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/drawable/list_item_bg_pressed.xml -->
+</shape><!-- From: file:/C:/Users/KaiHin/Desktop/2nd_ComeHere/ComeHere/app/src/main/res/drawable/list_item_bg_pressed.xml -->

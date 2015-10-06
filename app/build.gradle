@@ -71,4 +71,7 @@ dependencies {
 
     // swipe to dismiss undo dependency
     compile 'com.hudomju:swipe-to-dismiss-undo:1.0'
+
+    // estimote beacon
+    compile 'com.estimote:sdk:0.9.1@aar'
 }

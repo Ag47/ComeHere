@@ -11,4 +11,4 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/text" />
 
-</android.support.v4.widget.SwipeRefreshLayout><!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/layout/fragment_vendor.xml -->
+</android.support.v4.widget.SwipeRefreshLayout><!-- From: file:/C:/Users/KaiHin/Desktop/2nd_ComeHere/ComeHere/app/src/main/res/layout/fragment_vendor.xml -->

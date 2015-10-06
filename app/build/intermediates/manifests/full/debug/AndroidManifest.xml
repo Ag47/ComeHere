@@ -32,6 +32,13 @@
     <android:uses-permission
         android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
+ <!-- Needed for Bluetooth low energy scanning. -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
 
     <application
         android:name="io.codeguy.comehere.AppController"
@@ -107,6 +114,11 @@
         <activity android:name="io.codeguy.comehere.MapProductActivity" />
         <activity android:name="io.codeguy.comehere.SeekResultActivity" />
         <activity android:name="io.codeguy.comehere.VendorActivity" />
+        <activity android:name="io.codeguy.comehere.NearByActivity" />
+
+        <service
+            android:name="com.estimote.sdk.service.BeaconService"
+            android:exported="false" />
     </application>
 
 </manifest>

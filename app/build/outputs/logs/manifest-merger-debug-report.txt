@@ -1,8 +1,6 @@
 -- Merging decision tree log ---
 manifest
 ADDED from AndroidManifest.xml:2:1
-	xmlns:android
-		ADDED from AndroidManifest.xml:2:11
 	package
 		ADDED from AndroidManifest.xml:3:5
 		INJECTED from AndroidManifest.xml:0:0
@@ -10,17 +8,21 @@ ADDED from AndroidManifest.xml:2:1
 	android:versionName
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
 	android:versionCode
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
 uses-permission#android.permission.INTERNET
 ADDED from AndroidManifest.xml:6:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:21:5
+MERGED from com.estimote:sdk:0.9.1:13:5
 	android:name
 		ADDED from AndroidManifest.xml:6:22
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from AndroidManifest.xml:7:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:20:5
+MERGED from com.estimote:sdk:0.9.1:14:5
 	android:name
 		ADDED from AndroidManifest.xml:7:22
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
@@ -44,10 +46,10 @@ ADDED from AndroidManifest.xml:15:5
 uses-feature#0x00020000
 ADDED from AndroidManifest.xml:24:5
 MERGED from com.google.android.gms:play-services-maps:7.5.0:24:5
-	android:required
-		ADDED from AndroidManifest.xml:26:9
 	android:glEsVersion
 		ADDED from AndroidManifest.xml:25:9
+	android:required
+		ADDED from AndroidManifest.xml:26:9
 application
 ADDED from AndroidManifest.xml:28:5
 MERGED from com.android.support:appcompat-v7:22.2.0:22:5
@@ -80,31 +82,32 @@ MERGED from com.android.support:support-v4:22.2.1:22:5
 MERGED from com.android.support:cardview-v7:22.2.0:22:5
 MERGED from com.android.support:support-v4:22.2.1:22:5
 MERGED from com.hudomju:swipe-to-dismiss-undo:1.0:11:5
+MERGED from com.estimote:sdk:0.9.1:20:5
 	android:label
 		ADDED from AndroidManifest.xml:32:9
 	android:allowBackup
 		ADDED from AndroidManifest.xml:30:9
 	android:icon
 		ADDED from AndroidManifest.xml:31:9
-	android:theme
-		ADDED from AndroidManifest.xml:34:9
 	android:largeHeap
 		ADDED from AndroidManifest.xml:33:9
+	android:theme
+		ADDED from AndroidManifest.xml:34:9
 	android:name
 		ADDED from AndroidManifest.xml:29:9
 meta-data#com.google.android.gms.version
 ADDED from AndroidManifest.xml:36:9
 MERGED from com.google.android.gms:play-services-base:7.5.0:21:9
-	android:name
-		ADDED from AndroidManifest.xml:37:13
 	android:value
 		ADDED from AndroidManifest.xml:38:13
+	android:name
+		ADDED from AndroidManifest.xml:37:13
 meta-data#com.google.android.geo.API_KEY
 ADDED from AndroidManifest.xml:40:9
-	android:name
-		ADDED from AndroidManifest.xml:41:13
 	android:value
 		ADDED from AndroidManifest.xml:42:13
+	android:name
+		ADDED from AndroidManifest.xml:41:13
 activity#io.codeguy.comehere.MainActivity
 ADDED from AndroidManifest.xml:44:9
 	android:label
@@ -131,34 +134,34 @@ ADDED from AndroidManifest.xml:55:9
 		ADDED from AndroidManifest.xml:55:19
 activity#io.codeguy.comehere.RecyclerViewActivity
 ADDED from AndroidManifest.xml:62:9
-	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:65:13
 	android:label
 		ADDED from AndroidManifest.xml:64:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:65:13
 	android:name
 		ADDED from AndroidManifest.xml:63:13
 activity#io.codeguy.comehere.DetailItem
 ADDED from AndroidManifest.xml:66:9
-	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:69:13
 	android:label
 		ADDED from AndroidManifest.xml:68:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:69:13
 	android:name
 		ADDED from AndroidManifest.xml:67:13
 activity#io.codeguy.comehere.SpotActivity
 ADDED from AndroidManifest.xml:70:9
-	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:73:13
 	android:label
 		ADDED from AndroidManifest.xml:72:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:73:13
 	android:name
 		ADDED from AndroidManifest.xml:71:13
 activity#io.codeguy.comehere.AddToPendingDetailActivity
 ADDED from AndroidManifest.xml:74:9
-	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:77:13
 	android:label
 		ADDED from AndroidManifest.xml:76:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:77:13
 	android:name
 		ADDED from AndroidManifest.xml:75:13
 activity#io.codeguy.comehere.PromotionActivity
@@ -175,16 +178,16 @@ ADDED from AndroidManifest.xml:83:9
 		ADDED from AndroidManifest.xml:84:13
 meta-data#android.support.PARENT_ACTIVITY
 ADDED from AndroidManifest.xml:86:13
-	android:name
-		ADDED from AndroidManifest.xml:87:17
 	android:value
 		ADDED from AndroidManifest.xml:88:17
+	android:name
+		ADDED from AndroidManifest.xml:87:17
 activity#io.codeguy.comehere.FindResultAndAddActivity
 ADDED from AndroidManifest.xml:90:9
-	android:windowSoftInputMode
-		ADDED from AndroidManifest.xml:93:13
 	android:label
 		ADDED from AndroidManifest.xml:92:13
+	android:windowSoftInputMode
+		ADDED from AndroidManifest.xml:93:13
 	android:name
 		ADDED from AndroidManifest.xml:91:13
 activity#io.codeguy.comehere.RequestActivity
@@ -213,6 +216,10 @@ activity#io.codeguy.comehere.VendorActivity
 ADDED from AndroidManifest.xml:111:9
 	android:name
 		ADDED from AndroidManifest.xml:111:19
+activity#io.codeguy.comehere.NearByActivity
+ADDED from AndroidManifest.xml:113:9
+	android:name
+		ADDED from AndroidManifest.xml:113:19
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:22.2.0:20:5
@@ -249,6 +256,7 @@ MERGED from com.android.support:cardview-v7:22.2.0:20:5
 MERGED from com.android.support:recyclerview-v7:22.2.0:20:5
 MERGED from com.android.support:support-v4:22.2.1:20:5
 MERGED from com.hudomju:swipe-to-dismiss-undo:1.0:7:5
+MERGED from com.estimote:sdk:0.9.1:7:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
@@ -257,3 +265,23 @@ MERGED from com.hudomju:swipe-to-dismiss-undo:1.0:7:5
 		INJECTED from AndroidManifest.xml:0:0
 android:uses-permission#android.permission.READ_EXTERNAL_STORAGE
 IMPLIED from AndroidManifest.xml:2:1 reason: com.google.android.gms.maps requested WRITE_EXTERNAL_STORAGE
+uses-permission#android.permission.BLUETOOTH
+ADDED from com.estimote:sdk:0.9.1:10:5
+	android:name
+		ADDED from com.estimote:sdk:0.9.1:10:22
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from com.estimote:sdk:0.9.1:11:5
+	android:name
+		ADDED from com.estimote:sdk:0.9.1:11:22
+uses-feature#android.hardware.bluetooth_le
+ADDED from com.estimote:sdk:0.9.1:16:5
+	android:required
+		ADDED from com.estimote:sdk:0.9.1:18:9
+	android:name
+		ADDED from com.estimote:sdk:0.9.1:17:9
+service#com.estimote.sdk.service.BeaconService
+ADDED from com.estimote:sdk:0.9.1:21:9
+	android:exported
+		ADDED from com.estimote:sdk:0.9.1:23:13
+	android:name
+		ADDED from com.estimote:sdk:0.9.1:22:13
