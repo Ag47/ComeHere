@@ -13,12 +13,22 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.estimote.sdk.Beacon;
 import com.estimote.sdk.BeaconManager;
 import com.estimote.sdk.Region;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import org.json.JSONArray;
 
 import io.codeguy.comehere.Adapter.BeaconListAdapter;
 
@@ -30,6 +40,7 @@ public class NearByActivity extends AppCompatActivity {
 //    private static final String "NearBy" = ListBeaconsActivity.class.getSimpleName();
 
     protected Toolbar toolbar;
+    private JSONArray comeHereDB = null;
 
     public static final String EXTRAS_TARGET_ACTIVITY = "extrasTargetActivity";
     public static final String EXTRAS_BEACON = "extrasBeacon";
@@ -40,6 +51,7 @@ public class NearByActivity extends AppCompatActivity {
     private BeaconManager beaconManager;
     private BeaconListAdapter adapter;
 
+    String shopperType, shopperName, shopperAddr;
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -71,6 +83,14 @@ public class NearByActivity extends AppCompatActivity {
                         // distance between device and beacon.
                         toolbar.setSubtitle("Found beacons: " + beacons.size());
                         adapter.replaceWith(beacons);
+//                        for(Beacon getBeacon : beacons){
+//                            Log.v("8/10","the major is" +getBeacon.getMajor());
+//                            if(getBeacon.getMajor() == 12159)
+//                            {
+//                                Log.v("8/10","say hello");
+//                            }
+//
+//                        }
                     }
                 });
             }
@@ -122,7 +142,8 @@ public class NearByActivity extends AppCompatActivity {
         toolbar.setSubtitle("Searching...");
         adapter.replaceWith(Collections.<Beacon>emptyList());
         beaconManager.connect(new BeaconManager.ServiceReadyCallback() {
-            @Override public void onServiceReady() {
+            @Override
+            public void onServiceReady() {
                 beaconManager.startRanging(ALL_ESTIMOTE_BEACONS_REGION);
             }
         });
@@ -130,25 +151,59 @@ public class NearByActivity extends AppCompatActivity {
 
     private AdapterView.OnItemClickListener createOnItemClickListener() {
         return new AdapterView.OnItemClickListener() {
-            @Override public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (getIntent().getStringExtra(EXTRAS_TARGET_ACTIVITY) != null) {
-                    try {
-                        // refere to AllDemosActivity
-                        // intent.putExtra(ListBeaconsActivity.EXTRAS_TARGET_ACTIVITY, DistanceBeaconActivity.class.getName());
-                        // getName -> Returns the name of the class represented by this Class.
-                        // the main usage in Class<?> clazz is for reduce coding, clazz can represent All class in the AllDemonsActivity
-                        Class<?> clazz = Class.forName(getIntent().getStringExtra(EXTRAS_TARGET_ACTIVITY));
-                        Intent intent = new Intent(NearByActivity.this, clazz);
-                        intent.putExtra(EXTRAS_BEACON, adapter.getItem(position));
-                        startActivity(intent);
-                    } catch (ClassNotFoundException e) {
-                        Log.e("NearBy", "Finding class by name failed", e);
-                    }
-                }
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent beaconDetail = new Intent(NearByActivity.this,BeaconDetailActivity.class);
+                beaconDetail.putExtra("extraBeacon",adapter.getItem(position));
+                fetchShopDetail(String.valueOf(adapter.getItem(position).getMajor()));
+                Log.v("9/10", "inside on click listener");
+                startActivity(beaconDetail);
             }
         };
     }
 
+    private void fetchShopDetail(final String beaconMajor) {
+
+
+        String urlSearchProductJson = "http://androiddebugoska.host22.com/fetching_shop_detail.php?beacon_major=" + beaconMajor;
+        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST,
+                urlSearchProductJson, (String) null, new Response.Listener<JSONObject>() {
+
+            @Override
+            public void onResponse(JSONObject response) {
+                Log.d("oscar", response.toString());
+                try {
+                    comeHereDB = response.getJSONArray("come_here");
+                    Log.v("oscar", "before looping");
+                    for (int i = 0; i < comeHereDB.length(); i++) {
+                        JSONObject currentJsonObject = comeHereDB.getJSONObject(i);
+                        shopperType = currentJsonObject.getString("v_type");
+                        shopperName = currentJsonObject.getString("v_shop_name");
+                        shopperAddr = currentJsonObject.getString("v_addr");
+                        Log.v("BeaconDetailActivity","the shopper name is " + shopperName);
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.v("oscar", "onError Response: " + error.toString());
+            }
+        }) {
+            @Override
+            protected Map<String, String> getParams() throws com.android.volley.AuthFailureError {
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("p_name", beaconMajor);
+                return super.getParams();
+            }
+        };
+
+        // Adding request to request queue
+        AppController.getInstance().addToRequestQueue(jsonObjReq);
+    }
 
 }
 

@@ -5,24 +5,26 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal">
 
-    <com.android.volley.toolbox.NetworkImageView
-        android:layout_width="60dp"
-        android:layout_height="80dp"
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_gravity="center_vertical"
         android:layout_marginRight="10dp"
         android:padding="10dp"
-        android:src="@drawable/beacon_gray" />
+        android:src="@drawable/beacon_gray"
+        android:id="@+id/shopper_icon"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingLeft="30dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:tag="mac"
+            android:id="@+id/beacon_name"
             android:text="Device Name"
             android:textColor="@color/colorPrimaryText"
             android:textStyle="bold" />
@@ -37,15 +39,21 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:tag="rssi" />
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:tag="rssi" />-->
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:tag="major" />
+                    android:text="type"
+                    android:id="@+id/beacon_type"/>
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/talk"-->
+                    <!--android:text="talk"/>-->
 
             </LinearLayout>
 
@@ -57,12 +65,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:tag="mpower" />
+                    android:id="@+id/beacon_distance"
+                    android:text="distance"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:tag="minor" />
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:tag="minor" />-->
 
             </LinearLayout>
 
