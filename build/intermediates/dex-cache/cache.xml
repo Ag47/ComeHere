@@ -2,53 +2,39 @@
 <items version="2" >
 
     <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
+        jar="/Applications/eclipse/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-ed4e7d0a277e103c530d9b1addc5bad3a5b24b62.jar" />
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-df907aafa06df51c79d405e1d13daf5e0304bfb0.jar" />
     </item>
     <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/jars/classes.jar"
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.astuetz/pagerslidingtabstrip/1.0.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-2d0407d75439b330eddc28d70281d70484ca251d.jar" />
+        sha1="7912610ed96381c25c36d986eba422731b9641b6">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-edd9b4f960f046579a846cc225e58d4de0008176.jar" />
     </item>
     <item
-        jar="/Users/SILVER/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/library-1.0.19-d12b8f14e34b8520ce1d5f18240e86431465940e.jar" />
+        sha1="70036e565f7b7e4345e788ee814e91dd15c4d76e">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-5947a5f01cdba34260a645f3feb8353ec2b9c886.jar" />
     </item>
     <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.sothree.slidinguppanel/library/3.1.1/jars/classes.jar"
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="76351d3022d4a2803789c01046aa0aa4b0d5d134">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-6ab1787e9c13f341449867f478b01563f2c3e1ff.jar" />
+        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-7f43876dfa8e3e7f786e7d9754b5a99246c19075.jar" />
     </item>
     <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/pl.droidsonroids.gif/android-gif-drawable/1.1.7/jars/classes.jar"
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.wunderlist/sliding-layer/1.2.5/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="d6825a79ca6c134dd6f26fc15eff443b5215dbdc">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-77eaf3039a90ea392edf4b8977d36e98fa741975.jar" />
-    </item>
-    <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.estimote/sdk/0.9.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="09fa4dc711242896ba69fd3ad3384d1a8c349195">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-c861fa9c3560e91cbf433fe304f58db3689f0c88.jar" />
-    </item>
-    <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.1.4/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="288913b440a3c61c30aa171095453a605432277a">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-f34b838532070608b0732f3fd631d225ebdeb720.jar" />
+        sha1="1c5b3d5fb866920693c8f19718e8d233e4e7f298">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-084ec4f8b12198b26e2c19464f9813c729db983e.jar" />
     </item>
     <item
         jar="/Users/SILVER/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.4.0/f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2/picasso-2.4.0.jar"
@@ -58,11 +44,18 @@
         <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/picasso-2.4.0-bcac7b165dc1c2ecee6753e76074bb05323967a8.jar" />
     </item>
     <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.3.4/jars/classes.jar"
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/design/22.2.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="cf251baf39f5c5138224b67b4106eb6331abbd13">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-af61cee891bb0619d8207f768e6791042a752a09.jar" />
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-ed4e7d0a277e103c530d9b1addc5bad3a5b24b62.jar" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/pl.droidsonroids.gif/android-gif-drawable/1.1.7/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d6825a79ca6c134dd6f26fc15eff443b5215dbdc">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-77eaf3039a90ea392edf4b8977d36e98fa741975.jar" />
     </item>
     <item
         jar="/Users/SILVER/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
@@ -70,6 +63,41 @@
         revision="23.0.1"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
         <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/library-2.4.0-62b482831c773ce1f0f79ca46b5d458d522f9773.jar" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-f5b1cac21f2ed4f33ff0a8aa230ed7e2831cd0fa.jar" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.sothree.slidinguppanel/library/3.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="76351d3022d4a2803789c01046aa0aa4b0d5d134">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-6ab1787e9c13f341449867f478b01563f2c3e1ff.jar" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-a28ad23594f9967c176a7cd0bcc5a627f6fc991b.jar" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.estimote/sdk/0.9.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="09fa4dc711242896ba69fd3ad3384d1a8c349195">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-c861fa9c3560e91cbf433fe304f58db3689f0c88.jar" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.5.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="06a42becc33232ec0ee125161da68c1829c9f8fd">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-2d0407d75439b330eddc28d70281d70484ca251d.jar" />
     </item>
     <item
         jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
@@ -86,25 +114,11 @@
         <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-ea3b5586cc7171ee69413399acca27c66313fc9e.jar" />
     </item>
     <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/libs/cps2-java-api-java-7.jar"
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.3.4/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="65749729f2fe3881bd1473f6ba8990806dbce0a0">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/cps2-java-api-java-7-5ced50974d3cc2ebe79c5ef26cf0e254289d8f6c.jar" />
-    </item>
-    <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.10.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="078cad8ebaa25b1eb1790bd622b3a8ae27c9cc7a">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-6ca495e64c7eed3c280227c95dee8287cbae1eb2.jar" />
-    </item>
-    <item
-        jar="/Applications/eclipse/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-df907aafa06df51c79d405e1d13daf5e0304bfb0.jar" />
+        sha1="cf251baf39f5c5138224b67b4106eb6331abbd13">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-af61cee891bb0619d8207f768e6791042a752a09.jar" />
     </item>
     <item
         jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/palette-v7/22.2.0/jars/classes.jar"
@@ -114,18 +128,25 @@
         <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-bbdd1902e70bd38c5e29df045a3a587e72962f76.jar" />
     </item>
     <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/jars/classes.jar"
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/libs/cps2-java-api-java-7.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="70036e565f7b7e4345e788ee814e91dd15c4d76e">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-5947a5f01cdba34260a645f3feb8353ec2b9c886.jar" />
+        sha1="65749729f2fe3881bd1473f6ba8990806dbce0a0">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/cps2-java-api-java-7-5ced50974d3cc2ebe79c5ef26cf0e254289d8f6c.jar" />
     </item>
     <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/jars/classes.jar"
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.1.4/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="a78183f30e769a98ab4820794f597763088d3065">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-847bc3cbf7e6c3fb6a7acdbd894081fb4e161961.jar" />
+        sha1="288913b440a3c61c30aa171095453a605432277a">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-f34b838532070608b0732f3fd631d225ebdeb720.jar" />
+    </item>
+    <item
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.10.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="078cad8ebaa25b1eb1790bd622b3a8ae27c9cc7a">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-6ca495e64c7eed3c280227c95dee8287cbae1eb2.jar" />
     </item>
     <item
         jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.hudomju/swipe-to-dismiss-undo/1.0/jars/classes.jar"
@@ -135,20 +156,6 @@
         <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-9fa4b7d89b31cc3f17c83ecd55fcb4468a395346.jar" />
     </item>
     <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-f5b1cac21f2ed4f33ff0a8aa230ed7e2831cd0fa.jar" />
-    </item>
-    <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.wunderlist/sliding-layer/1.2.5/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1c5b3d5fb866920693c8f19718e8d233e4e7f298">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-084ec4f8b12198b26e2c19464f9813c729db983e.jar" />
-    </item>
-    <item
         jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -156,18 +163,18 @@
         <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-56c0e08ae1bc529cba02a5dd75701df3fc3e43d0.jar" />
     </item>
     <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.2.1/jars/classes.jar"
+        jar="/Users/SILVER/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="3abb4b88f5a8a0584a9b01d3170d7165f12f8588">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-7f43876dfa8e3e7f786e7d9754b5a99246c19075.jar" />
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/library-1.0.19-d12b8f14e34b8520ce1d5f18240e86431465940e.jar" />
     </item>
     <item
-        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.astuetz/pagerslidingtabstrip/1.0.1/jars/classes.jar"
+        jar="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="7912610ed96381c25c36d986eba422731b9641b6">
-        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-edd9b4f960f046579a846cc225e58d4de0008176.jar" />
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/pre-dexed/debug/classes-847bc3cbf7e6c3fb6a7acdbd894081fb4e161961.jar" />
     </item>
 
 </items>

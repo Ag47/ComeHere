@@ -66,7 +66,7 @@ dependencies {
     // drawable gif
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
 
-    // material list for vendor activity depency
+    // material list for vendor activity dependency
     compile 'com.github.dexafree:materiallist:3.0.1'
 
     // swipe to dismiss undo dependency
@@ -74,4 +74,7 @@ dependencies {
 
     // estimote beacon
     compile 'com.estimote:sdk:0.9.1@aar'
+
+    // circle image view
+    compile 'de.hdodenhof:circleimageview:2.0.0'
 }

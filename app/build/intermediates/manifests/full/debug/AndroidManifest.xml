@@ -109,6 +109,7 @@
         <activity android:name="io.codeguy.comehere.SeekResultActivity" />
         <activity android:name="io.codeguy.comehere.VendorActivity" />
         <activity android:name="io.codeguy.comehere.NearByActivity" />
+        <activity android:name="io.codeguy.comehere.BeaconDetailActivity" />
 
         <service
             android:name="com.estimote.sdk.service.BeaconService"

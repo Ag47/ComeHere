@@ -17,6 +17,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.estimote.sdk.Beacon;
 import com.estimote.sdk.BeaconManager;
 import com.estimote.sdk.Region;
@@ -26,8 +27,10 @@ import org.json.JSONObject;
 
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+
 import org.json.JSONArray;
 
 import io.codeguy.comehere.Adapter.BeaconListAdapter;
@@ -52,7 +55,9 @@ public class NearByActivity extends AppCompatActivity {
     private BeaconListAdapter adapter;
 
     String shopperType, shopperName, shopperAddr;
-    @Override protected void onCreate(Bundle savedInstanceState) {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.main);
@@ -75,12 +80,15 @@ public class NearByActivity extends AppCompatActivity {
         // Configure BeaconManager.
         beaconManager = new BeaconManager(this);
         beaconManager.setRangingListener(new BeaconManager.RangingListener() {
-            @Override public void onBeaconsDiscovered(Region region, final List<Beacon> beacons) {
+            @Override
+            public void onBeaconsDiscovered(Region region, final List<Beacon> beacons) {
                 // Note that results are not delivered on UI thread.
                 runOnUiThread(new Runnable() {
-                    @Override public void run() {
+                    @Override
+                    public void run() {
                         // Note that beacons reported here are already sorted by estimated
                         // distance between device and beacon.
+                        Log.v("13/10","is running");
                         toolbar.setSubtitle("Found beacons: " + beacons.size());
                         adapter.replaceWith(beacons);
 //                        for(Beacon getBeacon : beacons){
@@ -97,13 +105,15 @@ public class NearByActivity extends AppCompatActivity {
         });
     }
 
-    @Override protected void onDestroy() {
+    @Override
+    protected void onDestroy() {
         beaconManager.disconnect();
 
         super.onDestroy();
     }
 
-    @Override protected void onStart() {
+    @Override
+    protected void onStart() {
         super.onStart();
 
         // Check if device supports Bluetooth Low Energy.
@@ -121,12 +131,38 @@ public class NearByActivity extends AppCompatActivity {
         }
     }
 
-    @Override protected void onStop() {
+    @Override
+    protected void onStop() {
         beaconManager.stopRanging(ALL_ESTIMOTE_BEACONS_REGION);
         super.onStop();
     }
 
-    @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+//    @Override
+//    protected void onRestart() {
+//        super.onRestart();
+//        if (!beaconManager.hasBluetooth()) {
+//            Toast.makeText(this, "Device does not have Bluetooth Low Energy", Toast.LENGTH_LONG).show();
+//            return;
+//        }
+//
+//        // If Bluetooth is not enabled, let user enable it.
+//        if (!beaconManager.isBluetoothEnabled()) {
+//            Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+//            startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
+//        } else {
+//            connectToService();
+//        }
+//    }
+
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        // Check if device supports Bluetooth Low Energy.
+//
+//    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_ENABLE_BT) {
             if (resultCode == Activity.RESULT_OK) {
                 connectToService();
@@ -153,57 +189,16 @@ public class NearByActivity extends AppCompatActivity {
         return new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent beaconDetail = new Intent(NearByActivity.this,BeaconDetailActivity.class);
-                beaconDetail.putExtra("extraBeacon",adapter.getItem(position));
-                fetchShopDetail(String.valueOf(adapter.getItem(position).getMajor()));
+                Intent beaconDetail = new Intent(NearByActivity.this, BeaconDetailActivity.class);
+                beaconDetail.putExtra("extraBeacon", adapter.getItem(position));
+//                fetchShopDetail(String.valueOf(adapter.getItem(position).getMajor()));
                 Log.v("9/10", "inside on click listener");
+//                Log.v("getFromDB", shopperType + " " + shopperAddr + " " + shopperName);
                 startActivity(beaconDetail);
             }
         };
     }
 
-    private void fetchShopDetail(final String beaconMajor) {
-
-
-        String urlSearchProductJson = "http://androiddebugoska.host22.com/fetching_shop_detail.php?beacon_major=" + beaconMajor;
-        JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST,
-                urlSearchProductJson, (String) null, new Response.Listener<JSONObject>() {
-
-            @Override
-            public void onResponse(JSONObject response) {
-                Log.d("oscar", response.toString());
-                try {
-                    comeHereDB = response.getJSONArray("come_here");
-                    Log.v("oscar", "before looping");
-                    for (int i = 0; i < comeHereDB.length(); i++) {
-                        JSONObject currentJsonObject = comeHereDB.getJSONObject(i);
-                        shopperType = currentJsonObject.getString("v_type");
-                        shopperName = currentJsonObject.getString("v_shop_name");
-                        shopperAddr = currentJsonObject.getString("v_addr");
-                        Log.v("BeaconDetailActivity","the shopper name is " + shopperName);
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        }, new Response.ErrorListener() {
-
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.v("oscar", "onError Response: " + error.toString());
-            }
-        }) {
-            @Override
-            protected Map<String, String> getParams() throws com.android.volley.AuthFailureError {
-                Map<String, String> params = new HashMap<String, String>();
-                params.put("p_name", beaconMajor);
-                return super.getParams();
-            }
-        };
-
-        // Adding request to request queue
-        AppController.getInstance().addToRequestQueue(jsonObjReq);
-    }
 
 }
 

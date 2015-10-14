@@ -88,6 +88,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.1.4/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.sothree.slidinguppanel/library/3.1.1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.wunderlist/sliding-layer/1.2.5/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/pl.droidsonroids.gif/android-gif-drawable/1.1.7/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jacoco" />
@@ -109,6 +110,7 @@
     <orderEntry type="library" exported="" name="play-services-maps-7.5.0" level="project" />
     <orderEntry type="library" exported="" name="design-22.2.0" level="project" />
     <orderEntry type="library" exported="" name="pagerslidingtabstrip-1.0.1" level="project" />
+    <orderEntry type="library" exported="" name="circleimageview-2.0.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-base-7.5.0" level="project" />
     <orderEntry type="library" exported="" name="materiallist-3.0.1" level="project" />
     <orderEntry type="library" exported="" name="cps2-java-api-java-7" level="project" />

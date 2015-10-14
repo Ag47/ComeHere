@@ -107,6 +107,8 @@
 
         <activity android:name=".NearByActivity"/>
 
+        <activity android:name=".BeaconDetailActivity"/>
+
     </application>
 
 </manifest>
