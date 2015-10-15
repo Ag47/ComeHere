@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="home_activities">
@@ -151,6 +159,11 @@
     <eat-comment/>
     <color name="counter_text_bg">#626262</color>
     <color name="counter_text_color">#c5c4c4</color>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library-circular/1.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="cpb_default_color">#33b5e5</color>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <color name="cyan_500">#00bcd4</color>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
     <eat-comment/>
@@ -191,6 +204,10 @@
     <color name="fab_stroke_top_outer_color">#2EFFFFFF</color>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/colors.xml -->
     <eat-comment/>
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
     <color name="grey">#E0E0E0</color>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
     <eat-comment/>
@@ -317,6 +334,7 @@
     <declare-styleable name="AppCompatTextView"><attr format="reference|boolean" name="textAllCaps"/><attr name="android:textAppearance"/></declare-styleable>
     <declare-styleable name="CardView"><attr format="color" name="cardBackgroundColor"/><attr format="dimension" name="cardCornerRadius"/><attr format="dimension" name="cardElevation"/><attr format="dimension" name="cardMaxElevation"/><attr format="boolean" name="cardUseCompatPadding"/><attr format="boolean" name="cardPreventCornerOverlap"/><attr format="dimension" name="contentPadding"/><attr format="dimension" name="contentPaddingLeft"/><attr format="dimension" name="contentPaddingRight"/><attr format="dimension" name="contentPaddingTop"/><attr format="dimension" name="contentPaddingBottom"/></declare-styleable>
     <declare-styleable name="CircleImageView"><attr format="dimension" name="civ_border_width"/><attr format="color" name="civ_border_color"/><attr format="boolean" name="civ_border_overlay"/><attr format="color" name="civ_fill_color"/></declare-styleable>
+    <declare-styleable name="CircularProgressBar"><attr format="reference" name="cpbStyle"/><attr format="color" name="cpb_color"/><attr format="reference" name="cpb_colors"/><attr format="dimension" name="cpb_stroke_width"/><attr format="integer" name="cpb_min_sweep_angle"/><attr format="integer" name="cpb_max_sweep_angle"/><attr format="float" name="cpb_sweep_speed"/><attr format="float" name="cpb_rotation_speed"/></declare-styleable>
     <declare-styleable name="CollapsingAppBarLayout_LayoutParams"><attr name="layout_collapseMode"><enum name="none" value="0"/><enum name="pin" value="1"/><enum name="parallax" value="2"/></attr><attr format="float" name="layout_collapseParallaxMultiplier"/></declare-styleable>
     <declare-styleable name="CollapsingToolbarLayout"><attr format="dimension" name="expandedTitleMargin"/><attr format="dimension" name="expandedTitleMarginStart"/><attr format="dimension" name="expandedTitleMarginTop"/><attr format="dimension" name="expandedTitleMarginEnd"/><attr format="dimension" name="expandedTitleMarginBottom"/><attr format="reference" name="expandedTitleTextAppearance"/><attr format="reference" name="collapsedTitleTextAppearance"/><attr format="color" name="contentScrim"/><attr format="color" name="statusBarScrim"/><attr format="reference" name="toolbarId"/></declare-styleable>
     <declare-styleable name="CoordinatorLayout"><attr format="reference" name="keylines"/><attr format="reference" name="statusBarBackground"/></declare-styleable>
@@ -449,6 +467,11 @@
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="cardview_toolbar_spacer">16dp</dimen>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library-circular/1.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="cpb_default_stroke_width">4dp</dimen>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
     <dimen name="custom_profile_image">50dp</dimen>
     <dimen name="custom_profile_padding">2dp</dimen>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.rengwuxian.materialedittext/library/2.1.4/res/values/values.xml -->
@@ -653,6 +676,10 @@
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
     <integer name="cancel_button_image_alpha">127</integer>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library-circular/1.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <integer name="cpb_default_max_sweep_angle">300</integer>
+    <integer name="cpb_default_min_sweep_angle">20</integer>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.5.0/res/values/version.xml -->
     <eat-comment/>
     <integer name="google_play_services_version">7571000</integer>
@@ -729,6 +756,10 @@
     <string name="common_open_on_phone">Open on phone</string>
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library-circular/1.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <item format="float" name="cpb_default_rotation_speed" type="string">1</item>
+    <item format="float" name="cpb_default_sweep_speed" type="string">1</item>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="desc_list_item_icon">Item Icon</string>
@@ -1733,6 +1764,10 @@
         <item name="android:textColor">#fff</item>
         <item name="android:background">@drawable/button_red_selector</item>
     </style>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library-circular/1.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="CPB" parent="android:Widget.Holo.ProgressBar">
+    </style>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.dexafree/materiallist/3.0.1/res/values/values.xml -->
     <eat-comment/>
     <style name="CardDescription">
@@ -1773,6 +1808,16 @@
     </style>
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
+    </style>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library-circular/1.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="CircularProgressBar" parent="CPB">
+        <item name="cpb_color">@color/cpb_default_color</item>
+        <item name="cpb_stroke_width">@dimen/cpb_default_stroke_width</item>
+        <item name="cpb_min_sweep_angle">@integer/cpb_default_min_sweep_angle</item>
+        <item name="cpb_max_sweep_angle">@integer/cpb_default_max_sweep_angle</item>
+        <item name="cpb_sweep_speed">@string/cpb_default_sweep_speed</item>
+        <item name="cpb_rotation_speed">@string/cpb_default_rotation_speed</item>
     </style>
     <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.google.maps.android/android-maps-utils/0.3.4/res/values/values.xml -->
     <eat-comment/>
@@ -2077,6 +2122,13 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.github.castorflex.smoothprogressbar/library-circular/1.1.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Theme.SmoothProgressBarDefaults" parent="android:Theme.Holo">
+        <item name="cpbStyle">@style/CircularProgressBar</item>
+    </style>
+    <!-- From: file:/Users/SILVER/Documents/CodeGuy/ComeHere/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
+    <eat-comment/>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>
     <style name="ThemeOverlay.AppCompat.Dark" parent="Base.ThemeOverlay.AppCompat.Dark"/>

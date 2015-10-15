@@ -28,6 +28,8 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
+import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -96,7 +98,7 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
     private String imageStringArray[];
     private NetworkImageView firstImageToDisplay;
     private ImageLoader imageLoader;
-
+    private ProgressBar mProgressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -115,7 +117,7 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
         final DrawerLayout mDrawerLayout;
         mDrawerLayout = (DrawerLayout) findViewById(R.id.nav_drawer);
         toolbar = (Toolbar) findViewById(R.id.tabanim_toolbar);
-
+        mProgressBar = (ProgressBar) findViewById(R.id.circle_laoder);
         if (toolbar != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             toolbar.setNavigationIcon(R.drawable.ic_drawer);
@@ -152,11 +154,14 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
                         return true;
                     case R.id.navigation_promotion:
                         MainActivity.mCurrentSelectedPosition = 4;
-                        startActivity(new Intent(PromotionActivity.this, PromotionActivity.class));
                         return true;
                     case R.id.navigation_vendor:
                         MainActivity.mCurrentSelectedPosition = 5;
                         startActivity(new Intent(PromotionActivity.this, VendorActivity.class));
+                        return true;
+                    case R.id.nearby:
+                        MainActivity.mCurrentSelectedPosition = 6;
+                        startActivity(new Intent(PromotionActivity.this, NearByActivity.class));
                         return true;
                     default:
                         return true;
@@ -461,6 +466,9 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
             @Override
             public void onResponse(JSONObject response) {
                 try {
+//                    mProgressBar.setVisibility(View.INVISIBLE);
+                    mProgressBar.setVisibility(View.GONE);
+                    mProgressBar.setLayoutParams(new TableLayout.LayoutParams(0, 0, 1f));
                     comeHereDB = response.getJSONArray("come_here");
                     Log.v("promo", "inside the fetch data function");
                     for (int i = 0; i < comeHereDB.length(); i++) {
@@ -589,6 +597,8 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
 
     @Override
     public boolean onClusterItemClick(PromotionMarkerInfo promotionMarkerInfo) {
+        mProgressBar.setVisibility(View.VISIBLE);
+//        mProgressBar.setLayoutParams(new TableLayout.LayoutParams(5,5, 1f));
         clickedPinpointName = promotionMarkerInfo.getName();
         String clusterTime = promotionMarkerInfo.getTime();
         Log.v("cluster", "you clicked " + promotionMarkerInfo.getName());
@@ -694,5 +704,6 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
             // Always render clusters.
             return cluster.getSize() > 1;
         }
+
     }
 }

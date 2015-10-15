@@ -5,6 +5,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 
 import com.android.volley.Request;
@@ -37,6 +38,7 @@ public class SeekResultActivity extends AppCompatActivity {
     private RecyclerView.Adapter mAdapter;
     private FloatingActionButton mapFab;
     private String intentExtraType;
+    private Toolbar toolbar;
 
     JSONArray comeHereDB = null;
     ArrayList<Product> data = new ArrayList<>();
@@ -57,8 +59,21 @@ public class SeekResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seek_result);
         intentExtraType = getIntent().getStringExtra("type");
+
+        toolbar = (Toolbar) findViewById(R.id.tabanim_toolbar);
+        setSupportActionBar(toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_drawer);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(true); //show the title in the action bar
+//            toolbar.setTitle(intentExtraType.toString());
+            getSupportActionBar().setTitle(intentExtraType.toString());
+//        getSupportActionBar().setTitle("Seek Result");
+
+
         Log.i("intentExtra", intentExtraType);
+
         ReadDataFromDB(intentExtraType);
+
         initRecyclerView();
 
     }

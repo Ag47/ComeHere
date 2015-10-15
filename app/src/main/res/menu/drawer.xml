@@ -23,11 +23,11 @@
             android:title="Promotion" />
         <item
             android:id="@+id/navigation_vendor"
-            android:icon="@android:drawable/ic_menu_add"
-            android:title="vendor" />
+            android:icon="@drawable/vender"
+            android:title="Vendor" />
         <item
             android:id="@+id/nearby"
-            android:icon="@drawable/ic_action_add"
+            android:icon="@drawable/nearby"
             android:title="nearby"/>
     </group>
 

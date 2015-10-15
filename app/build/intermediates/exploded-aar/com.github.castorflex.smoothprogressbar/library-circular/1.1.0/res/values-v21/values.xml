@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/castorflex/work/SmoothProgressBar/library-circular/src/main/res/values-v21/styles.xml -->
+    <eat-comment/>
+    <style name="CPB" parent="android:Widget.Material.ProgressBar">
+    </style>
+</resources>

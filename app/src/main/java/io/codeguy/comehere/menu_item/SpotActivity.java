@@ -42,6 +42,7 @@ import io.codeguy.comehere.AppController;
 import io.codeguy.comehere.DataObject.Product;
 import io.codeguy.comehere.FindResultAndAddActivity;
 import io.codeguy.comehere.MainActivity;
+import io.codeguy.comehere.NearByActivity;
 import io.codeguy.comehere.PromotionActivity;
 import io.codeguy.comehere.R;
 import io.codeguy.comehere.RequestActivity;
@@ -118,10 +119,11 @@ public class SpotActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()) {
                     case R.id.navigation_home:
                         MainActivity.mCurrentSelectedPosition = 0;
+                        startActivity(new Intent(SpotActivity.this, MainActivity.class));
                         return true;
                     case R.id.navigation_spot:
                         MainActivity.mCurrentSelectedPosition = 1;
-                        startActivity(new Intent(SpotActivity.this, SpotActivity.class));
+//                        startActivity(new Intent(SpotActivity.this, SpotActivity.class));
                         return true;
                     case R.id.navigation_seek:
                         MainActivity.mCurrentSelectedPosition = 2;
@@ -139,6 +141,9 @@ public class SpotActivity extends AppCompatActivity {
                         MainActivity.mCurrentSelectedPosition = 5;
                         startActivity(new Intent(SpotActivity.this, VendorActivity.class));
                         return true;
+                    case R.id.nearby:
+                        MainActivity.mCurrentSelectedPosition = 6;
+                        startActivity(new Intent(SpotActivity.this, NearByActivity.class));
                     default:
                         return true;
                 }
@@ -147,9 +152,9 @@ public class SpotActivity extends AppCompatActivity {
     }
 
     private void instantSearch(CharSequence inputSearch) {
-            searchProduct.clear();
-            searchProduct = new ArrayList<>();
-            Log.v("instant", "count i " + i);
+        searchProduct.clear();
+        searchProduct = new ArrayList<>();
+        Log.v("instant", "count i " + i);
         fetchInstantSearch(inputSearch);
         mAdapter = new SpotPendingAdapter(this, searchProduct);
         instantRecycler.setAdapter(mAdapter);
@@ -283,7 +288,7 @@ public class SpotActivity extends AppCompatActivity {
                 @Override
                 public void beforeTextChanged(CharSequence s, int start, int count, int after) {
                     if (searchProduct != null) {
-                        searchProduct.clear();
+//                        searchProduct.clear();
                         searchProduct = new ArrayList<>();
                         Log.v("instant", "count i " + i);
                     }
@@ -294,17 +299,17 @@ public class SpotActivity extends AppCompatActivity {
                     Log.v("instant", "search bar :" + s.toString());
                     Log.v("instant", "start :" + start);
                     Log.v("instant", "before" + before);
-                    if (searchProduct != null) {
+//                    if (searchProduct != null) {
                         searchProduct.clear();
                         searchProduct = new ArrayList<>();
-                    }
+//                    }
                     searchContentRow.setVisibility(View.VISIBLE);
                     searchContentString = s.toString();
                     searchContent.setText(s.toString());
                     if (before == 1 && start == 0) {
-                         searchContentRow.setVisibility(View.GONE);
+                        searchContentRow.setVisibility(View.GONE);
                     }
-//                    instantSearch(s);
+                    instantSearch(s);
                 }
 
                 @Override
@@ -320,7 +325,7 @@ public class SpotActivity extends AppCompatActivity {
 //                        searchContentRow.setVisibility(View.GONE);
 //                    }
                     instantSearch(s);
-                    s.toString();
+//                    s.toString();
                 }
 
             });

@@ -33,12 +33,13 @@
                     android:layout_height="match_parent">
 
                     <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
-                        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
                         android:id="@+id/tabanim_toolbar"
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
-                        android:background="@drawable/mtr_bg"
-                        sothree:theme="@style/ActionBar" />
+                        android:background="@drawable/actionbar"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
                     <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
                         xmlns:tools="http://schemas.android.com/tools"
@@ -136,6 +137,27 @@
                     android:paddingTop="9dp"
                     android:text="Promotion Now"
                     android:textColor="#767676" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <fr.castorflex.android.circularprogressbar.CircularProgressBar xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/circle_laoder"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:indeterminate="true"
+                        app:cpb_color="#FFee44"
+                        app:cpb_colors="@array/gplus_colors"
+                        app:cpb_max_sweep_angle="300"
+                        app:cpb_min_sweep_angle="10"
+                        app:cpb_rotation_speed="1.0"
+                        app:cpb_stroke_width="4dp"
+                        app:cpb_sweep_speed="1.0" />
+
+                </LinearLayout>
 
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/promotion_info_view"

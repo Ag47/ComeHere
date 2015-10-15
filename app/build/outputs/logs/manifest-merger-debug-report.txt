@@ -84,6 +84,7 @@ MERGED from com.android.support:support-v4:22.2.1:22:5
 MERGED from com.hudomju:swipe-to-dismiss-undo:1.0:11:5
 MERGED from com.estimote:sdk:0.9.1:20:5
 MERGED from de.hdodenhof:circleimageview:2.0.0:9:5
+MERGED from com.github.castorflex.smoothprogressbar:library-circular:1.1.0:12:5
 	android:label
 		ADDED from AndroidManifest.xml:27:9
 	android:allowBackup
@@ -263,6 +264,7 @@ MERGED from com.android.support:support-v4:22.2.1:20:5
 MERGED from com.hudomju:swipe-to-dismiss-undo:1.0:7:5
 MERGED from com.estimote:sdk:0.9.1:7:5
 MERGED from de.hdodenhof:circleimageview:2.0.0:5:5
+MERGED from com.github.castorflex.smoothprogressbar:library-circular:1.1.0:8:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0

@@ -71,6 +71,10 @@ public class SeekActivity extends AppCompatActivity {
                         MainActivity.mCurrentSelectedPosition = 5;
                         startActivity(new Intent(SeekActivity.this, VendorActivity.class));
                         return true;
+                    case R.id.nearby:
+                        MainActivity.mCurrentSelectedPosition = 6;
+                        startActivity(new Intent(SeekActivity.this, NearByActivity.class));
+                        return true;
                     default:
                         return true;
                 }
@@ -80,38 +84,38 @@ public class SeekActivity extends AppCompatActivity {
     }
 
     public void cable(View view) {
-        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "cable"));
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "Cable"));
     }
 
     public void smartphone(View view) {
-        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "smartphone"));
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "Smartphone"));
     }
 
     public void handtools(View view) {
-        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "handtools"));
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "Handtools"));
     }
 
     public void lightbulb(View view) {
-        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "lightbulb"));
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "Lightbulb"));
     }
 
     public void watch(View view) {
-        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "watch"));
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "Watch"));
     }
 
     public void tv(View view) {
-        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "tv"));
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "TV"));
     }
 
     public void tnd(View view) {
-        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "tnd"));
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "TND"));
     }
 
     public void msp(View view) {
-        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "msp"));
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "MSP"));
     }
 
     public void tvwall(View view) {
-        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "tvwall"));
+        startActivity(new Intent(getApplicationContext(), SeekResultActivity.class).putExtra("type", "TVWall"));
     }
 }

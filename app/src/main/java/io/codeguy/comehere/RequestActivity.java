@@ -121,9 +121,15 @@ public class RequestActivity extends AppCompatActivity {
                     case R.id.navigation_promotion:
                         mCurrentSelectedPosition = 4;
                         startActivity(new Intent(RequestActivity.this, PromotionActivity.class));
+                        return true;
                     case R.id.navigation_vendor:
                         mCurrentSelectedPosition = 5;
                         startActivity(new Intent(RequestActivity.this, VendorActivity.class));
+                        return true;
+                    case R.id.nearby:
+                        MainActivity.mCurrentSelectedPosition = 6;
+                        startActivity(new Intent(RequestActivity.this, NearByActivity.class));
+                        return true;
                     default:
                         return true;
                 }

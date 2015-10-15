@@ -68,7 +68,9 @@ public class NearByActivity extends AppCompatActivity {
         list.setOnItemClickListener(createOnItemClickListener());
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setNavigationIcon(R.drawable.ic_action_navigation_arrow_back);
+//        toolbar.setNavigationIcon(R.drawable.ic_action_navigation_arrow_back);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setTitle(getTitle());
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,17 +90,17 @@ public class NearByActivity extends AppCompatActivity {
                     public void run() {
                         // Note that beacons reported here are already sorted by estimated
                         // distance between device and beacon.
-                        Log.v("13/10","is running");
+                        Log.v("13/10", "is running");
                         toolbar.setSubtitle("Found beacons: " + beacons.size());
                         adapter.replaceWith(beacons);
-//                        for(Beacon getBeacon : beacons){
-//                            Log.v("8/10","the major is" +getBeacon.getMajor());
-//                            if(getBeacon.getMajor() == 12159)
-//                            {
-//                                Log.v("8/10","say hello");
-//                            }
-//
-//                        }
+                        for(Beacon getBeacon : beacons){
+                            Log.v("8/10","the major is" +getBeacon.getMajor());
+                            if(getBeacon.getMajor() == 12159)
+                            {
+                                Log.v("8/10","say hello");
+                            }
+
+                        }
                     }
                 });
             }
@@ -201,4 +203,3 @@ public class NearByActivity extends AppCompatActivity {
 
 
 }
-

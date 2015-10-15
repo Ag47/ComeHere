@@ -8,25 +8,25 @@ package com.google.android.gms.maps;
 
 public final class R {
 	public static final class attr {
-		public static final int cameraBearing = 0x7f01006e;
-		public static final int cameraTargetLat = 0x7f01006f;
-		public static final int cameraTargetLng = 0x7f010070;
-		public static final int cameraTilt = 0x7f010071;
-		public static final int cameraZoom = 0x7f010072;
-		public static final int circleCrop = 0x7f01006c;
-		public static final int imageAspectRatio = 0x7f01006b;
-		public static final int imageAspectRatioAdjust = 0x7f01006a;
-		public static final int liteMode = 0x7f010073;
-		public static final int mapType = 0x7f01006d;
-		public static final int uiCompass = 0x7f010074;
-		public static final int uiMapToolbar = 0x7f01007c;
-		public static final int uiRotateGestures = 0x7f010075;
-		public static final int uiScrollGestures = 0x7f010076;
-		public static final int uiTiltGestures = 0x7f010077;
-		public static final int uiZoomControls = 0x7f010078;
-		public static final int uiZoomGestures = 0x7f010079;
-		public static final int useViewLifecycle = 0x7f01007a;
-		public static final int zOrderOnTop = 0x7f01007b;
+		public static final int cameraBearing = 0x7f010076;
+		public static final int cameraTargetLat = 0x7f010077;
+		public static final int cameraTargetLng = 0x7f010078;
+		public static final int cameraTilt = 0x7f010079;
+		public static final int cameraZoom = 0x7f01007a;
+		public static final int circleCrop = 0x7f010074;
+		public static final int imageAspectRatio = 0x7f010073;
+		public static final int imageAspectRatioAdjust = 0x7f010072;
+		public static final int liteMode = 0x7f01007b;
+		public static final int mapType = 0x7f010075;
+		public static final int uiCompass = 0x7f01007c;
+		public static final int uiMapToolbar = 0x7f010084;
+		public static final int uiRotateGestures = 0x7f01007d;
+		public static final int uiScrollGestures = 0x7f01007e;
+		public static final int uiTiltGestures = 0x7f01007f;
+		public static final int uiZoomControls = 0x7f010080;
+		public static final int uiZoomGestures = 0x7f010081;
+		public static final int useViewLifecycle = 0x7f010082;
+		public static final int zOrderOnTop = 0x7f010083;
 	}
 	public static final class color {
 		public static final int common_action_bar_splitter = 0x7f0c0030;
@@ -39,8 +39,8 @@ public final class R {
 		public static final int common_signin_btn_light_text_disabled = 0x7f0c0037;
 		public static final int common_signin_btn_light_text_focused = 0x7f0c0038;
 		public static final int common_signin_btn_light_text_pressed = 0x7f0c0039;
-		public static final int common_signin_btn_text_dark = 0x7f0c009e;
-		public static final int common_signin_btn_text_light = 0x7f0c009f;
+		public static final int common_signin_btn_text_dark = 0x7f0c00a3;
+		public static final int common_signin_btn_text_light = 0x7f0c00a4;
 	}
 	public static final class drawable {
 		public static final int common_full_open_on_phone = 0x7f02005e;
@@ -85,7 +85,7 @@ public final class R {
 		public static final int wrap_content = 0x7f0d0046;
 	}
 	public static final class integer {
-		public static final int google_play_services_version = 0x7f0a0005;
+		public static final int google_play_services_version = 0x7f0a0007;
 	}
 	public static final class raw {
 	}
@@ -128,11 +128,11 @@ public final class R {
 	public static final class style {
 	}
 	public static final class styleable {
-		public static final int[] LoadingImageView = { 0x7f01006a, 0x7f01006b, 0x7f01006c };
+		public static final int[] LoadingImageView = { 0x7f010072, 0x7f010073, 0x7f010074 };
 		public static final int LoadingImageView_circleCrop = 2;
 		public static final int LoadingImageView_imageAspectRatio = 1;
 		public static final int LoadingImageView_imageAspectRatioAdjust = 0;
-		public static final int[] MapAttrs = { 0x7f01006d, 0x7f01006e, 0x7f01006f, 0x7f010070, 0x7f010071, 0x7f010072, 0x7f010073, 0x7f010074, 0x7f010075, 0x7f010076, 0x7f010077, 0x7f010078, 0x7f010079, 0x7f01007a, 0x7f01007b, 0x7f01007c };
+		public static final int[] MapAttrs = { 0x7f010075, 0x7f010076, 0x7f010077, 0x7f010078, 0x7f010079, 0x7f01007a, 0x7f01007b, 0x7f01007c, 0x7f01007d, 0x7f01007e, 0x7f01007f, 0x7f010080, 0x7f010081, 0x7f010082, 0x7f010083, 0x7f010084 };
 		public static final int MapAttrs_cameraBearing = 1;
 		public static final int MapAttrs_cameraTargetLat = 2;
 		public static final int MapAttrs_cameraTargetLng = 3;

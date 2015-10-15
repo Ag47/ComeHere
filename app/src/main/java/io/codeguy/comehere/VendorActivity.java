@@ -113,6 +113,10 @@ public class VendorActivity extends AppCompatActivity {
                         MainActivity.mCurrentSelectedPosition = 5;
                         startActivity(new Intent(VendorActivity.this, VendorActivity.class));
                         return true;
+                    case R.id.nearby:
+                        MainActivity.mCurrentSelectedPosition = 6;
+                        startActivity(new Intent(VendorActivity.this, NearByActivity.class));
+                        return true;
                     default:
                         return true;
                 }

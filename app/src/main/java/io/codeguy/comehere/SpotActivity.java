@@ -109,6 +109,10 @@ public class SpotActivity extends AppCompatActivity {
                         MainActivity.mCurrentSelectedPosition = 5;
                         startActivity(new Intent(SpotActivity.this, VendorActivity.class));
                         return true;
+                    case R.id.nearby:
+                        MainActivity.mCurrentSelectedPosition = 6;
+                        startActivity(new Intent(SpotActivity.this, NearByActivity.class));
+                        return true;
                     default:
                         return true;
                 }
