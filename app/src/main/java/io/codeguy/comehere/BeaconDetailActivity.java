@@ -18,7 +18,6 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
 import com.estimote.sdk.Beacon;
 import com.estimote.sdk.BeaconManager;
 import com.estimote.sdk.Region;
@@ -28,8 +27,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,8 +34,7 @@ import java.util.Map;
 import de.hdodenhof.circleimageview.CircleImageView;
 import io.codeguy.comehere.Adapter.BeaconListAdapter;
 import io.codeguy.comehere.Adapter.FocusTodayInfoAdapter;
-import io.codeguy.comehere.DataObject.Product;
-import io.codeguy.comehere.DataObject.response;
+import io.codeguy.comehere.Network.AppController;
 
 /**
  * Created by KaiHin on 10/9/2015.

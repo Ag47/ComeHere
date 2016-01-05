@@ -23,6 +23,7 @@ import java.util.Map;
 
 import io.codeguy.comehere.Adapter.ResultSearchAdapter;
 import io.codeguy.comehere.DataObject.Product;
+import io.codeguy.comehere.Network.AppController;
 
 /**
  * Created by KaiHin on 8/25/2015.

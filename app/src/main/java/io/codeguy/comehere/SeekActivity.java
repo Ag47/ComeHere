@@ -53,7 +53,7 @@ public class SeekActivity extends AppCompatActivity {
                         return true;
                     case R.id.navigation_spot:
                         MainActivity.mCurrentSelectedPosition = 1;
-                        startActivity(new Intent(SeekActivity.this, io.codeguy.comehere.menu_item.SpotActivity.class));
+                        startActivity(new Intent(SeekActivity.this, SpotActivity.class));
                         return true;
                     case R.id.navigation_seek:
                         MainActivity.mCurrentSelectedPosition = 2;

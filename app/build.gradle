@@ -1,11 +1,13 @@
 apply plugin: 'com.android.application'
+//apply plugin: 'com.android.databinding'
+
 
 android {
     compileSdkVersion 22
     buildToolsVersion "23.0.1"
     defaultConfig {
         applicationId 'io.codeguy.comehere'
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -80,4 +82,7 @@ dependencies {
 
     // circle loader
     compile 'com.github.castorflex.smoothprogressbar:library-circular:1.1.0'
+
+    // image ripple effect
+    compile 'com.skyfishjy.ripplebackground:library:1.0.1'
 }

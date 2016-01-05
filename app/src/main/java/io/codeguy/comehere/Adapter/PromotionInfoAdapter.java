@@ -16,7 +16,7 @@ import com.android.volley.toolbox.ImageLoader;
 
 import java.util.ArrayList;
 
-import io.codeguy.comehere.AppController;
+import io.codeguy.comehere.Network.AppController;
 import io.codeguy.comehere.DataObject.PromotionInfo;
 import io.codeguy.comehere.R;
 

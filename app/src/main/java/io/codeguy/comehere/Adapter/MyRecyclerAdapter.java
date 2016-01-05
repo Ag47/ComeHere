@@ -20,7 +20,7 @@ import com.android.volley.toolbox.ImageLoader;
 
 import java.util.ArrayList;
 
-import io.codeguy.comehere.AppController;
+import io.codeguy.comehere.Network.AppController;
 import io.codeguy.comehere.DataObject.pending;
 import io.codeguy.comehere.DetailItem;
 import io.codeguy.comehere.R;
@@ -77,15 +77,6 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.My
         holder.name.setText(data.get(position).getName());
 //        holder.profileIcon.setImageUrl(data.get(position).getIcon_thum(), imageLoader);
         Log.v("oscar", "onBindViewHolder adding..." + current.getName());
-//     java.lang.NullPointerException onViewHolder setText
-
-//        holder.icon.setOnClickListener(new View.OnClickListener()
-//        {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(v.getContext(),"Item click at "+ position,Toast.LENGTH_LONG).show();;
-//            }
-//        });
         Log.v("onBindViewHolder", "adde din the MyViewHolder");
 
     }
@@ -114,37 +105,6 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.My
     public interface OnStartDragListener {
         void onStartDrag(RecyclerView.ViewHolder viewHolder);
     }
-
-
-//    @Override
-//    public void onItemDismiss(int position) {
-//
-//        pending current = data.get(position);
-//
-//        String delete_url = "http://androiddebugoska.host22.com/delete_pending_item.php?pending_id=" + current.getId();
-//        JsonObjectRequest delete_request = new JsonObjectRequest(delete_url,
-//                null, new Response.Listener<JSONObject>() {
-//
-//            @Override
-//            public void onResponse(JSONObject response) {
-//                Log.v("pending","onItemDississ run");
-//            }
-//        }, new Response.ErrorListener() {
-//
-//            @Override
-//            public void onErrorResponse(VolleyError error) {
-//
-//            }
-//        });
-//
-//        // Adding request to request queue
-//        AppController.getInstance().addToRequestQueue(delete_request);
-//
-//        data.remove(position);
-//
-//        notifyItemRemoved(position);
-//    }
-
 
     public interface ClickListener {
         public void itemClicked(View view, int position);

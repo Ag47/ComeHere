@@ -19,10 +19,6 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.hudomju.swipe.OnItemClickListener;
-import com.hudomju.swipe.SwipeToDismissTouchListener;
-import com.hudomju.swipe.SwipeableItemClickListener;
-import com.hudomju.swipe.adapter.RecyclerViewAdapter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -32,7 +28,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import io.codeguy.comehere.Adapter.MyRecyclerAdapter;
-import io.codeguy.comehere.AppController;
+import io.codeguy.comehere.Network.AppController;
 import io.codeguy.comehere.DataObject.pending;
 import io.codeguy.comehere.R;
 

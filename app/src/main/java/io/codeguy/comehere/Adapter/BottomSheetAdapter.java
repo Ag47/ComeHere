@@ -11,12 +11,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.android.volley.toolbox.ImageLoader;
 import com.wunderlist.slidinglayer.SlidingLayer;
 
 import java.util.ArrayList;
 
-import io.codeguy.comehere.AppController;
 import io.codeguy.comehere.DataObject.BottomSheetItem;
 import io.codeguy.comehere.R;
 
@@ -26,7 +24,6 @@ import io.codeguy.comehere.R;
 public class BottomSheetAdapter extends RecyclerView.Adapter<BottomSheetAdapter.MyViewHolder> {
 
     ArrayList<BottomSheetItem> data = new ArrayList<>();
-    ImageLoader imageLoader = AppController.getInstance().getImageLoader();
     private LayoutInflater inflater;
     private Context context;
     private ClickListener clickListener;

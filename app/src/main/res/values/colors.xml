@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="theme_blue">#0071BC</color>
+     <color name="theme_blue">#0071BC</color>
     <color name="theme_blue_green">#05ACB0</color>
     <color name="theme_green">#64FF4E</color>
     <color name="theme_orange">#FBB03B</color>
@@ -108,5 +108,8 @@
     <color name="gplus_color_3">#427fed</color>
     <color name="gplus_color_4">#b23424</color>
 
-
+    <!-- tab bar-->
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
 </resources>

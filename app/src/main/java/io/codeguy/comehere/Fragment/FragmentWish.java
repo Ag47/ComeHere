@@ -5,8 +5,6 @@ import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.StateListDrawable;
-import android.graphics.drawable.TransitionDrawable;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.annotation.Nullable;
@@ -43,7 +41,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import io.codeguy.comehere.Adapter.BottomSheetAdapter;
-import io.codeguy.comehere.AppController;
+import io.codeguy.comehere.Network.AppController;
 import io.codeguy.comehere.DataObject.BottomSheetItem;
 import io.codeguy.comehere.R;
 import io.codeguy.comehere.RequestActivity;

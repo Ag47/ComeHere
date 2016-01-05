@@ -6,9 +6,6 @@ package io.codeguy.comehere.Adapter;
  */
 
 import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -21,9 +18,8 @@ import com.android.volley.toolbox.ImageLoader;
 
 import java.util.ArrayList;
 
-import io.codeguy.comehere.AppController;
+import io.codeguy.comehere.Network.AppController;
 import io.codeguy.comehere.DataObject.pending;
-import io.codeguy.comehere.DetailItem;
 import io.codeguy.comehere.R;
 
 /**

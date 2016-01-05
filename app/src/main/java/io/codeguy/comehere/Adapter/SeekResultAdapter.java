@@ -17,7 +17,7 @@ import com.android.volley.toolbox.NetworkImageView;
 
 import java.util.ArrayList;
 
-import io.codeguy.comehere.AppController;
+import io.codeguy.comehere.Network.AppController;
 import io.codeguy.comehere.DataObject.Product;
 import io.codeguy.comehere.R;
 import io.codeguy.comehere.SearchProductDetail;

@@ -43,6 +43,7 @@ import java.util.ArrayList;
 
 import io.codeguy.comehere.Adapter.ProductInfoAdapter;
 import io.codeguy.comehere.DataObject.response;
+import io.codeguy.comehere.Network.AppController;
 
 public class DetailItem extends AppCompatActivity {
     private static final float MAX_TEXT_SCALE_DELTA = 0.3f;

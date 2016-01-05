@@ -70,6 +70,7 @@ import io.codeguy.comehere.DataObject.PromotionInfo;
 import io.codeguy.comehere.DataObject.PromotionMarkerInfo;
 import io.codeguy.comehere.GoogleMap.MainMapFragment;
 import io.codeguy.comehere.GoogleMap.MultiDrawable;
+import io.codeguy.comehere.Network.AppController;
 import io.codeguy.comehere.Utils.DividerItemDecoration;
 
 public class PromotionActivity extends ActionBarActivity implements OnMapReadyCallback, ClusterManager.OnClusterClickListener<PromotionMarkerInfo>, ClusterManager.OnClusterItemClickListener<PromotionMarkerInfo> {
@@ -142,7 +143,7 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
                         return true;
                     case R.id.navigation_spot:
                         MainActivity.mCurrentSelectedPosition = 1;
-                        startActivity(new Intent(PromotionActivity.this, io.codeguy.comehere.menu_item.SpotActivity.class));
+                        startActivity(new Intent(PromotionActivity.this, SpotActivity.class));
                         return true;
                     case R.id.navigation_seek:
                         MainActivity.mCurrentSelectedPosition = 2;

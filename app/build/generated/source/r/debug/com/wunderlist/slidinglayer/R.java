@@ -8,21 +8,21 @@ package com.wunderlist.slidinglayer;
 
 public final class R {
 	public static final class attr {
-		public static final int changeStateOnTap = 0x7f0100d3;
-		public static final int offsetDistance = 0x7f0100d4;
-		public static final int previewOffsetDistance = 0x7f0100d5;
-		public static final int shadowDrawable = 0x7f0100d1;
-		public static final int shadowSize = 0x7f0100d2;
-		public static final int stickTo = 0x7f0100d6;
+		public static final int changeStateOnTap = 0x7f0100da;
+		public static final int offsetDistance = 0x7f0100db;
+		public static final int previewOffsetDistance = 0x7f0100dc;
+		public static final int shadowDrawable = 0x7f0100d8;
+		public static final int shadowSize = 0x7f0100d9;
+		public static final int stickTo = 0x7f0100dd;
 	}
 	public static final class id {
-		public static final int bottom = 0x7f0d0021;
-		public static final int left = 0x7f0d002b;
-		public static final int right = 0x7f0d002c;
-		public static final int top = 0x7f0d002e;
+		public static final int bottom = 0x7f0e0021;
+		public static final int left = 0x7f0e002b;
+		public static final int right = 0x7f0e002c;
+		public static final int top = 0x7f0e002e;
 	}
 	public static final class styleable {
-		public static final int[] SlidingLayer = { 0x7f0100d1, 0x7f0100d2, 0x7f0100d3, 0x7f0100d4, 0x7f0100d5, 0x7f0100d6 };
+		public static final int[] SlidingLayer = { 0x7f0100d8, 0x7f0100d9, 0x7f0100da, 0x7f0100db, 0x7f0100dc, 0x7f0100dd };
 		public static final int SlidingLayer_changeStateOnTap = 2;
 		public static final int SlidingLayer_offsetDistance = 3;
 		public static final int SlidingLayer_previewOffsetDistance = 4;

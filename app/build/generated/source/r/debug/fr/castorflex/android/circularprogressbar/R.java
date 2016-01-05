@@ -18,23 +18,23 @@ public final class R {
 		public static final int cpb_sweep_speed = 0x7f01003d;
 	}
 	public static final class color {
-		public static final int cpb_default_color = 0x7f0c003c;
+		public static final int cpb_default_color = 0x7f0d003c;
 	}
 	public static final class dimen {
-		public static final int cpb_default_stroke_width = 0x7f070059;
+		public static final int cpb_default_stroke_width = 0x7f080059;
 	}
 	public static final class integer {
-		public static final int cpb_default_max_sweep_angle = 0x7f0a0005;
-		public static final int cpb_default_min_sweep_angle = 0x7f0a0006;
+		public static final int cpb_default_max_sweep_angle = 0x7f0b0009;
+		public static final int cpb_default_min_sweep_angle = 0x7f0b000a;
 	}
 	public static final class string {
-		public static final int cpb_default_rotation_speed = 0x7f06003b;
-		public static final int cpb_default_sweep_speed = 0x7f06003c;
+		public static final int cpb_default_rotation_speed = 0x7f07003b;
+		public static final int cpb_default_sweep_speed = 0x7f07003c;
 	}
 	public static final class style {
-		public static final int CPB = 0x7f080072;
-		public static final int CircularProgressBar = 0x7f0800b4;
-		public static final int Theme_SmoothProgressBarDefaults = 0x7f0800fc;
+		public static final int CPB = 0x7f090072;
+		public static final int CircularProgressBar = 0x7f0900b8;
+		public static final int Theme_SmoothProgressBarDefaults = 0x7f090101;
 	}
 	public static final class styleable {
 		public static final int[] CircularProgressBar = { 0x7f010037, 0x7f010038, 0x7f010039, 0x7f01003a, 0x7f01003b, 0x7f01003c, 0x7f01003d, 0x7f01003e };

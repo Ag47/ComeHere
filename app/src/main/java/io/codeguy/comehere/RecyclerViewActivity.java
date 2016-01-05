@@ -30,6 +30,7 @@ import java.util.HashMap;
 
 import io.codeguy.comehere.Adapter.MyRecyclerAdapter;
 import io.codeguy.comehere.DataObject.pending;
+import io.codeguy.comehere.Network.AppController;
 
 public class RecyclerViewActivity extends ActionBarActivity {
     // JSON Node names

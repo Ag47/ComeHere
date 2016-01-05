@@ -19,6 +19,11 @@
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primaryDark</item>
         <item name="colorAccent">@color/accent</item>
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowAllowReturnTransitionOverlap">false</item>
+
     </style>
 
     <style name="AppTheme.Toolbar" parent="Theme.AppCompat.Light.NoActionBar">
@@ -67,5 +72,13 @@
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">#fff</item>
         <item name="android:background">@drawable/button_red_selector</item>
+    </style>
+    <!-- for main screen tab-->
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 </resources>

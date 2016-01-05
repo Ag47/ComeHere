@@ -59,4 +59,16 @@
     <dimen name="layer_size">300dp</dimen>
     <dimen name="preview_offset_distance">150dp</dimen>
     <dimen name="offset_distance">48dp</dimen>
+
+    <!-- tab fo r main screen-->
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+
+    <!-- material transition-->
+    <integer name="anim_duration_very_long">1500</integer>
+    <integer name="anim_duration_long">500</integer>
+    <integer name="anim_duration_medium_long">300</integer>
+    <integer name="anim_duration_medium">300</integer>
 </resources>

@@ -68,7 +68,6 @@ public class BeaconListAdapter extends BaseAdapter {
 
   private void bind(Beacon beacon, View view) {
     ViewHolder holder = (ViewHolder) view.getTag();
-//    holder.macTextView.setText(String.format("MAC: %s (%.2fm)", beacon.getMacAddress(), Utils.computeAccuracy(beacon)));
 //    holder.rssiTextView.setText("RSSI: " + beacon.getRssi());
     if(beacon.getMajor() == TAG_MING_CHU_BLDGE_MAJOR){
       holder.shopperIcon.setImageResource(R.drawable.ming_chu_bldg_shopper);

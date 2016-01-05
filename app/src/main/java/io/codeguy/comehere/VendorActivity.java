@@ -16,7 +16,6 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
@@ -33,9 +32,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import io.codeguy.comehere.Adapter.MyRecyclerAdapter;
 import io.codeguy.comehere.Adapter.VendorAdapter;
 import io.codeguy.comehere.DataObject.pending;
+import io.codeguy.comehere.Network.AppController;
 
 /**
  * Created by SILVER on 3/9/15.
@@ -95,7 +94,7 @@ public class VendorActivity extends AppCompatActivity {
                         return true;
                     case R.id.navigation_spot:
                         MainActivity.mCurrentSelectedPosition = 1;
-                        startActivity(new Intent(VendorActivity.this, io.codeguy.comehere.menu_item.SpotActivity.class));
+                        startActivity(new Intent(VendorActivity.this, SpotActivity.class));
                         return true;
                     case R.id.navigation_seek:
                         MainActivity.mCurrentSelectedPosition = 2;

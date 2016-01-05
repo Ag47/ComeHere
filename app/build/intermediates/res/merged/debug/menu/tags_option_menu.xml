@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/share" android:title="share" android:icon="@drawable/perm_group_phone_calls"/>
+    <item android:id="@+id/upload" android:title="upload" android:icon="@drawable/perm_group_phone_calls"/>
+    <item android:id="@+id/call" android:title="call" android:icon="@drawable/perm_group_phone_calls"/>
+    <group android:id="@android:id/empty">
+        <item android:id="@+id/help" android:title="help" android:icon="@drawable/perm_group_phone_calls"/>
+    </group>
+</menu><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/ComeHere-master/app/src/main/res/menu/tags_option_menu.xml -->

@@ -27,6 +27,7 @@ import java.util.ArrayList;
 
 import io.codeguy.comehere.Adapter.ProductInfoAdapter;
 import io.codeguy.comehere.DataObject.response;
+import io.codeguy.comehere.Network.AppController;
 
 /**
  * Created by KaiHin on 9/2/2015.

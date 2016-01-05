@@ -83,7 +83,7 @@ public class RequestActivity extends AppCompatActivity {
         mDrawerLayout = (DrawerLayout) findViewById(R.id.nav_drawer);
 
         fl = (FrameLayout) findViewById(R.id.mFrameLayout);
-        Log.v("main", "frameLayout" + fl.toString());
+
         mUserLearnedDrawer = Boolean.valueOf(readSharedSetting(this, PREF_USER_LEARNED_DRAWER, "false"));
 
         if (savedInstanceState != null) {
@@ -109,7 +109,7 @@ public class RequestActivity extends AppCompatActivity {
                         return true;
                     case R.id.navigation_spot:
                         mCurrentSelectedPosition = 1;
-                        startActivity(new Intent(RequestActivity.this, io.codeguy.comehere.menu_item.SpotActivity.class));
+                        startActivity(new Intent(RequestActivity.this, SpotActivity.class));
                         return true;
                     case R.id.navigation_seek:
                         mCurrentSelectedPosition = 2;
@@ -163,14 +163,6 @@ public class RequestActivity extends AppCompatActivity {
     void showToast(String msg) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
-
-    //    private void setupViewPager(ViewPager viewPager) {
-//        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-//        adapter.addFrag(new ViewPagerAdapter.DummyFragment(getResources().getColor(R.color.accent_material_light)), "CAT");
-//        adapter.addFrag(new ViewPagerAdapter.DummyFragment(getResources().getColor(R.color.ripple_material_light)), "DOG");
-//        adapter.addFrag(new ViewPagerAdapter.DummyFragment(getResources().getColor(R.color.button_material_dark)), "MOUSE");
-//        viewPager.setAdapter(adapter);
-//    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
