@@ -14,4 +14,4 @@
         android:id="@+id/textView"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
-</RelativeLayout><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/ComeHere-master/app/src/main/res/layout/nav_fragment_spot.xml -->
+</RelativeLayout><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/app/src/main/res/layout/nav_fragment_spot.xml -->

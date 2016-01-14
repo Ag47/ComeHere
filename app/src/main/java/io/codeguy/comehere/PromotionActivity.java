@@ -459,7 +459,7 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
         Log.v("promo", "the clickedPinpointName " + clickedPinpointName);
         //work
 //        String urlFetchPinpointData = "http://androiddebugoska.host22.com/fetch_all_data_in_pinpoint.php?v_shop_name=" + clickedPinpointName;
-        String urlFetchPinpointData = "http://androiddebugoska.host22.com/fetch_now_promotion_data.php?v_shop_name=" + clickedPinpointName;
+        String urlFetchPinpointData = "http://104.155.195.239/oska/php/comehere/fetch_all_data_in_pinpoint.php?v_shop_name=" + clickedPinpointName;
 
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST,
                 urlFetchPinpointData, (String) null, new Response.Listener<JSONObject>() {
@@ -532,7 +532,7 @@ public class PromotionActivity extends ActionBarActivity implements OnMapReadyCa
     }
 
     private void fetchPromotionImage() {
-        String urlFetchPinpointData = "http://androiddebugoska.host22.com/fetch_image.php?v_shop_name=" + clickedPinpointName;
+        String urlFetchPinpointData = "http://104.155.195.239/oska/php/comehere/fetch_image.php?v_shop_name=" + clickedPinpointName;
 
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST,
                 urlFetchPinpointData, (String) null, new Response.Listener<JSONObject>() {

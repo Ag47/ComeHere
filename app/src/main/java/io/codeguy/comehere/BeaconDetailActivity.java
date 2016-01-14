@@ -131,7 +131,7 @@ public class BeaconDetailActivity extends AppCompatActivity {
     private void fetchShopDetail(final String beaconMajor, final VolleyCallback callback) {
 
 
-        String urlSearchProductJson = "http://androiddebugoska.host22.com/fetching_shop_detail.php?beacon_major=" + beaconMajor;
+        String urlSearchProductJson = "http://104.155.195.239/oska/php/comehere/fetching_shop_detail.php?beacon_major=" + beaconMajor;
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST,
                 urlSearchProductJson, (String) null, new Response.Listener<JSONObject>() {
 

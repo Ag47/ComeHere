@@ -6,4 +6,4 @@
     android:background="@drawable/actionbar"
     android:elevation="2dp"
     android:theme="@style/Base.ThemeOverlay.AppCompat.Dark" />
-<!-- From: file:/Users/SILVER/Downloads/ComeHere-master/ComeHere-master/app/src/main/res/layout/toolbar.xml -->
+<!-- From: file:/Users/SILVER/Downloads/ComeHere-master/app/src/main/res/layout/toolbar.xml -->

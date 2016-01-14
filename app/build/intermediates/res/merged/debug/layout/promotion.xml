@@ -18,7 +18,7 @@
             sothree:umanoDragView="@+id/dragView"
             sothree:umanoOverlay="true"
             sothree:umanoPanelHeight="68dp"
-            sothree:umanoParalaxOffset="100dp"
+            sothree:umanoParallaxOffset="100dp"
             sothree:umanoScrollableView="@+id/list"
             sothree:umanoShadowHeight="4dp">
 
@@ -236,4 +236,4 @@
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/drawer_header"
         app:menu="@menu/drawer" />
-</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/ComeHere-master/app/src/main/res/layout/promotion.xml -->
+</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/app/src/main/res/layout/promotion.xml -->

@@ -3,41 +3,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="Spot Now"-->
+        <!--android:textSize="72dp" />-->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/comehere_logo"
+        android:id="@+id/imageView17"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+<LinearLayout
+    android:layout_width="330dp"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:layout_below="@+id/imageView17"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/customborder"
+    android:id="@+id/animated_search_bar"
+    android:transitionName="@string/transition_name"
+    >
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Spot Now"
-        android:textSize="72dp" />
+        android:text="Search product or type"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorSecondaryText"
+        />
+</LinearLayout>
 
-    <com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/content"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/grid_type_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        app:rb_color="#0099CC"
-        app:rb_duration="5000"
-        app:rb_radius="15dp"
-        app:rb_rippleAmount="4"
-        app:rb_scale="3">
+        android:clipToPadding="false"
+        android:layout_below="@+id/animated_search_bar"
+        />
 
-        <ImageView
-            android:id="@+id/animated_search"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
-            android:layout_centerInParent="true"
-            android:src="@drawable/search_touch"
-            android:transitionName="@string/transition_name"
+    <!--<com.skyfishjy.library.RippleBackground xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/content"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--app:rb_color="#0099CC"-->
+        <!--app:rb_duration="5000"-->
+        <!--app:rb_radius="15dp"-->
+        <!--app:rb_rippleAmount="4"-->
+        <!--app:rb_scale="3">-->
 
-            />
-    </com.skyfishjy.library.RippleBackground>
+        <!--<ImageView-->
+            <!--android:id="@+id/animated_search"-->
+            <!--android:layout_width="64dp"-->
+            <!--android:layout_height="64dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:src="@drawable/search_touch"-->
+            <!--android:transitionName="@string/transition_name"-->
 
-    <!--<ImageView-->
-    <!--android:id="@+id/animated_search"-->
-    <!--android:src="@drawable/search67"-->
-    <!--android:transitionName="@string/transition_name"-->
-    <!--android:layout_centerVertical="true"-->
-    <!--android:layout_centerHorizontal="true" />-->
+            <!--/>-->
+    <!--</com.skyfishjy.library.RippleBackground>-->
+
+
 </RelativeLayout>

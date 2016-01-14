@@ -17,7 +17,7 @@ public final class R {
 		public static final int rb_type = 0x7f0100c8;
 	}
 	public static final class color {
-		public static final int rippelColor = 0x7f0d0081;
+		public static final int rippelColor = 0x7f0d0082;
 	}
 	public static final class dimen {
 		public static final int rippleRadius = 0x7f08009e;

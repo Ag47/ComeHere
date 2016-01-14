@@ -6,28 +6,58 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="@color/primary_dark">
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imageView17"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/customborder"
+        android:id="@+id/linearLayout2"
+        android:transitionName="@string/transition_name">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Search product or type"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:textSize="20dp"-->
+            <!--android:textColor="@color/colorSecondaryText"-->
+            <!--/>-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:hint="Search product or type"
+            android:background="@null"
+            android:id="@+id/edit_search"
+            />
     </LinearLayout>
 
-        <ImageView
-            android:id="@+id/animated_search"
-            style="@style/material_transition.IconSmall"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="24dp"
-            android:src="@drawable/ic_search_white_24dp"
-            android:transitionName="@string/transition_name"
-            android:layout_marginTop="10dp"/>
 
-        <EditText
-            android:id="@+id/home_edit_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/animated_search"
-            android:layout_alignParentEnd="true"
-            android:layout_toEndOf="@+id/animated_search"
-            android:layout_marginTop="10dp"
-            />
-</RelativeLayout><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/ComeHere-master/app/src/main/res/layout/activity_main_v21up_shared_fragment_2.xml -->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="@color/primary_dark">-->
+    <!--</LinearLayout>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/animated_search"-->
+            <!--style="@style/material_transition.IconSmall"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_marginLeft="24dp"-->
+            <!--android:src="@drawable/ic_search_white_24dp"-->
+            <!--android:transitionName="@string/transition_name"-->
+            <!--android:layout_marginTop="10dp"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/home_edit_text"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@+id/animated_search"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_toEndOf="@+id/animated_search"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--/>-->
+</RelativeLayout><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/app/src/main/res/layout/activity_main_v21up_shared_fragment_2.xml -->

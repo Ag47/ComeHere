@@ -220,7 +220,7 @@ public class RequestActivity extends AppCompatActivity {
             Fragment f = new Fragment();
             switch (position) {
                 case 0:
-                    f = new FragmentPending().newInstance("http://androiddebugoska.host22.com/readAllpending.php", "");
+                    f = new FragmentPending().newInstance("http://104.155.195.239/oska/php/comehere/readAllpending.php", "");
                     break;
                 case 1:
                     f = new FragmentResponse().newInstance("", "", fl);

@@ -26,7 +26,7 @@ import io.codeguy.comehere.Network.AppController;
 public class AddToPendingDetailActivity extends ActionBarActivity {
 
     //    String insertURL = "http://10.0.2.2/android/add_to_pending.php";
-    String insertURL = "http://androiddebugoska.host22.com/add_to_pending.php";
+    String insertURL = "http://104.155.195.239/oska/php/comehere/add_to_pending.php";
     String spotName, spotTime, spotType;
     ProgressDialog PD;
 

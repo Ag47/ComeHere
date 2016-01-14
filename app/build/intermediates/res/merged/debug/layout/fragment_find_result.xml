@@ -40,4 +40,4 @@
         app:layout_anchor="@id/coordinatorLayout"
         app:layout_anchorGravity="bottom|right|end"
         app:rippleColor="#F06292" />
-</android.support.design.widget.CoordinatorLayout><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/ComeHere-master/app/src/main/res/layout/fragment_find_result.xml -->
+</android.support.design.widget.CoordinatorLayout><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/app/src/main/res/layout/fragment_find_result.xml -->

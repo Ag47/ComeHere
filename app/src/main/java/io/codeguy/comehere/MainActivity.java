@@ -12,6 +12,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.transition.ChangeBounds;
+import android.transition.Fade;
 import android.transition.Slide;
 import android.util.Log;
 import android.view.Gravity;
@@ -181,15 +182,23 @@ public class MainActivity extends AppCompatActivity {
         setupLayout();
     }
 
+
+    private void setupWindowAnimations() {
+        // We are not interested in defining a new Enter Transition. Instead we change default transition duration
+        if (android.os.Build.VERSION.SDK_INT >= 21)
+            getWindow().getEnterTransition().setDuration(getResources().getInteger(R.integer.anim_duration_long));
+    }
     private void setupLayout() {
         if (android.os.Build.VERSION.SDK_INT >= 21) {
 
+            Fade fadeIn = new Fade();
+            fadeIn.setDuration(getResources().getInteger(R.integer.anim_duration_long));
 //            Slide slideTransition = new Slide(Gravity.LEFT);
 //            slideTransition.setDuration(getResources().getInteger(R.integer.anim_duration_long));
-            // Create fragment and define some of it transitions
+//             Create fragment and define some of it transitions
             FragmentSharedHomePage1 sharedElementFragment1 = FragmentSharedHomePage1.newInstance();
-//            sharedElementFragment1.setReenterTransition(slideTransition);
-//            sharedElementFragment1.setExitTransition(slideTransition);
+            sharedElementFragment1.setReenterTransition(fadeIn);
+            sharedElementFragment1.setExitTransition(fadeIn);
             sharedElementFragment1.setSharedElementEnterTransition(new ChangeBounds());
             Log.v("transition", "1");
             getSupportFragmentManager().beginTransaction()
@@ -198,11 +207,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void setupWindowAnimations() {
-        // We are not interested in defining a new Enter Transition. Instead we change default transition duration
-        if (android.os.Build.VERSION.SDK_INT >= 21)
-            getWindow().getEnterTransition().setDuration(getResources().getInteger(R.integer.anim_duration_long));
-    }
+
 
 
 }

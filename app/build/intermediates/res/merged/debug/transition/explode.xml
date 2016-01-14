@@ -3,4 +3,4 @@
     <explode
         android:duration="@integer/anim_duration_long"
         android:interpolator="@android:interpolator/bounce" />
-</transitionSet><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/ComeHere-master/app/src/main/res/transition/explode.xml -->
+</transitionSet><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/app/src/main/res/transition/explode.xml -->

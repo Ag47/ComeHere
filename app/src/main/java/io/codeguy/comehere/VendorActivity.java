@@ -1,9 +1,7 @@
 package io.codeguy.comehere;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,8 +14,6 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -41,24 +37,14 @@ import io.codeguy.comehere.Network.AppController;
  */
 
 public class VendorActivity extends AppCompatActivity {
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-    ArrayList<HashMap<String, String>> Item_List;
-    ProgressDialog PD;
     JSONArray comeHereDB = null;
     ArrayList<pending> data = new ArrayList<>();
-    private ImageButton mImgBtn;
     private RecyclerView mRecyclerView;
-    private ItemTouchHelper mItemTouchHelper;
-    private String mParam1;
-    private String mParam2;
     //    private String urlJsonObj = "http://10.0.2.2/android/readAllpending.php";
-    private String urlJsonObj = "http://androiddebugoska.host22.com/readAllpending.php";
+    private String urlJsonObj = "http://104.155.195.239/oska/php/comehere/readAllpending.phpq";
     private SwipeRefreshLayout pendingSwipeRefreshLayout;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    private LinearLayout mToolbarContainer;
-    private int mToolbarHeight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +68,6 @@ public class VendorActivity extends AppCompatActivity {
 
         NavigationView mNavigationView = (NavigationView) findViewById(R.id.nav_view);
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            CoordinatorLayout mCoordinator = (CoordinatorLayout) findViewById(R.id.tabanim_maincontent);
 
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
@@ -132,81 +117,37 @@ public class VendorActivity extends AppCompatActivity {
         data = new ArrayList<>();
 
         fetchPendingItems();
-        mAdapter = new VendorAdapter(this, data);
-        mRecyclerView.setAdapter(mAdapter);
+        mAdapter = new VendorAdapter(data);
 
-        mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mRecyclerView.setHasFixedSize(true);
-
-        // init recycler view
-        final RecyclerView recyclerView = mRecyclerView;
-
-        // init layout manager
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-        // or
-        // LayoutManager layoutManager = new GridLayoutManager(this, 2);
-        // or
-        // LayoutManager layoutManager = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
-        recyclerView.setLayoutManager(layoutManager);
-
-        // init data
-//        final List<String> items = mAdaptergetItems(); // implement #getItems method by yourself
-
-        // init adapter
+        mRecyclerView.setAdapter(mAdapter);
 
 
-        recyclerView.setAdapter(mAdapter);
 
         // init swipe to dismiss logic
         ItemTouchHelper swipeToDismissTouchHelper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(
                 ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
             @Override
             public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
-                // callback for drag-n-drop, false to skip this feature
                 return false;
             }
 
             @Override
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
-                // callback for swipe to dismiss, removing item from data and adapter
-//                items.remove(viewHolder.getAdapterPosition());
                 int getPosition = viewHolder.getAdapterPosition();
                 Log.v("vendor", "the row id is " + data.get(getPosition).getId());
-                deletePendingItem(Integer.toString(getPosition));
-                mAdapter.notifyItemRemoved(viewHolder.getAdapterPosition());
-//                mAdapter.notifyDataSetChanged();
+//                deletePendingItem(Integer.toString(getPosition));
+                data.remove(getPosition);
+                mAdapter.notifyDataSetChanged();
 
 
             }
         });
         swipeToDismissTouchHelper.attachToRecyclerView(mRecyclerView);
 
-
-        Log.v("pending", " after the new recyclerAdapter");
-//        pendingSwipeRefreshLayout.setOnRefreshListener(this);
-//        pendingSwipeRefreshLayout.post(new Runnable() {
-//
-//                                           @Override
-//                                           public void run() {
-//                                               pendingSwipeRefreshLayout.setRefreshing(true);
-//
-//                                               fetchPendingItems();
-//                                               Log.v("pending", "in the refresh runnable");
-//                                           }
-//                                       }
-//        );
-
     }
 
-//    @Override
-//    public void onRefresh() {
-//        if (fetchPendingItems != null) {
-//            data.clear();
-//        }
-//        fetchPendingItems();
-//    }
 
     private void fetchPendingItems() {
 
@@ -230,28 +171,15 @@ public class VendorActivity extends AppCompatActivity {
                         String name = currentJsonObject.getString("pending_name");
                         String appkey = currentJsonObject.getString("app_registered_key");
                         String expired = currentJsonObject.getString("time_expired");
-//                        String iconThum = currentJsonObject.getString("test_shopper_thum_icon");
-//                        if(iconThum == "" || iconThum == null)
-//                            iconThum = "";
-//                        else
-//                            iconThum = iconThum.replace("\\/","/");
-                        Log.v("oscar", "pending name: " + name);
-//                        currentPendingItem.setIcon_thum(iconThum);
+
                         currentPendingItem.setName(name);
                         currentPendingItem.setId(id);
                         currentPendingItem.setTimeExpired(expired);
                         currentPendingItem.setInstalledKey(appkey);
-//                        pending p = new pending(name, id , appkey, expired);
                         data.add(i, currentPendingItem);
-//                        data.add(i, p);
-
-//                    result.add
-                        Log.v("oscar", "the array data is " + data.get(i).toString());
-                        Log.v("oscar", "adding...");
 
                     }
                     mAdapter.notifyDataSetChanged();
-//                    pendingSwipeRefreshLayout.setRefreshing(false);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -271,12 +199,6 @@ public class VendorActivity extends AppCompatActivity {
     }
 
 
-    public static interface ClickListener {
-        public void onClick(View view, int position);
-
-        public void onLoingClick(View view, int position);
-    }
-
 
     /**
      * Created by KaiHin on 7/10/2015.
@@ -284,7 +206,7 @@ public class VendorActivity extends AppCompatActivity {
 
     private void deletePendingItem(final String id) {
         Log.v("vendor", "deleted id is " + id);
-        String deleteURL = "http://androiddebugoska.host22.com/delete_pending_item.php?pending_id=" + id;
+        String deleteURL = "http://104.155.195.239/oska/php/comehere/delete_pending_item.php?pending_id=" + id;
 
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST,
                 deleteURL, (String) null, new Response.Listener<JSONObject>() {
@@ -308,7 +230,6 @@ public class VendorActivity extends AppCompatActivity {
             }
         };
 
-        // Adding request to request queue
         AppController.getInstance().addToRequestQueue(jsonObjReq);
 
     }

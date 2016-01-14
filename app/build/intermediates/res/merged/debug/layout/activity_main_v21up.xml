@@ -45,7 +45,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_below="@+id/tabanim_appbar"
-                        android:background="@drawable/apliu_street_bg2"/>
+                        android:background="@color/home_background_color"/>
 
 
             </RelativeLayout>
@@ -64,4 +64,4 @@
         app:headerLayout="@layout/drawer_header"
         app:menu="@menu/drawer" />
 
-</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/ComeHere-master/app/src/main/res/layout/activity_main_v21up.xml -->
+</android.support.v4.widget.DrawerLayout><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/app/src/main/res/layout/activity_main_v21up.xml -->

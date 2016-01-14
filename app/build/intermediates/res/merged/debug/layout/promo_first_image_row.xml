@@ -8,4 +8,4 @@
         android:scaleType="centerCrop"
         android:id="@+id/promo_image"/>
 
-</LinearLayout><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/ComeHere-master/app/src/main/res/layout/promo_first_image_row.xml -->
+</LinearLayout><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/app/src/main/res/layout/promo_first_image_row.xml -->

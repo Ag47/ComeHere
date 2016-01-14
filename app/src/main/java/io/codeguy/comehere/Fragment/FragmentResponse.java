@@ -49,7 +49,7 @@ public class FragmentResponse extends Fragment implements SwipeRefreshLayout.OnR
     private SwipeRefreshLayout responseSwipeRefreshLayout;
     private String mParam1;
     private String mParam2;
-    private String urlReadResponse = "http://androiddebugoska.host22.com/readAllResponse.php";
+    private String urlReadResponse = "http://104.155.195.239/oska/php/comehere/readAllResponse.php";
     private RecyclerView.LayoutManager mLayoutManager;
     private RecyclerView.Adapter mAdapter;
 

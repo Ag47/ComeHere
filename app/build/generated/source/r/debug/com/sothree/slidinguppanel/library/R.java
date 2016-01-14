@@ -8,6 +8,10 @@ package com.sothree.slidinguppanel.library;
 
 public final class R {
 	public static final class attr {
+		public static final int layoutManager = 0x7f0100be;
+		public static final int reverseLayout = 0x7f0100c0;
+		public static final int spanCount = 0x7f0100bf;
+		public static final int stackFromEnd = 0x7f0100c1;
 		public static final int umanoAnchorPoint = 0x7f0100e7;
 		public static final int umanoClipPanel = 0x7f0100e6;
 		public static final int umanoDragView = 0x7f0100e3;
@@ -16,9 +20,13 @@ public final class R {
 		public static final int umanoInitialState = 0x7f0100e8;
 		public static final int umanoOverlay = 0x7f0100e5;
 		public static final int umanoPanelHeight = 0x7f0100de;
-		public static final int umanoParalaxOffset = 0x7f0100e0;
+		public static final int umanoParallaxOffset = 0x7f0100e0;
+		public static final int umanoScrollInterpolator = 0x7f0100e9;
 		public static final int umanoScrollableView = 0x7f0100e4;
 		public static final int umanoShadowHeight = 0x7f0100df;
+	}
+	public static final class dimen {
+		public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f080088;
 	}
 	public static final class drawable {
 		public static final int above_shadow = 0x7f02003b;
@@ -29,9 +37,16 @@ public final class R {
 		public static final int collapsed = 0x7f0e0041;
 		public static final int expanded = 0x7f0e0042;
 		public static final int hidden = 0x7f0e0043;
+		public static final int item_touch_helper_previous_elevation = 0x7f0e0007;
 	}
 	public static final class styleable {
-		public static final int[] SlidingUpPanelLayout = { 0x7f0100de, 0x7f0100df, 0x7f0100e0, 0x7f0100e1, 0x7f0100e2, 0x7f0100e3, 0x7f0100e4, 0x7f0100e5, 0x7f0100e6, 0x7f0100e7, 0x7f0100e8 };
+		public static final int[] RecyclerView = { 0x010100c4, 0x7f0100be, 0x7f0100bf, 0x7f0100c0, 0x7f0100c1 };
+		public static final int RecyclerView_android_orientation = 0;
+		public static final int RecyclerView_layoutManager = 1;
+		public static final int RecyclerView_reverseLayout = 3;
+		public static final int RecyclerView_spanCount = 2;
+		public static final int RecyclerView_stackFromEnd = 4;
+		public static final int[] SlidingUpPanelLayout = { 0x7f0100de, 0x7f0100df, 0x7f0100e0, 0x7f0100e1, 0x7f0100e2, 0x7f0100e3, 0x7f0100e4, 0x7f0100e5, 0x7f0100e6, 0x7f0100e7, 0x7f0100e8, 0x7f0100e9 };
 		public static final int SlidingUpPanelLayout_umanoAnchorPoint = 9;
 		public static final int SlidingUpPanelLayout_umanoClipPanel = 8;
 		public static final int SlidingUpPanelLayout_umanoDragView = 5;
@@ -40,7 +55,8 @@ public final class R {
 		public static final int SlidingUpPanelLayout_umanoInitialState = 10;
 		public static final int SlidingUpPanelLayout_umanoOverlay = 7;
 		public static final int SlidingUpPanelLayout_umanoPanelHeight = 0;
-		public static final int SlidingUpPanelLayout_umanoParalaxOffset = 2;
+		public static final int SlidingUpPanelLayout_umanoParallaxOffset = 2;
+		public static final int SlidingUpPanelLayout_umanoScrollInterpolator = 11;
 		public static final int SlidingUpPanelLayout_umanoScrollableView = 6;
 		public static final int SlidingUpPanelLayout_umanoShadowHeight = 1;
 	}

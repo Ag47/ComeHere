@@ -40,7 +40,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import io.codeguy.comehere.Adapter.BottomSheetAdapter;
+import io.codeguy.comehere.Adapter.GridProductTypeAdapter;
 import io.codeguy.comehere.Network.AppController;
 import io.codeguy.comehere.DataObject.BottomSheetItem;
 import io.codeguy.comehere.R;
@@ -276,7 +276,7 @@ public class FragmentWish extends Fragment {
         }
 
         bottomSheetRecyclerview = (RecyclerView) layout.findViewById(R.id.bottom_sheet_recyclerview);
-        mAdapter = new BottomSheetAdapter(getActivity(), arrayOfBottomSheetItem, mSlidingLayer, rowTags, tag1, tag2, tag3);
+        mAdapter = new GridProductTypeAdapter(getActivity(), arrayOfBottomSheetItem, mSlidingLayer, rowTags, tag1, tag2, tag3, true);
         mLayoutManager = new GridLayoutManager(this.getActivity(), 3);
         mLayoutManager.setOrientation(GridLayoutManager.VERTICAL);
         bottomSheetRecyclerview.setLayoutManager(mLayoutManager);
@@ -288,7 +288,7 @@ public class FragmentWish extends Fragment {
     }
 
     private void AddToDB(final String spotName, final String spotNote, final String spotTag1) {
-        String insertURL = "http://androiddebugoska.host22.com/add_to_pending.php?spot_name=" + spotName + "&spot_note=" + spotNote + "&spot_tag1=" + spotTag1;
+        String insertURL = "http://104.155.195.239/oska/php/comehere/add_to_pending.php?spot_name=" + spotName + "&spot_note=" + spotNote + "&spot_tag1=" + spotTag1;
         Toast.makeText(getActivity(), "added", Toast.LENGTH_LONG);
         StringRequest postRequest = new StringRequest(Request.Method.POST, insertURL,
                 new Response.Listener<String>() {

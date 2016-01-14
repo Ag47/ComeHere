@@ -7,14 +7,17 @@ android {
     buildToolsVersion "23.0.1"
     defaultConfig {
         applicationId 'io.codeguy.comehere'
-        minSdkVersion 21
+        minSdkVersion 19
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
     }
     buildTypes {
         release {
-            minifyEnabled false
+//            minifyEnabled false
+            // increase performance
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -54,7 +57,7 @@ dependencies {
     compile 'com.android.support:palette-v7:22.2.0'
 
     // sliding uppane (map)
-    compile 'com.sothree.slidinguppanel:library:3.1.1'
+    compile 'com.sothree.slidinguppanel:library:3.2.1'
 
     // floating button
     compile 'com.getbase:floatingactionbutton:1.10.0'

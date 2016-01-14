@@ -3,4 +3,4 @@
     <slide
         android:duration="@integer/anim_duration_long"
         android:slideEdge="bottom" />
-</transitionSet><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/ComeHere-master/app/src/main/res/transition/slide_from_bottom.xml -->
+</transitionSet><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/app/src/main/res/transition/slide_from_bottom.xml -->

@@ -106,7 +106,7 @@ public class SeekResultActivity extends AppCompatActivity {
         Log.v("spot", "on ReadDataFromDB");
 
         Log.v("oscar", "int the ReadDataFromDb");
-        String urlSearchProductJson = "http://androiddebugoska.host22.com/products_user_seek.php?type=" + type;
+        String urlSearchProductJson = "http://104.155.195.239/oska/php/comehere/products_user_seek.php?type=" + type;
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST,
                 urlSearchProductJson, (String) null, new Response.Listener<JSONObject>() {
 

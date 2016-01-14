@@ -49,7 +49,7 @@ public class FragmentPending extends Fragment implements SwipeRefreshLayout.OnRe
     private String mParam1;
     private String mParam2;
     //    private String urlJsonObj = "http://10.0.2.2/android/readAllpending.php";
-    private String urlJsonObj = "http://androiddebugoska.host22.com/readAllpending.php";
+    private String urlJsonObj = "http://104.155.195.239/oska/php/comehere/readAllpending.php";
     private SwipeRefreshLayout pendingSwipeRefreshLayout;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;

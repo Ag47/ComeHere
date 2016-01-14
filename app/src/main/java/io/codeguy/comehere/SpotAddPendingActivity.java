@@ -129,7 +129,7 @@ public class SpotAddPendingActivity extends AppCompatActivity {
 
     private void fetchInstantSearch(CharSequence inputSearch) {
         final String inputSearchString = inputSearch.toString();
-        String urlSearchProductJson = "http://androiddebugoska.host22.com/products_user_spot.php?p_name=" + inputSearchString;
+        String urlSearchProductJson = "http://104.155.195.239/oska/php/comehere/products_user_spot.php?p_name=" + inputSearchString;
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST,
                 urlSearchProductJson, (String) null, new Response.Listener<JSONObject>() {
 
@@ -246,7 +246,7 @@ public class SpotAddPendingActivity extends AppCompatActivity {
             action.setCustomView(R.layout.search_bar);//add the custom view
             action.setDisplayShowTitleEnabled(false); //hide the title
 
-            edtSeach = (EditText) action.getCustomView().findViewById(R.id.edtSearch); //the text editor
+//            edtSeach = (EditText) action.getCustomView().findViewById(R.id.edtSearch); //the text editor
 
             edtSeach.addTextChangedListener(new TextWatcher() {
                 @Override

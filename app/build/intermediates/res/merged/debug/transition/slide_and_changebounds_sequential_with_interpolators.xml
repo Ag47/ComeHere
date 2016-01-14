@@ -4,4 +4,4 @@
     android:transitionOrdering="sequential">
     <slide android:interpolator="@android:interpolator/decelerate_cubic" />
     <changeBounds android:interpolator="@android:interpolator/bounce" />
-</transitionSet><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/ComeHere-master/app/src/main/res/transition/slide_and_changebounds_sequential_with_interpolators.xml -->
+</transitionSet><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/app/src/main/res/transition/slide_and_changebounds_sequential_with_interpolators.xml -->

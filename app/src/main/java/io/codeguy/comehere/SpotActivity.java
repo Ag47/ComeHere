@@ -47,6 +47,7 @@ import io.codeguy.comehere.Network.AppController;
 public class SpotActivity extends AppCompatActivity {
     int i = 1;
     private ArrayList<Product> searchProduct = new ArrayList<>();
+    private ArrayList<Product> filteredProductResults = new ArrayList<>();
     private RecyclerView instantRecycler;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
@@ -62,7 +63,8 @@ public class SpotActivity extends AppCompatActivity {
     private String searchContentString;
     NavigationView mNavigationView;
     private DrawerLayout mDrawerLayout;
-
+    private boolean matchFound = false;
+    private Product tempProduct;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -147,6 +149,7 @@ public class SpotActivity extends AppCompatActivity {
         searchProduct = new ArrayList<>();
         Log.v("instant", "count i " + i);
         fetchInstantSearch(inputSearch);
+//        filterProductArray(inputSearch.toString());
         mAdapter = new SpotPendingAdapter(this, searchProduct);
         instantRecycler.setAdapter(mAdapter);
         instantRecycler.setLayoutManager(mLayoutManager);
@@ -156,7 +159,7 @@ public class SpotActivity extends AppCompatActivity {
 
     private void fetchInstantSearch(CharSequence inputSearch) {
         final String inputSearchString = inputSearch.toString();
-        String urlSearchProductJson = "http://androiddebugoska.host22.com/products_user_spot.php?p_name=" + inputSearchString;
+        String urlSearchProductJson = "http://104.155.195.239/oska/php/comehere/products_user_spot.php?p_name=" + inputSearchString;
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST,
                 urlSearchProductJson, (String) null, new Response.Listener<JSONObject>() {
 
@@ -168,7 +171,8 @@ public class SpotActivity extends AppCompatActivity {
                     comeHereDB = response.getJSONArray("come_here");
                     Log.v("oscar", "before looping");
                     for (int i = 0; i < comeHereDB.length(); i++) {
-                        Product currentProductItem = new Product();
+//                        Product currentProductItem = new Product();
+                        tempProduct = new Product();
                         JSONObject currentJsonObject = comeHereDB.getJSONObject(i);
                         String pid = currentJsonObject.getString("p_id");
                         String pName = currentJsonObject.getString("p_name");
@@ -184,20 +188,27 @@ public class SpotActivity extends AppCompatActivity {
                             imageURL = "";
                         else
                             imageURL = imageURL.replace("\\/", "/");
-                        currentProductItem.setpVendorAddr(shopperAddr);
-                        currentProductItem.setpName(pName);
-                        currentProductItem.setPid(pid);
-                        currentProductItem.setImaageURL(imageURL);
-                        currentProductItem.setpDiscount(pDiscount);
-                        currentProductItem.setpPrice(pPrice);
-                        currentProductItem.setpTypeId(pTypeId);
-                        currentProductItem.setpTypeName(pTypeName);
-                        currentProductItem.setpVendorId(pVendorId);
-                        currentProductItem.setpVendorName(pVendorName);
+                        tempProduct.setpVendorAddr(shopperAddr);
+                        tempProduct.setpName(pName);
+                        tempProduct.setPid(pid);
+                        tempProduct.setImaageURL(imageURL);
+                        tempProduct.setpDiscount(pDiscount);
+                        tempProduct.setpPrice(pPrice);
+                        tempProduct.setpTypeId(pTypeId);
+                        tempProduct.setpTypeName(pTypeName);
+                        tempProduct.setpVendorId(pVendorId);
+                        tempProduct.setpVendorName(pVendorName);
 
-                        searchProduct.add(i, currentProductItem);
-//                    result.add
-                        Log.v("spot", " in the onResponse, the price is :" + pPrice);
+                        // check if this product is already there in searchProduct, if yes, then don't add it again
+                        matchFound = false;
+                        for (int j = 0; j < searchProduct.size(); j++) {
+                            Log.v("searchingProduct", "current i = " + j);
+                            if (searchProduct.get(j).getpName().equals(tempProduct.getpName()))
+                                matchFound = true;
+                        }
+
+                        if (matchFound == false)
+                            searchProduct.add(tempProduct);
                     }
                     mAdapter.notifyDataSetChanged();
                 } catch (JSONException e) {
@@ -256,10 +267,6 @@ public class SpotActivity extends AppCompatActivity {
             action.setDisplayShowCustomEnabled(false); //disable a custom view inside the actionbar
             action.setDisplayShowTitleEnabled(true); //show the title in the action bar
 
-            //hides the keyboard
-//            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-//            imm.hideSoftInputFromWindow(edtSeach.getWindowToken(), 0);
-
             //add the search icon in the action bar
             mSearchAction.setIcon(getResources().getDrawable(R.drawable.ic_search_white_24dp));
 
@@ -280,43 +287,26 @@ public class SpotActivity extends AppCompatActivity {
                 public void beforeTextChanged(CharSequence s, int start, int count, int after) {
                     if (searchProduct != null) {
 //                        searchProduct.clear();
-                        searchProduct = new ArrayList<>();
+//                        searchProduct = new ArrayList<>();
                         Log.v("instant", "count i " + i);
                     }
                 }
 
                 @Override
                 public void onTextChanged(CharSequence s, int start, int before, int count) {
-                    Log.v("instant", "search bar :" + s.toString());
-                    Log.v("instant", "start :" + start);
-                    Log.v("instant", "before" + before);
-//                    if (searchProduct != null) {
-                        searchProduct.clear();
-                        searchProduct = new ArrayList<>();
-//                    }
                     searchContentRow.setVisibility(View.VISIBLE);
                     searchContentString = s.toString();
                     searchContent.setText(s.toString());
                     if (before == 1 && start == 0) {
                         searchContentRow.setVisibility(View.GONE);
                     }
+                    Log.v("instant_S","current input:");
                     instantSearch(s);
                 }
 
                 @Override
                 public void afterTextChanged(Editable s) {
-//                    if (searchProduct != null) {
-//                        searchProduct.clear();
-//                        searchProduct = new ArrayList<>();
-//                    }
-//                    searchContentRow.setVisibility(View.VISIBLE);
-//                    searchContentString = s.toString();
-//                    searchContent.setText(s.toString());
-//                    if (before == 1 && start == 0) {
-//                        searchContentRow.setVisibility(View.GONE);
-//                    }
                     instantSearch(s);
-//                    s.toString();
                 }
 
             });
@@ -352,4 +342,15 @@ public class SpotActivity extends AppCompatActivity {
         return true;
     }
 
+    public void filterProductArray(String newText) {
+        String findMatchProductName;
+        filteredProductResults.clear();
+        for (int i = 0; i < searchProduct.size(); i++) {
+            findMatchProductName = searchProduct.get(i).getpName().toLowerCase();
+            if (findMatchProductName.contains(newText.toLowerCase())) {
+                filteredProductResults.add(searchProduct.get(i));
+            }
+        }
+    }
 }
+

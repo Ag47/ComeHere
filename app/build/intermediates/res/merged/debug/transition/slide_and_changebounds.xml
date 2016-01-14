@@ -3,4 +3,4 @@
     android:duration="@integer/anim_duration_long">
     <slide />
     <changeBounds />
-</transitionSet><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/ComeHere-master/app/src/main/res/transition/slide_and_changebounds.xml -->
+</transitionSet><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/app/src/main/res/transition/slide_and_changebounds.xml -->

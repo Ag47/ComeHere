@@ -5,4 +5,4 @@
     <item android:state_focused="true" android:drawable="@color/background_tab_pressed"/>
     <item android:drawable="@android:color/transparent"/>
 
-</selector><!-- From: file:/C:/Users/Andreas/workspace/PagerSlidingTabStrip/library/res/drawable/background_tab.xml --><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/ComeHere-master/app/build/intermediates/exploded-aar/com.astuetz/pagerslidingtabstrip/1.0.1/res/drawable/background_tab.xml -->
+</selector><!-- From: file:/C:/Users/Andreas/workspace/PagerSlidingTabStrip/library/res/drawable/background_tab.xml --><!-- From: file:/Users/SILVER/Downloads/ComeHere-master/app/build/intermediates/exploded-aar/com.astuetz/pagerslidingtabstrip/1.0.1/res/drawable/background_tab.xml -->
